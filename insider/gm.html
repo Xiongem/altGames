@@ -22,10 +22,14 @@
     <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
     <button>Submit</button>
     <script type='text/javascript'>
-        let gameplayers = ["Bob", "Dan", "Bill"];
-        let i = Math.floor(Math.random() * gameplayers.length);
-        let r = gameplayers[i];
-        $("#gmName").text(r);
+        //* function to pull a random player name from player array and write it in the gmName span
+        function pullGM() {
+            let gameplayers = ["Bob", "Dan", "Bill"];
+            let i = Math.floor(Math.random() * gameplayers.length);
+            let r = gameplayers[i];
+            $("#gmName").text(r);
+        }
+        pullGM();
     </script>
 </body>
 </html>
