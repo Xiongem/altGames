@@ -90,8 +90,8 @@
         }
         function cookieCreate() {
             var gameplayers = document.getElementsByName('gameplayers');
-            var json_str = JSON.stringify(gameplayers);
-            document.cookie = "playerCookie=" + json_str + ";";
+            //* PHP to assign array to session variable
+            window.location.href="gm.html";
         }
     </script>
 </body>
