@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="ALT JET Games"> 
+    <meta property="og:description" content="In class games and activities for ALTs."> 
+    <meta property="og:image" content=""> 
+    <meta property="og:url" content="">
+    <title>Insider Game Master</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/insider/gm.css">
+    <link rel="website icon" type="webp" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2 class="title">The Game Master is:</h2>
+    <span id="gmName"></span>
+    <h3>Game Master, please choose a word:</h3>
+    <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
+    <button>Submit</button>
+    <script type='text/javascript'>
+        let gameplayers = ["Bob", "Dan", "Bill"];
+        let i = Math.floor(Math.random() * gameplayers.length);
+        let r = gameplayers[i];
+        $("#gmName").text(r);
+    </script>
+</body>
+</html>

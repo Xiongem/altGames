@@ -1,0 +1,45 @@
+:root,
+    /*Light Theme*/
+    :root.light { 
+        --background-color: #1e202c;
+        --text-color: #bfc0d1;
+        --reverse-text-color: #1e202c;
+        --accent-1: #31323c;
+        --accent-2: #bfc0d1;
+        --accent-3: #60519b;
+        --filter-color: #dda7ff7e;
+        --box-shadow: 0px 0px 15px #dda7ff7e;
+        --warning: #b80303;
+        --progress-bar: #60519b;
+        --percentage: #bfc0d1;
+    }
+    /*Dark Theme*/
+    :root.dark {
+        --background-color: #222831;
+        --text-color: #d8d7ce;
+        --reverse-text-color: #222831;
+        --accent-1: #283b48;
+        --accent-2: #d8d7ce;
+        --accent-3: #00a6c0;
+        --filter-color: #7ae8f878;
+        --box-shadow: 0px 0px 15px #7ae8f878;
+        --warning: #b80303;
+        --progress-bar: #00a6c0;
+        --percentage: #d8d7ce;
+    }
+
+/** UNIVERSAL*/
+h1, h2, h3, h4, h5, h6, p, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+/** SMALL PHONES*/
+@media only screen and (min-width: 200px) {
+  .title {
+        margin: 0.5em 0;
+    }  
+}

@@ -1,0 +1,45 @@
+/** SMALL PHONES*/
+@media only screen and (min-width: 200px) {
+    .spacing {
+        margin-bottom: 1.5em;
+    }
+    .sections {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .selectWrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+    .selectWrapper > label {
+        margin-right: 0.5em;
+    }
+    #playerWrapper {
+        display: flex;
+        
+    }
+    #showPlayers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .playerInput {
+        width: 70%;
+        height: 2.5em;
+    }
+    .options {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="ALT JET Games"> 
+    <meta property="og:description" content="In class games and activities for ALTs."> 
+    <meta property="og:image" content=""> 
+    <meta property="og:url" content="">
+    <title>Insider Start</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/insider/start.css">
+    <link rel="website icon" type="webp" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Insider</h1>
+        <div id="playerWrapper" class="spacing sections">
+            <div class="selectWrapper">
+                <label>Please select number of players:</label>
+                <select id="playerNumber" onclick="displayPlayers()">
+                    <option value="">-</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+            <div id="showPlayers">
+                <!-- //* displays number of inputs based on selection above -->
+            </div>
+        </div>
+        <div id="guessTimeWrapper" class="spacing sections">
+            <p>Please choose amount of GUESSING time:</p>
+            <div class="options">
+                <div>
+                    <input type="radio" id="twoMins" name="guessTime" value="2">
+                    <label for="twoMins">2 Minutes</label>
+                </div>
+                <div>
+                    <input type="radio" id="threeMins" name="guessTime" value="3" checked>
+                    <label for="threeMins">3 Minutes</label>
+                </div>
+                <div>
+                    <input type="radio" id="fiveMins" name="guessTime" value="5">
+                    <label for="fiveMins">5 Minutes</label>
+                </div>
+            </div>
+        </div>
+        <div id="discussTimeWrapper" class="spacing sections">
+            <p>Please choose amount of DISCUSSION time:</p>
+            <div class="options">
+                <div>
+                    <input type="radio" id="oneMins" name="discussTime" value="1"  checked>
+                    <label for="oneMins">1 Minute</label>
+                </div>
+                <div>
+                    <input type="radio" id="twoMins" name="discussTime" value="2">
+                    <label for="twoMins">2 Minutes</label>
+                </div>
+                <div>
+                    <input type="radio" id="threeMins" name="discussTime" value="3">
+                    <label for="threeMins">3 Minutes</label>
+                </div>
+            </div>
+        </div>
+        <div class="buttonWrapper">
+            <button onclick="cookieCreate()">Start</button>
+        </div>
+    </div>
+    <script type='text/javascript'>
+        function displayPlayers(){
+            let players = document.getElementById("playerNumber");
+            var container = document.getElementById("showPlayers");
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            for (let i = 0; i < players.value; i++) {
+                container.appendChild(document.createTextNode("Player " + (i+1)));
+                var player = document.createElement("input");
+                player.setAttribute("type", "text");
+                player.setAttribute("class", "playerInput");
+                player.setAttribute("name", "gameplayers");
+                document.getElementById("showPlayers").appendChild(player);
+            }
+        }
+        function cookieCreate() {
+            var gameplayers = document.getElementsByName('gameplayers');
+            var json_str = JSON.stringify(gameplayers);
+            document.cookie = "playerCookie=" + json_str + ";";
+        }
+    </script>
+</body>
+</html>
