@@ -8,7 +8,7 @@
     <meta property="og:image" content=""> 
     <meta property="og:url" content="">
     <title>Insider Roles</title>
-    <link rel="stylesheet" href="../css/instyle.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/insider/style.css">
     <link rel="stylesheet" href="../css/insider/roles.css">
     <link rel="website icon" type="webp" href="">
@@ -22,25 +22,31 @@
             <span id="player"></span>
             <span id="confirm"></span>
         </div>
-        <button onclick="nextPlayer()">Next Player</button>
+        <button onclick="displayPlayer();">Next Player</button>
     </div>
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
-        let gmWord = "Apple";
-        let gameplayers = ["Bob", "Dan", "Bill", "Greg", "Bobby"];
+        var gmWord = "Apple";
+        var gameplayers = ["Bob", "Dan", "Bill", "Greg", "Bobby"];
 
-        let i = Math.floor(Math.random() * gameplayers.length);
-        let insider = gameplayers[i];
-        for (let i = 0; i < gameplayers.length;) {
-            $("#player").text(gameplayers);
-            $("#confirm").text("You are not the Insider.");
-            if (gameplayers == insider) {
-                $("#player").text("You are the Insider.");
+        var r = Math.floor(Math.random() * gameplayers.length);
+        var insider = gameplayers[r];
+        
+        var i = 0;
+        function displayPlayer() {
+            if (gameplayers[i] == insider) {
+                $("#player").text(gameplayers[i] + ", you are the Insider.");
                 $("#confirm").text("The word is " + gmWord);
+            } else {
+                $("#player").text(gameplayers[i]);
+                $("#confirm").text("You are not the Insider.");
             }
-        }
-        function nextPlayer() {
-            i++
+
+            gameplayers[i++];
+
+            if (i === gameplayers.length) {
+            i = 0;
+            }
         }
     </script>
 </body>
