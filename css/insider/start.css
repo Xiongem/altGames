@@ -9,11 +9,11 @@
         flex-direction: column;
         align-items: center;
     }
-    .wrapper {
+    /* .wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
     .selectWrapper {
         display: flex;
         justify-content: center;
@@ -25,7 +25,6 @@
     }
     #playerWrapper {
         display: flex;
-        
     }
     #showPlayers {
         display: flex;

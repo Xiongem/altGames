@@ -9,6 +9,7 @@
     <meta property="og:url" content="">
     <title>Insider Game Master</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/insider/style.css">
     <link rel="stylesheet" href="../css/insider/gm.css">
     <link rel="website icon" type="webp" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,20 +17,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <h2 class="title">The Game Master is:</h2>
-    <span id="gmName"></span>
-    <h3>Game Master, please choose a word:</h3>
-    <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
-    <button>Submit</button>
+    <div class="wrapper">
+        <div id="gmNameWrapper" class="spacing sections">
+            <h2 class="title">The Game Master is:</h2>
+            <span id="gmName"></span>
+        </div>
+        <div id="gmWordWrapper" class="spacing sections">
+            <h3>Game Master, please choose a word:</h3>
+            <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
+        </div>
+        <button onclick="sendWord()">Submit</button>
+    </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
         function pullGM() {
+            //* Add Session variable with array and put back into js
             let gameplayers = ["Bob", "Dan", "Bill"];
             let i = Math.floor(Math.random() * gameplayers.length);
             let r = gameplayers[i];
             $("#gmName").text(r);
         }
         pullGM();
+        function sendWord() {
+            let gmWord = document.getElementById("gmWord").value;
+            //* add PHP to turn word into session variable
+            window.location.href = "roles.html";
+        }
     </script>
 </body>
 </html>
