@@ -20,6 +20,10 @@
     .instruct-wrapper {
         display: flex;
     }
+    .instruct-img {
+        width: 0.7em;
+        height: fit-content;
+    }
     #showPlayers {
         display: flex;
         flex-direction: column;
@@ -34,5 +38,11 @@
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+    }
+    #guessExplain, #discussExplain {
+        display: none;
+    }
+    #guessImg:hover #guessExplain {
+        display: flex;
     }
 }

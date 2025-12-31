@@ -37,10 +37,12 @@
         </div>
         <div id="guessTimeWrapper" class="spacing sections">
             <div class="instruct-wrapper">
-            <h4>Please choose amount of GUESSING time:</h4>
-            <i class="fa-solid fa-circle-question"></i>
+                <h4>Please choose amount of GUESSING time:</h4>
+                <img id="guessImg" class="instruct-img" src="/insider/images/questionMark.webp">
             </div>
-            <p>This is how much time you have to guess the correct word</p>
+            <div id="guessExplain" class="popup-wrapper">
+                <p>This is how much time you have to guess the correct word</p>
+            </div>
             <div class="options">
                 <div>
                     <input type="radio" id="twoMins" name="guessTime" value="2">
@@ -57,7 +59,13 @@
             </div>
         </div>
         <div id="discussTimeWrapper" class="spacing sections">
-            <h4>Please choose amount of DISCUSSION time:</h4>
+            <div class="instruct-wrapper">
+                <h4>Please choose amount of DISCUSSION time:</h4>
+                <img id="discussImg" class="instruct-img" src="/insider/images/questionMark.webp">
+            </div>
+            <div id="discussExplain" class="popup-wrapper">
+                <p>This is how much time you have to guess the correct word</p>
+            </div>
             <div class="options">
                 <div>
                     <input type="radio" id="oneMins" name="discussTime" value="1"  checked>
