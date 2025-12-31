@@ -20,10 +20,11 @@
     <div class="wrapper">
         <h1 class="title">Insider</h1>
         <div id="playerWrapper">
-            <span id="player"></span>
-            <span id="confirm"></span>
+            <h2  class="spacing"><span id="player"></span></h2>
+            <h3 class="spacing"><span id="confirm"></span></h3>
         </div>
-        <button onclick="displayPlayer();">Next Player</button>
+        <button id="nextPlayer" onclick="displayPlayer();">Next Player</button>
+        <button>Start!</button>
     </div>
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
@@ -37,16 +38,18 @@
         function displayPlayer() {
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i] + ", you are the Insider.");
-                $("#confirm").text("The word is " + gmWord);
+                $("#confirm").text("The secret word is " + gmWord);
             } else {
                 $("#player").text(gameplayers[i]);
-                $("#confirm").text("You are not the Insider.");
+                $("#confirm").text("You are NOT the Insider.");
             }
 
             gameplayers[i++];
 
             if (i === gameplayers.length) {
-            i = 0;
+                i = 0;
+                console.log("the end");
+                var playerButton = getElem
             }
         }
     </script>

@@ -2,5 +2,10 @@
     #gmWord {
         width: 70%;
         height: 2.5em;
+        accent-color: #004122;
+        background-color: #d9d9d9;
+        border: solid 2px #004122;
+        border-radius: 8px;
+        padding: 0 8px;
     }
 }

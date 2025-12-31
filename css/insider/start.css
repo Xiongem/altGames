@@ -18,6 +18,8 @@
         border-radius: 8px;
         min-width: 3em;
         padding: 0 0.5em;
+        border: none;
+        cursor: pointer;
     }
     .instruct-wrapper {
         display: flex;
@@ -45,6 +47,7 @@
     }
     .radio {
         accent-color: #004122;
+        cursor: pointer;
     }
     #guessExplain, #discussExplain {
         display: none;
@@ -77,12 +80,5 @@
         border-radius: 14px;
         margin-right: 1em;
         text-align: center;
-    }
-    .startBttn {
-        background-color: #004122;
-        color: #f6f0ff;
-        border-radius: 8px;
-        width: 4em;
-        height: 2em;
     }
 }
