@@ -1,10 +1,5 @@
 /** SMALL PHONES*/
 @media only screen and (min-width: 200px) {
-    /* .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
     .selectWrapper {
         display: flex;
         justify-content: center;
@@ -17,12 +12,21 @@
     #playerWrapper {
         display: flex;
     }
+    #playerNumber {
+        background-color: #004122;
+        color: #f6f0ff;
+        border-radius: 8px;
+        min-width: 3em;
+        padding: 0 0.5em;
+    }
     .instruct-wrapper {
         display: flex;
+        align-items: center;
     }
     .instruct-img {
         width: 0.7em;
         height: fit-content;
+        padding-bottom: 0.3em;
     }
     #showPlayers {
         display: flex;
@@ -39,10 +43,46 @@
         justify-content: space-evenly;
         width: 100%;
     }
+    .radio {
+        accent-color: #004122;
+    }
     #guessExplain, #discussExplain {
         display: none;
     }
+    #guessExplain {
+        position: relative;
+    }
     #guessImg:hover #guessExplain {
+        position: absolute;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 9em;
+        right: 0;
+    }
+    #discussImg:hover #discussExplain {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10em;
+        right: 0;
+    }
+    .popup-wrapper {
+        background-color: #004122;
+        color: #f6f0ff;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em;
+        border-radius: 14px;
+        margin-right: 1em;
+        text-align: center;
+    }
+    .startBttn {
+        background-color: #004122;
+        color: #f6f0ff;
+        border-radius: 8px;
+        width: 4em;
+        height: 2em;
     }
 }

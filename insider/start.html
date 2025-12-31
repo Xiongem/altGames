@@ -38,22 +38,24 @@
         <div id="guessTimeWrapper" class="spacing sections">
             <div class="instruct-wrapper">
                 <h4>Please choose amount of GUESSING time:</h4>
-                <img id="guessImg" class="instruct-img" src="/insider/images/questionMark.webp">
-            </div>
-            <div id="guessExplain" class="popup-wrapper">
-                <p>This is how much time you have to guess the correct word</p>
+                <div id="guessImg" class="guessImg-wrapper">
+                    <img class="instruct-img" src="/insider/images/questionMark.webp">
+                    <div id="guessExplain" class="popup-wrapper">
+                        <p>This is how much time you have to guess the correct word</p>
+                    </div>
+                </div>
             </div>
             <div class="options">
                 <div>
-                    <input type="radio" id="twoMins" name="guessTime" value="2">
+                    <input type="radio" id="twoMins" class="radio" name="guessTime" value="2">
                     <label for="twoMins">2 Minutes</label>
                 </div>
                 <div>
-                    <input type="radio" id="threeMins" name="guessTime" value="3" checked>
+                    <input type="radio" id="threeMins" class="radio" name="guessTime" value="3" checked>
                     <label for="threeMins">3 Minutes</label>
                 </div>
                 <div>
-                    <input type="radio" id="fiveMins" name="guessTime" value="5">
+                    <input type="radio" id="fiveMins" class="radio" name="guessTime" value="5">
                     <label for="fiveMins">5 Minutes</label>
                 </div>
             </div>
@@ -61,28 +63,30 @@
         <div id="discussTimeWrapper" class="spacing sections">
             <div class="instruct-wrapper">
                 <h4>Please choose amount of DISCUSSION time:</h4>
-                <img id="discussImg" class="instruct-img" src="/insider/images/questionMark.webp">
-            </div>
-            <div id="discussExplain" class="popup-wrapper">
-                <p>This is how much time you have to guess the correct word</p>
+                <div id="discussImg" class="discussImg-wrapper">
+                    <img class="instruct-img" src="/insider/images/questionMark.webp">
+                    <div id="discussExplain" class="popup-wrapper">
+                        <p>This is how much time you have to guess the identity of the Insider</p>
+                    </div>
+                </div>
             </div>
             <div class="options">
                 <div>
-                    <input type="radio" id="oneMins" name="discussTime" value="1"  checked>
+                    <input type="radio" id="oneMins" class="radio" name="discussTime" value="1"  checked>
                     <label for="oneMins">1 Minute</label>
                 </div>
                 <div>
-                    <input type="radio" id="twoMins" name="discussTime" value="2">
+                    <input type="radio" id="twoMins" class="radio" name="discussTime" value="2">
                     <label for="twoMins">2 Minutes</label>
                 </div>
                 <div>
-                    <input type="radio" id="threeMins" name="discussTime" value="3">
+                    <input type="radio" id="threeMins" class="radio" name="discussTime" value="3">
                     <label for="threeMins">3 Minutes</label>
                 </div>
             </div>
         </div>
         <div class="buttonWrapper">
-            <button onclick="cookieCreate()">Start</button>
+            <button class="startBttn" onclick="cookieCreate()">Start</button>
         </div>
     </div>
     <script type='text/javascript'>
