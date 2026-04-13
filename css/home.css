@@ -21,8 +21,8 @@
         justify-content: center;
         align-items: center;
     }
-    #battleImg {
-        width: 8em;
+    .image-wrapper {
+        width: 12em;
         height: fit-content;
     }
 }
