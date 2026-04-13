@@ -51,4 +51,7 @@
     .games-wrapper {
         flex-direction: row;
     }
+    .border-wrapper {
+        margin: 0 0.5em;
+    }
 }
