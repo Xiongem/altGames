@@ -52,6 +52,7 @@
 @media only screen and (min-width: 700px) {
     .games-wrapper {
         flex-direction: row;
+        justify-content: center;
     }
     .border-wrapper {
         margin: 0 0.5em;
