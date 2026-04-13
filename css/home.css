@@ -18,8 +18,6 @@
         align-items: center;
         padding: 0.5em;
         margin: 0.5em 0;
-        /* width: 90%; */
-        /* max-width: 90%; */
         width: 20em;
         height: 20em;
         border-radius: 16px;
@@ -64,5 +62,11 @@
     }
     .border-wrapper {
         margin: 0 0.5em;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .border-wrapper {
+        width: 25em;
+        height: 25em;
     }
 }
