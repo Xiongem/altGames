@@ -1,0 +1,7 @@
+/** SMALL PHONES*/
+@media only screen and (min-width: 200px) {
+    .title-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
