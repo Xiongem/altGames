@@ -29,7 +29,7 @@
     }
     .title {
         color: var(--reverse-text-color);
-        margin-left: 1em;
+        margin-left: 2em;
     }
     .games-wrapper {
         display: flex;
