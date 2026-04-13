@@ -16,7 +16,7 @@
         padding: 0.5em;
         margin: 0.5em 0;
         width: 90%;
-        border-radius: 12px;
+        border-radius: 16px;
         background-color: gray;
     }
     .contens-wrapper {
@@ -24,7 +24,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0.5em;
+        padding: 1em;
         width: 100%;
         border-radius: 16px;
         background-color: whitesmoke;
