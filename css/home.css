@@ -2,6 +2,7 @@
     /*Light Theme*/
     :root.light { 
         --background-color: #1e202c;
+        --background-gradient: linear-gradient(90deg,rgba(3, 0, 18, 1) 0%, rgba(96, 81, 155, 1) 50%, rgba(250, 240, 240, 1) 100%);
         --text-color: #bfc0d1;
         --reverse-text-color: #1e202c;
         --accent-1: #31323c;
@@ -21,7 +22,7 @@
         /* border-bottom: 2px solid gray; */
         margin-bottom: 0.5em;
         background-color: var(--accent-3);
-        background: linear-gradient(90deg,rgba(3, 0, 18, 1) 0%, rgba(96, 81, 155, 1) 50%, rgba(250, 240, 240, 1) 100%);
+        background: var(--background-gradient);
     }
     #logo {
         width: 3em;
