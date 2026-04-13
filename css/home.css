@@ -70,4 +70,7 @@
         height: 25em;
         margin: 0 1em;
     }
+    .image-wrapper > img {
+        width: 15em;
+    }
 }
