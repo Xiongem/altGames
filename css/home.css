@@ -25,10 +25,11 @@
     #logo {
         width: 3em;
         height: fit-content;
-        margin-right: 1em;
+        /* margin-right: 1em; */
     }
     .title {
         color: var(--reverse-text-color);
+        margin-left: 1em;
     }
     .games-wrapper {
         display: flex;
