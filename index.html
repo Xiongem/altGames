@@ -21,7 +21,7 @@
     </div>
     <div class="games-wrapper">
         <div class="border-wrapper">
-            <div class="contens-wrapper">
+            <div class="contens-wrapper" id="insiderLink" onclick="travel(insider);">
                 <div class="image-wrapper">
                     <img id="insiderImg" src="images/comingSoon.png" alt="coming soon tilted text">
                 </div>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="border-wrapper">
-            <div class="contens-wrapper">
+            <div class="contens-wrapper" id="battleLink" onclick="travel(battle);">
                 <div class="image-wrapper">
                     <img id="battleImg" src="battleForJapan/map.png" alt="old style map of Japan">
                 </div>
@@ -41,5 +41,16 @@
             </div>
         </div>
     </div>
+    <script>
+        function travel(page) {
+            // let page = arguments;
+            if (page == "insider") {
+                window.location.href="insider/start.html"
+            }
+            else if (page = "battle") {
+                window.location.href="battleForJapan/index.html"
+            }
+        }
+    </script>
 </body>
 </html>
