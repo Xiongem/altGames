@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
     }
-    .image-wrapper {
+    .image-wrapper > img {
         width: 8em;
         height: fit-content;
     }
