@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5, h6, p, body {
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: var(--background-color);
+}
 
 /** SMALL PHONES*/
 @media only screen and (min-width: 200px) {
