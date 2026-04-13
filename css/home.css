@@ -38,4 +38,7 @@
     .link-wrapper {
         padding-top: 0.5em;
     }
+    .selectLink {
+        font-size: 40px;
+    }
 }
