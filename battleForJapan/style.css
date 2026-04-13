@@ -360,3 +360,7 @@ button:active {
   stroke-opacity: 1;
   filter: brightness(2) drop-shadow(0 0 5px rgba(215, 230, 238, 0.785));
 }
+
+.howTO-wrapper {
+  padding-left: 2em;
+}
