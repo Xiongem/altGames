@@ -28,7 +28,7 @@
         /* margin-right: 1em; */
     }
     .title {
-        color: var(--reverse-text-color);
+        color: var(--text-color);
         margin-left: 1em;
     }
     .games-wrapper {
