@@ -21,6 +21,10 @@
         margin-bottom: 0.5em;
         background-color: var(--accent-2);
     }
+    #logo {
+        width: 3em;
+        height: fit-content;
+    }
     .title {
         color: var(--reverse-text-color);
     }
