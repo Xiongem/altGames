@@ -1,3 +1,17 @@
+:root,
+    /*Light Theme*/
+    :root.light { 
+        --background-color: #1e202c;
+        --text-color: #bfc0d1;
+        --reverse-text-color: #1e202c;
+        --accent-1: #31323c;
+        --accent-2: #bfc0d1;
+        --accent-3: #60519b;
+        --filter-color: #dda7ff7e;
+        --box-shadow: 0px 0px 15px #dda7ff7e;
+        --warning: #b80303;
+    }
+
 /** SMALL PHONES*/
 @media only screen and (min-width: 200px) {
     .title-wrapper {
@@ -5,10 +19,10 @@
         justify-content: center;
         /* border-bottom: 2px solid gray; */
         margin-bottom: 0.5em;
-        background-color: gray;
+        background-color: var(--background-color);
     }
     .title {
-        color: whitesmoke;
+        color: var(--text-color);
     }
     .games-wrapper {
         display: flex;
@@ -25,7 +39,7 @@
         width: 20em;
         height: 20em;
         border-radius: 16px;
-        background-color: gray;
+        background-color: var(--accent-3);
     }
     .contens-wrapper {
         display: flex;
@@ -36,7 +50,7 @@
         width: 100%;
         height: 100%;
         border-radius: 16px;
-        background-color: whitesmoke;
+        background-color: var(--accent-2);
     }
     .image-wrapper > img {
         width: 12em;
