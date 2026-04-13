@@ -31,4 +31,7 @@
         width: 12em;
         height: fit-content;
     }
+    .link-wrapper {
+        padding-top: 0.5em;
+    }
 }
