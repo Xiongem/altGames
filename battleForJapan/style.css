@@ -362,8 +362,8 @@ button:active {
 }
 
 .howTO-wrapper {
-  padding-left: 2em;
-  background: #5b4635;
+  margin-left: 2em;
+  /* background: #5b4635; */
   width: fit-content;
 }
 .howTO-wrapper a {
