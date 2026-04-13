@@ -3,8 +3,12 @@
     .title-wrapper {
         display: flex;
         justify-content: center;
-        border-bottom: 2px solid gray;
+        /* border-bottom: 2px solid gray; */
         margin-bottom: 0.5em;
+        background-color: gray;
+    }
+    .title {
+        color: whitesmoke;
     }
     .games-wrapper {
         display: flex;
