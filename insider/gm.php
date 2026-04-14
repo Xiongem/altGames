@@ -31,9 +31,10 @@
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
+        var playerArray = <?php $_SESSION["players"] ?>;
         function pullGM() {
             //* Add Session variable with array and put back into js
-            let gameplayers = ["Bob", "Dan", "Bill"];
+            let gameplayers = playerArray;
             let i = Math.floor(Math.random() * gameplayers.length);
             let r = gameplayers[i];
             $("#gmName").text(r);
@@ -42,6 +43,7 @@
         function sendWord() {
             let gmWord = document.getElementById("gmWord").value;
             //* add PHP to turn word into session variable
+            <?php $_SESSION["gmWord"] ?> = gmWord;
             window.location.href = "roles.php";
         }
     </script>

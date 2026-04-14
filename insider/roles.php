@@ -28,8 +28,8 @@
     </div>
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
-        var gmWord = "Apple";
-        var gameplayers = ["Bob", "Dan", "Bill", "Greg", "Bobby"];
+        var gmWord = <?php $_SESSION["gmWord"] ?>;
+        var gameplayers = <?php $_SESSION["players"] ?>;
 
         var r = Math.floor(Math.random() * gameplayers.length);
         var insider = gameplayers[r];
