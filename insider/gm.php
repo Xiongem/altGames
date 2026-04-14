@@ -31,7 +31,7 @@
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        var playerArray = <?= $_GET["players"] ?>;
+        var playerArray = <?= json_encode($_GET["players"]) ?>;
         function pullGM() {
             //* Add Session variable with array and put back into js
             let gameplayers = playerArray;
