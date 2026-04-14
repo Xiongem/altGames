@@ -42,7 +42,7 @@
         function sendWord() {
             let gmWord = document.getElementById("gmWord").value;
             //* add PHP to turn word into session variable
-            window.location.href = "roles.html";
+            window.location.href = "roles.php";
         }
     </script>
 </body>
