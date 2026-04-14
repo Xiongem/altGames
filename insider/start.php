@@ -108,7 +108,8 @@
         function cookieCreate() {
             var gameplayers = document.getElementsByName('gameplayers');
             //* PHP to assign array to session variable
-            window.location.href="gm.php?players=" + gameplayers;
+            <?= $_SESSION["players"] ?> = gameplayers;
+            window.location.href="gm.php";
         }
     </script>
 </body>
