@@ -1,3 +1,4 @@
+<?php $_SESSION["players"] = $players ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +32,7 @@
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        var playerArray = <?= $_SESSION["players"] ?>;
+        var playerArray = <?= $players ?>;
         console.log(playerArray);
         
         function pullGM() {
