@@ -115,7 +115,7 @@
                 // var gameplayers = [];
                 //     gameplayers.push(value);
             }
-            console.log(gameplayers);
+            // console.log(gameplayers);
             
             //* PHP to assign array to session variable
             
