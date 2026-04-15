@@ -1,4 +1,5 @@
-<?php $players = $_SESSION["players"] ?>
+<?php $players = $_SESSION["players"];
+echo $players;?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
