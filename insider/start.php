@@ -102,10 +102,17 @@
                 player.setAttribute("type", "text");
                 player.setAttribute("class", "playerInput");
                 player.setAttribute("name", "gameplayers");
+                player.setAttribute("id", (i+1));
                 document.getElementById("showPlayers").appendChild(player);
             }
         }
         function cookieCreate() {
+            // var values = [];
+            //     values.push(value_1);
+            //     values.push(value_2);
+            //     values.push(value_3);
+            //     values.push(value_4);
+            //     values.push(value_5);
             var gameplayers = document.getElementsByName('gameplayers').value;
             console.log(gameplayers);
             
