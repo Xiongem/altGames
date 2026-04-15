@@ -31,7 +31,7 @@
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        var json_str = getCookie('players');
+        var json_str = document.cookie('players');
         var playerArray = JSON.parse(json_str);
         console.log(playerArray);
         
