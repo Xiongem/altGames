@@ -1,6 +1,6 @@
 <?php
     $players = $_GET["players"];
-    echo $players;
+    print_r($players);
 ?>
 <!DOCTYPE html>
 <html lang="en">
