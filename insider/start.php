@@ -109,7 +109,7 @@
         function cookieCreate() {
             let players = document.getElementById("playerNumber");
             for (let i = 0; i < players.value; i++) {
-                console.log("i+1");
+                console.log(i+1);
                 
                 // let value = document.getElementById(i+1).value;
                 // var gameplayers = [];
