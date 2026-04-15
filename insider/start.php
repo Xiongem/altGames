@@ -114,6 +114,7 @@
             }
             console.log(gameplayers);
             document.cookie = "players" +gameplayers;
+            window.location.href = "gm.php";
         }
     </script>
 </body>
