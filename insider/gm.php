@@ -31,15 +31,16 @@
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        var playerArray = Cookies.get('players');
+        var json_str = getCookie('players');
+        var playerArray = JSON.parse(json_str);
         console.log(playerArray);
         
         function pullGM() {
             //* Add Session variable with array and put back into js
-            let gameplayers = Cookies.get('players');
-            let i = Math.floor(Math.random() * gameplayers.length);
-            let r = gameplayers[i];
-            $("#gmName").text(r);
+            // let gameplayers = Cookies.get('players');
+            // let i = Math.floor(Math.random() * gameplayers.length);
+            // let r = gameplayers[i];
+            // $("#gmName").text(r);
         }
         pullGM();
         function sendWord() {
