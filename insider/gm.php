@@ -1,6 +1,6 @@
 <?php 
-session_start();
-$players = $_COOKIE["players"];
+// session_start();
+// $players = $_COOKIE["players"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +19,7 @@ $players = $_COOKIE["players"];
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://jsdelivr.net"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -35,12 +36,12 @@ $players = $_COOKIE["players"];
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        var playerArray = <?= $players ?>;
+        var playerArray = Cookies.get('name');
         console.log(playerArray);
         
         function pullGM() {
             //* Add Session variable with array and put back into js
-            let gameplayers = playerArray;
+            let gameplayers = Cookies.get('name');
             let i = Math.floor(Math.random() * gameplayers.length);
             let r = gameplayers[i];
             $("#gmName").text(r);
