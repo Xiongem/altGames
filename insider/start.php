@@ -113,8 +113,7 @@
                 gameplayers["player"+i] = document.getElementById(i+1).value;
             }
             console.log(gameplayers);
-            //* PHP to assign array to session variable
-            <?= $_SESSION["players"] ?> = gameplayers;
+            document.cookie = "players" +gameplayers;
         }
     </script>
 </body>
