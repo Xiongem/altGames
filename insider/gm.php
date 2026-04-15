@@ -36,12 +36,12 @@
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        var playerArray = Cookies.get('name');
+        var playerArray = Cookies.get('players');
         console.log(playerArray);
         
         function pullGM() {
             //* Add Session variable with array and put back into js
-            let gameplayers = Cookies.get('name');
+            let gameplayers = Cookies.get('players');
             let i = Math.floor(Math.random() * gameplayers.length);
             let r = gameplayers[i];
             $("#gmName").text(r);
