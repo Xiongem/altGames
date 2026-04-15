@@ -113,8 +113,8 @@
                 gameplayers["player"+i] = document.getElementById(i+1).value;
             }
             var json_str = JSON.stringify(gameplayers);
-            createCookie('players', json_str);
-            // document.cookie = "players" + gameplayers;
+            // createCookie('players', json_str);
+            document.cookie = "players" + json_str;
             window.location.href = "gm.php";
         }
     </script>
