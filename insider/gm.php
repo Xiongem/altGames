@@ -1,7 +1,3 @@
-<?php 
-// session_start();
-// $players = $_COOKIE["players"];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
