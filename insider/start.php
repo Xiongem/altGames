@@ -109,9 +109,9 @@
         function cookieCreate() {
             let players = document.getElementById("playerNumber");
             for (let i = 0; i < players.value; i++) {
-                let value"(i+1)" = document.getElementById(i+1).value;
+                let value = document.getElementById(i+1).value;
                 var gameplayers = [];
-                    gameplayers.push(value + i);
+                    gameplayers.push(value);
             }
             console.log(gameplayers);
             
