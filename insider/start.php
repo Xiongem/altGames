@@ -107,13 +107,12 @@
             }
         }
         function cookieCreate() {
-            // var values = [];
-            //     values.push(value_1);
-            //     values.push(value_2);
-            //     values.push(value_3);
-            //     values.push(value_4);
-            //     values.push(value_5);
-            var gameplayers = document.getElementsByName('gameplayers').value;
+            let players = document.getElementById("playerNumber");
+            for (let i = 0; i < players.value; i++) {
+                let value + (i+1) = document.getElementById(i+1).value;
+                var gameplayers = [];
+                    gameplayers.push(value + i);
+            }
             console.log(gameplayers);
             
             //* PHP to assign array to session variable
