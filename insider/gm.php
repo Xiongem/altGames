@@ -1,7 +1,7 @@
 <?php 
 session_start();
 $players = $_COOKIE["players"];
-echo $players;?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +49,7 @@ echo $players;?>
         function sendWord() {
             let gmWord = document.getElementById("gmWord").value;
             //* add PHP to turn word into session variable
-            <?= $_SESSION["gmWord"] ?> = gmWord;
+            document.cookie = "gmWord" + gmWord;
             window.location.href = "roles.php";
         }
     </script>

@@ -112,8 +112,7 @@
             for (let i = 0; i < players.value; i++) {       
                 gameplayers["player"+i] = document.getElementById(i+1).value;
             }
-            console.log(gameplayers);
-            document.cookie = "players" +gameplayers;
+            document.cookie = "players" + gameplayers;
             window.location.href = "gm.php";
         }
     </script>
