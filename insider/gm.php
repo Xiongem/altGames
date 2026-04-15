@@ -1,7 +1,6 @@
 <?php
-foreach($_COOKIE['players'] as $e){
-echo $e,'<br />';
-}
+    $players = $_GET["players"];
+    echo $players;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,9 +35,9 @@ echo $e,'<br />';
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        var json_str = document.cookie('players');
-        var playerArray = JSON.parse(json_str);
-        console.log(playerArray);
+        // var json_str = document.cookie('players');
+        // var playerArray = JSON.parse(json_str);
+        // console.log(playerArray);
         
         function pullGM() {
             //* Add Session variable with array and put back into js

@@ -112,8 +112,8 @@
             for (let i = 0; i < players.value; i++) {       
                 gameplayers["player"+i] = document.getElementById(i+1).value;
             }
-            document.cookie = "players" + gameplayers;
-            window.location.href = "gm.php";
+            // document.cookie = "players" + gameplayers;
+            window.location.href = "gm.php?players=" + gameplayers;
         }
     </script>
 </body>
