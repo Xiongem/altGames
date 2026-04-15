@@ -106,7 +106,7 @@
             }
         }
         function cookieCreate() {
-            var gameplayers = document.getElementsByName('gameplayers');
+            var gameplayers = document.getElementsByName('gameplayers').value;
             console.log(gameplayers);
             
             //* PHP to assign array to session variable
