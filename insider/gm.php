@@ -1,6 +1,6 @@
 <?php
     $players = $_GET["players"];
-    print_r(json_encode($players));
+    echo json_encode($players);
 ?>
 <!DOCTYPE html>
 <html lang="en">
