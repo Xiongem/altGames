@@ -108,14 +108,11 @@
         }
         function cookieCreate() {
             let players = document.getElementById("playerNumber");
-            for (let i = 0; i < players.value; i++) {
-                console.log(i+1);
-                
-                // let value = document.getElementById(i+1).value;
-                // var gameplayers = [];
-                //     gameplayers.push(value);
+            var gameplayers = {};
+            for (let i = 0; i < players.value; i++) {       
+                gameplayers["player"+i] = document.getElementById(i+1).value;
             }
-            // console.log(gameplayers);
+            console.log(gameplayers);
             
             //* PHP to assign array to session variable
             
