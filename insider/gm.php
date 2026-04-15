@@ -1,3 +1,8 @@
+<?php
+foreach($_COOKIE['players'] as $e){
+echo $e,'<br />';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
