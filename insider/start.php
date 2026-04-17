@@ -1,3 +1,7 @@
+<?php
+dbConnect();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
