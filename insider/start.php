@@ -1,5 +1,6 @@
 <?php
-    // dbConnect();
+    require($_SERVER['DOCUMENT_ROOT'] . '../php/utilities.php');
+    dbConnect();
 ?>
 
 <!DOCTYPE html>
