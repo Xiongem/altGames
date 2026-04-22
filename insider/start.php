@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form method="post" action="">
+        <form method="post" action="" class="wrapper">
             <h1 class="title">Insider</h1>
             <div id="playerWrapper" class="spacing sections">
                 <div class="selectWrapper">
