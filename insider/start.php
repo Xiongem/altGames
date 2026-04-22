@@ -1,5 +1,5 @@
 <?php
-dbConnect();
+    // dbConnect();
 ?>
 
 <!DOCTYPE html>
