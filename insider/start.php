@@ -1,5 +1,5 @@
 <?php
-    require($_SERVER['DOCUMENT_ROOT'] . '../php/utilities.php');
+    require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
     dbConnect();
 ?>
 
