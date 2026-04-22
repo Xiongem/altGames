@@ -22,76 +22,78 @@ dbConnect();
 </head>
 <body>
     <div class="wrapper">
-        <h1 class="title">Insider</h1>
-        <div id="playerWrapper" class="spacing sections">
-            <div class="selectWrapper">
-                <label><h4>Please select number of players:</h4></label>
-                <select id="playerNumber" onclick="displayPlayers()">
-                    <option value="">-</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
+        <form method="post" action="">
+            <h1 class="title">Insider</h1>
+            <div id="playerWrapper" class="spacing sections">
+                <div class="selectWrapper">
+                    <label><h4>Please select number of players:</h4></label>
+                    <select id="playerNumber" onclick="displayPlayers()">
+                        <option value="">-</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div id="showPlayers">
+                    <!-- //* displays number of inputs based on selection above -->
+                </div>
             </div>
-            <div id="showPlayers">
-                <!-- //* displays number of inputs based on selection above -->
-            </div>
-        </div>
-        <div id="guessTimeWrapper" class="spacing sections">
-            <div class="instruct-wrapper">
-                <h4>Please choose amount of GUESSING time:</h4>
-                <div id="guessImg" class="guessImg-wrapper">
-                    <img class="instruct-img" src="/insider/images/questionMark.webp">
-                    <div id="guessExplain" class="popup-wrapper">
-                        <p>This is how much time you have to guess the correct word</p>
+            <div id="guessTimeWrapper" class="spacing sections">
+                <div class="instruct-wrapper">
+                    <h4>Please choose amount of GUESSING time:</h4>
+                    <div id="guessImg" class="guessImg-wrapper">
+                        <img class="instruct-img" src="/insider/images/questionMark.webp">
+                        <div id="guessExplain" class="popup-wrapper">
+                            <p>This is how much time you have to guess the correct word</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options">
+                    <div>
+                        <input type="radio" id="twoMins" class="radio" name="guessTime" value="2">
+                        <label for="twoMins">2 Minutes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="threeMins" class="radio" name="guessTime" value="3" checked>
+                        <label for="threeMins">3 Minutes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fiveMins" class="radio" name="guessTime" value="5">
+                        <label for="fiveMins">5 Minutes</label>
                     </div>
                 </div>
             </div>
-            <div class="options">
-                <div>
-                    <input type="radio" id="twoMins" class="radio" name="guessTime" value="2">
-                    <label for="twoMins">2 Minutes</label>
+            <div id="discussTimeWrapper" class="spacing sections">
+                <div class="instruct-wrapper">
+                    <h4>Please choose amount of DISCUSSION time:</h4>
+                    <div id="discussImg" class="discussImg-wrapper">
+                        <img class="instruct-img" src="/insider/images/questionMark.webp">
+                        <div id="discussExplain" class="popup-wrapper">
+                            <p>This is how much time you have to guess the identity of the Insider</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="threeMins" class="radio" name="guessTime" value="3" checked>
-                    <label for="threeMins">3 Minutes</label>
-                </div>
-                <div>
-                    <input type="radio" id="fiveMins" class="radio" name="guessTime" value="5">
-                    <label for="fiveMins">5 Minutes</label>
-                </div>
-            </div>
-        </div>
-        <div id="discussTimeWrapper" class="spacing sections">
-            <div class="instruct-wrapper">
-                <h4>Please choose amount of DISCUSSION time:</h4>
-                <div id="discussImg" class="discussImg-wrapper">
-                    <img class="instruct-img" src="/insider/images/questionMark.webp">
-                    <div id="discussExplain" class="popup-wrapper">
-                        <p>This is how much time you have to guess the identity of the Insider</p>
+                <div class="options">
+                    <div>
+                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="1"  checked>
+                        <label for="oneMins">1 Minute</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="twoMins" class="radio" name="discussTime" value="2">
+                        <label for="twoMins">2 Minutes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="3">
+                        <label for="threeMins">3 Minutes</label>
                     </div>
                 </div>
             </div>
-            <div class="options">
-                <div>
-                    <input type="radio" id="oneMins" class="radio" name="discussTime" value="1"  checked>
-                    <label for="oneMins">1 Minute</label>
-                </div>
-                <div>
-                    <input type="radio" id="twoMins" class="radio" name="discussTime" value="2">
-                    <label for="twoMins">2 Minutes</label>
-                </div>
-                <div>
-                    <input type="radio" id="threeMins" class="radio" name="discussTime" value="3">
-                    <label for="threeMins">3 Minutes</label>
-                </div>
+            <div class="buttonWrapper">
+                <button class="startBttn" type="submit">Start</button>
             </div>
-        </div>
-        <div class="buttonWrapper">
-            <button class="startBttn" onclick="cookieCreate()">Start</button>
-        </div>
+        </form>
     </div>
     <script type='text/javascript'>
         function displayPlayers(){
@@ -109,15 +111,6 @@ dbConnect();
                 player.setAttribute("id", (i+1));
                 document.getElementById("showPlayers").appendChild(player);
             }
-        }
-        function cookieCreate() {
-            let players = document.getElementById("playerNumber");
-            var gameplayers = {};
-            for (let i = 0; i < players.value; i++) {       
-                gameplayers["player"+i] = document.getElementById(i+1).value;
-            }
-            // document.cookie = "players" + gameplayers;
-            window.location.href = "gm.php?players=" + gameplayers;
         }
     </script>
 </body>
