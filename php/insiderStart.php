@@ -15,11 +15,12 @@ $players = $_POST["playerNum"];
 
 $stmt = $_SESSION["conn"] -> begin_transaction();
 
-$stmt = $_SESSION["conn"] -> prepare("INSERT INTO games (gameID, created, expiration, guessTime, discussTime) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("issii",
+$stmt = $_SESSION["conn"] -> prepare("INSERT INTO games (gameID, created, expiration, playerNum, guessTime, discussTime) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("issiii",
                         $gameID,
                         $created,
                         $expire,
+                        $_POST["playerNum"],
                         $_POST["guessTime"],
                         $_POST["discussTime"]);
 $stmt -> execute();
