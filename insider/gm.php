@@ -85,6 +85,8 @@ switch ($playerNum) {
             let i = Math.floor(Math.random() * gameplayers.length);
             let r = gameplayers[i];
             $("#gmName").text(r);
+            console.log(r);
+            
 
             var gameID = <?= $gameID ?>;
             //begin post method
