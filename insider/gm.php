@@ -1,6 +1,15 @@
 <?php
-    $players = $_GET["players"];
-    echo json_encode($players);
+ob_start();
+require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
+dbConnect();
+
+$gameID = $_GET["gameID"];
+
+$sql = "SELECT * FROM players WHERE gameID=$gameID";
+        $result = $_SESSION["conn"]->query($sql);
+        $game = $result->fetch_assoc();
+
+        print_r($game);
 ?>
 <!DOCTYPE html>
 <html lang="en">
