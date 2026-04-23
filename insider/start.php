@@ -23,7 +23,7 @@ dbConnect();
 </head>
 <body>
     <div class="wrapper">
-        <form method="post" action="" class="wrapper">
+        <form method="post" action="../php/insiderStart.php" class="wrapper">
             <h1 class="title">Insider</h1>
             <div id="playerWrapper" class="spacing sections">
                 <div class="selectWrapper">
