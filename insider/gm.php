@@ -64,37 +64,37 @@ switch ($playerNum) {
 </head>
 <body>
     <div class="wrapper">
-        <h1 class="title">Insider</h1>
-        <div id="gmNameWrapper" class="spacing sections">
-            <h2 class="title">The Game Master is:</h2>
-            <h3><span id="gmName"></span></h3>
-        </div>
-        <div id="gmWordWrapper" class="spacing sections">
-            <h3>Game Master, please choose a word:</h3>
-            <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
-        </div>
-        <button class="startBttn" onclick="sendWord()">Submit</button>
+        <form method="post" action="../php/insiderGM.php">
+            <h1 class="title">Insider</h1>
+            <div id="gmNameWrapper" class="spacing sections">
+                <h2 class="title">The Game Master is:</h2>
+                <h3><span id="gmName"></span></h3>
+            </div>
+            <div id="gmWordWrapper" class="spacing sections">
+                <h3>Game Master, please choose a word:</h3>
+                <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
+                <input type="hidden" name="gameID" value= "<?= $gameID ?>">
+            </div>
+            <button class="startBttn" type="submit">Submit</button>
+        </form>
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        // var json_str = document.cookie('players');
-        // var playerArray = JSON.parse(json_str);
-        // console.log(playerArray);
-        
         function pullGM() {
-            //* Add Session variable with array and put back into js
-            // let gameplayers = Cookies.get('players');
-            // let i = Math.floor(Math.random() * gameplayers.length);
-            // let r = gameplayers[i];
-            // $("#gmName").text(r);
+            let gameplayers = <?= $game ?>;
+            let i = Math.floor(Math.random() * gameplayers.length);
+            let r = gameplayers[i];
+            $("#gmName").text(r);
+
+            var gameID = <?= $gameID ?>;
+            //begin post method
+            $.post("php/updateGM", {
+                //DATA
+                gameID: gameID,
+                gmName: r
+            });
         }
         pullGM();
-        function sendWord() {
-            let gmWord = document.getElementById("gmWord").value;
-            //* add PHP to turn word into session variable
-            document.cookie = "gmWord" + gmWord;
-            window.location.href = "roles.php";
-        }
     </script>
 </body>
 </html>
