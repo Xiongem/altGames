@@ -71,7 +71,7 @@ switch ($playerNum) {
                     $p8 = $game["player8"];
         break;
 }
-print_r($result);
+print_r($game);
 ?>
 <!DOCTYPE html>
 <html lang="en">
