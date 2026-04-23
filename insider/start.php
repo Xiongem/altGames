@@ -78,7 +78,7 @@ dbConnect();
                 </div>
                 <div class="options">
                     <div>
-                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="1"  checked>
+                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="1">
                         <label for="oneMins">1 Minute</label>
                     </div>
                     <div>
@@ -86,7 +86,7 @@ dbConnect();
                         <label for="twoMins">2 Minutes</label>
                     </div>
                     <div>
-                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="3">
+                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="3" checked>
                         <label for="threeMins">3 Minutes</label>
                     </div>
                 </div>
