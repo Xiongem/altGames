@@ -1,4 +1,9 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('log_errors', 'On');
+ini_set('error_log', '/path/to/php_errors.log');
+
 ob_start();
 require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
@@ -31,7 +36,7 @@ switch ($players) {
                                 $_POST["gameplayer3"],
                                 $_POST["gameplayer4"]);
         break;
-        
+
     case '5':
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5) VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("isssss",
