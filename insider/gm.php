@@ -111,6 +111,8 @@ print_r($game);
         //* function to pull a random player name from player array and write it in the gmName span
         function pullGM() {
             let gameplayers = <?= $game ?>;
+            console.log(gameplayers);
+            
             let i = Math.floor(Math.random() * gameplayers.length);
             let r = gameplayers[i];
             $("#gmName").text(r);
