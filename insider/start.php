@@ -28,7 +28,7 @@ dbConnect();
             <div id="playerWrapper" class="spacing sections">
                 <div class="selectWrapper">
                     <label><h4>Please select number of players:</h4></label>
-                    <select id="playerNumber" onclick="displayPlayers()">
+                    <select id="playerNumber" name="playerNum" onclick="displayPlayers()">
                         <option value="">-</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
@@ -108,7 +108,7 @@ dbConnect();
                 var player = document.createElement("input");
                 player.setAttribute("type", "text");
                 player.setAttribute("class", "playerInput");
-                player.setAttribute("name", "gameplayers");
+                player.setAttribute("name", "gameplayer" + (i+1));
                 player.setAttribute("id", (i+1));
                 document.getElementById("showPlayers").appendChild(player);
             }
