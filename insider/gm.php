@@ -5,9 +5,42 @@ dbConnect();
 
 $gameID = $_GET["gameID"];
 
-$sql = "SELECT * FROM players WHERE gameID=$gameID";
-        $result = $_SESSION["conn"]->query($sql);
-        $game = $result->fetch_assoc();
+$sql = "SELECT playerNum FROM games WHERE gameID=$gameID";
+    $result = $_SESSION["conn"]->query($sql);
+        $players = $result->fetch_assoc();
+            $playerNum = $players["playerNum"];
+
+switch ($playerNum) {
+    case '4':
+        $sql = "SELECT player1, player2, player3, player4 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+    
+    case '5':
+        $sql = "SELECT player1, player2, player3, player4, player5 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+    
+    case '6':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+
+    case '7':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+
+    case '8':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+}
 
         print_r($game);
 ?>
