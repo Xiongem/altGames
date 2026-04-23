@@ -93,7 +93,7 @@ switch ($players) {
 
 if ($stmt -> execute()) {
     $_SESSION["conn"] -> commit();
-    header("Location: /gm.php?gameID=$gameID");
+    header("Location: /insider/gm.php?gameID=$gameID");
     exit;
 } else {
     die("an unexpected error occured");
