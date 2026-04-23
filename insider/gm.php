@@ -88,7 +88,7 @@ switch ($playerNum) {
 
             var gameID = <?= $gameID ?>;
             //begin post method
-            $.post("php/updateGM", {
+            $.post("../php/updateGM", {
                 //DATA
                 gameID: gameID,
                 gmName: r
