@@ -131,6 +131,7 @@ if ($key !== false) {
             } else {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("You are NOT the Insider.");
+                document.getElementById("player").style.color = "black";
             }
             gameplayers[i++];
 
