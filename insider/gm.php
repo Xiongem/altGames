@@ -112,16 +112,16 @@ print_r($game);
         function pullGM() {
             let gameplayers = <?= json_encode($game); ?>;
             
-            
             const randomPlayer = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
             console.log(randomPlayer);
+            $("#gmName").text(randomPlayer);
 
             var gameID = <?= $gameID ?>;
             //begin post method
             $.post("../php/updateGM.php", {
                 //DATA
                 gameID: gameID,
-                gmName: r
+                gmName: randomPlayer
             });
         }
         pullGM();
