@@ -122,49 +122,29 @@ if ($key !== false) {
 
         console.log(gameplayers);
         console.log(insider);
-
-
-        for (let i = 0; i < gameplayers.length; i++) {
-            const element = gameplayers[i];
-                if (gameplayers[i] == insider) {
-                    $("#player").text(gameplayers[i] + ", you are the Insider.");
-                    $("#confirm").text("The secret word is " + gmWord);
-                } else {
-                    $("#player").text(gameplayers[i]);
-                    $("#confirm").text("You are NOT the Insider.");
-                }
+        
+        
+        var i = 0;
+        function displayPlayer() {
+            if (gameplayers[i] == insider) {
+                $("#player").text(gameplayers[i] + ", you are the Insider.");
+                $("#confirm").text("The secret word is " + gmWord);
+            } else {
+                $("#player").text(gameplayers[i]);
+                $("#confirm").text("You are NOT the Insider.");
+            }
+            gameplayers[i++];
         }
 
+        if (i === <?= $playerNum ?>) {
             i = 0;
             console.log("the end");
-            // var nextButton = document.getElementById("nextPlayer");
+            var nextButton = document.getElementById("nextPlayer");
             var startButton = document.getElementById("start");
 
-            // nextButton.style.display = "none";
+            nextButton.style.display = "none";
             startButton.style.display = "flex";
-        
-        
-        // var i = 0;
-        // function displayPlayer() {
-        //     if (gameplayers[i] == insider) {
-        //         $("#player").text(gameplayers[i] + ", you are the Insider.");
-        //         $("#confirm").text("The secret word is " + gmWord);
-        //     } else {
-        //         $("#player").text(gameplayers[i]);
-        //         $("#confirm").text("You are NOT the Insider.");
-        //     }
-        //     gameplayers[i++];
-        // }
-
-        // if (i === gameplayers.length) {
-        //     i = 0;
-        //     console.log("the end");
-        //     var nextButton = document.getElementById("nextPlayer");
-        //     var startButton = document.getElementById("start");
-
-        //     nextButton.style.display = "none";
-        //     startButton.style.display = "flex";
-        // }
+        }
     </script>
 </body>
 </html>
