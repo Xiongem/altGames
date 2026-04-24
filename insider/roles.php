@@ -1,3 +1,48 @@
+<?php
+ob_start();
+require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
+dbConnect();
+
+$gameID = $_GET["gameID"];
+
+$sql = "SELECT gmWord, playerNum FROM games WHERE gameID=$gameID";
+    $result = $_SESSION["conn"]->query($sql);
+        $game = $result->fetch_assoc();
+            $gmWord = $game["gmWord"];
+            $playerNum = $game["playerNum"];
+
+switch ($playerNum) {
+    case '4':
+        $sql = "SELECT player1, player2, player3, player4 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+    
+    case '5':
+        $sql = "SELECT player1, player2, player3, player4, player5 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+    
+    case '6':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+
+    case '7':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+
+    case '8':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,11 +73,13 @@
     </div>
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
-        var gmWord = <?php $_SESSION["gmWord"] ?>;
-        var gameplayers = <?php $_SESSION["players"] ?>;
+        var gmWord = <?php $gmWord ?>;
+        var gameplayers = <?= json_encode($game); ?>;
 
-        var r = Math.floor(Math.random() * gameplayers.length);
-        var insider = gameplayers[r];
+        // var r = Math.floor(Math.random() * gameplayers.length);
+        // var insider = gameplayers[r];
+
+        const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
         
         var i = 0;
         function displayPlayer() {
