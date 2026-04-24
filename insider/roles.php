@@ -136,7 +136,7 @@ if ($key !== false) {
             gameplayers[i++];
         }
 
-        if (i === gameplayers.length) {
+
             i = 0;
             console.log("the end");
             var nextButton = document.getElementById("nextPlayer");
@@ -144,7 +144,6 @@ if ($key !== false) {
 
             nextButton.style.display = "none";
             startButton.style.display = "flex";
-        }
     </script>
 </body>
 </html>
