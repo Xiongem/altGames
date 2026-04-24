@@ -5,11 +5,12 @@ dbConnect();
 
 $gameID = $_GET["gameID"];
 
-$sql = "SELECT gmWord, playerNum FROM games WHERE gameID=$gameID";
+$sql = "SELECT gmWord, playerNum, gmName FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
         $game = $result->fetch_assoc();
             $gmWord = $game["gmWord"];
             $playerNum = $game["playerNum"];
+            $gmName = $game["gmName"];
 
 switch ($playerNum) {
     case '4':
@@ -21,6 +22,8 @@ switch ($playerNum) {
                     $p3 = $game["player3"];
                     $p4 = $game["player4"];
                 $players = [$p1, $p2, $p3, $p4];
+                unset($players[$gmName]);
+                print_r($players);
         break;
     
     case '5':
