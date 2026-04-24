@@ -110,22 +110,10 @@ print_r($game);
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
         function pullGM() {
-            let gameplayers = <?= json_encode($game); ?>;
-            console.log(gameplayers);
             
-            let i = Math.floor(Math.random() * gameplayers.length);
-            console.log(i);
-            let r = gameplayers[i];
-            console.log(r);
-            $("#gmName").text(r);
-            console.log(r);
-
-
-            let colors = ["red", "green", "blue", "yellow"];
-            console.log(colors);
-            let random = colors.sort(() => 0.5 - Math.random())[0];
-            console.log(random);
             
+            const randomPlayer = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
+            console.log(randomPlayer);
 
             var gameID = <?= $gameID ?>;
             //begin post method
