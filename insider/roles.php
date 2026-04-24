@@ -22,7 +22,11 @@ switch ($playerNum) {
                     $p3 = $game["player3"];
                     $p4 = $game["player4"];
                 $players = [$p1, $p2, $p3, $p4];
-                unset($players[$gmName]);
+
+                $key = array_search($gmName, $players);
+                if ($key !== false) {
+                    unset($players[$key]);
+                }
                 print_r($players);
         break;
     
