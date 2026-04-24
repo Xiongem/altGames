@@ -123,6 +123,7 @@ if ($key !== false) {
 
         console.log(gameplayers);
         console.log(insider);
+        console.log(finish);
         
         
         var i = 0;
