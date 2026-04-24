@@ -15,63 +15,32 @@ switch ($playerNum) {
         $sql = "SELECT player1, player2, player3, player4 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
-                    $p1 = $game["player1"];
-                    $p2 = $game["player2"];
-                    $p3 = $game["player3"];
-                    $p4 = $game["player4"];
         break;
     
     case '5':
         $sql = "SELECT player1, player2, player3, player4, player5 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
-                    $p1 = $game["player1"];
-                    $p2 = $game["player2"];
-                    $p3 = $game["player3"];
-                    $p4 = $game["player4"];
-                    $p5 = $game["player5"];
         break;
     
     case '6':
         $sql = "SELECT player1, player2, player3, player4, player5, player6 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
-                    $p1 = $game["player1"];
-                    $p2 = $game["player2"];
-                    $p3 = $game["player3"];
-                    $p4 = $game["player4"];
-                    $p5 = $game["player5"];
-                    $p6 = $game["player6"];
         break;
 
     case '7':
         $sql = "SELECT player1, player2, player3, player4, player5, player6, player7 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
-                    $p1 = $game["player1"];
-                    $p2 = $game["player2"];
-                    $p3 = $game["player3"];
-                    $p4 = $game["player4"];
-                    $p5 = $game["player5"];
-                    $p6 = $game["player6"];
-                    $p7 = $game["player7"];
         break;
 
     case '8':
         $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
-                    $p1 = $game["player1"];
-                    $p2 = $game["player2"];
-                    $p3 = $game["player3"];
-                    $p4 = $game["player4"];
-                    $p5 = $game["player5"];
-                    $p6 = $game["player6"];
-                    $p7 = $game["player7"];
-                    $p8 = $game["player8"];
         break;
 }
-print_r($game);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -113,7 +82,6 @@ print_r($game);
             let gameplayers = <?= json_encode($game); ?>;
             
             const randomPlayer = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
-            console.log(randomPlayer);
             $("#gmName").text(randomPlayer);
 
             var gameID = <?= $gameID ?>;
