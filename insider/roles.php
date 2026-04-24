@@ -120,12 +120,7 @@ if ($key !== false) {
         var finish = <?= $playerNum ?> -1;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
-
-        console.log(gameplayers);
-        console.log(insider);
-        console.log(finish);
-        
-        
+         
         var i = 0;
         function displayPlayer() {
             if (gameplayers[i] == insider) {
@@ -136,15 +131,11 @@ if ($key !== false) {
                 $("#confirm").text("You are NOT the Insider.");
             }
             gameplayers[i++];
-            console.log(i);
 
             if (i == finish) {
                 i = 0;
-                console.log("the end");
-                // var nextButton = document.getElementById("nextPlayer");
-                var startButton = document.getElementById("start");
 
-                // nextButton.style.display = "none";
+                var startButton = document.getElementById("start");
                 startButton.style.display = "flex";
             }
         }
