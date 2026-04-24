@@ -137,17 +137,19 @@ if ($key !== false) {
             }
             gameplayers[i++];
             console.log(i);
+
+            if (i == finish) {
+                i = 0;
+                console.log("the end");
+                var nextButton = document.getElementById("nextPlayer");
+                var startButton = document.getElementById("start");
+
+                nextButton.style.display = "none";
+                startButton.style.display = "flex";
+            }
         }
 
-        if (i == finish) {
-            i = 0;
-            console.log("the end");
-            var nextButton = document.getElementById("nextPlayer");
-            var startButton = document.getElementById("start");
-
-            nextButton.style.display = "none";
-            startButton.style.display = "flex";
-        }
+        
     </script>
 </body>
 </html>
