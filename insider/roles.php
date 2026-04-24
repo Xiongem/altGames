@@ -110,8 +110,10 @@ if ($key !== false) {
             <h2  class="spacing"><span id="player"></span></h2>
             <h3 class="spacing"><span id="confirm"></span></h3>
         </div>
-        <button id="nextPlayer" onclick="displayPlayer();">Next Player</button>
-        <button id="start">Start!</button>
+        <div class="buttonWrapper">
+            <button id="nextPlayer" onclick="displayPlayer();">Next Player</button>
+            <button id="start" onclick="nextPage()">Start!</button>
+        </div>
     </div>
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
@@ -137,6 +139,10 @@ if ($key !== false) {
                 var startButton = document.getElementById("start");
                 startButton.style.display = "flex";
             }
+        }
+
+        function nextPage() {
+            window.location.href = "/";
         }
 
         
