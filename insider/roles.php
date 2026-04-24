@@ -117,7 +117,6 @@ if ($key !== false) {
         //* PHP Session variables to js variables here
         var gmWord = "<?= $gmWord ?>";
         var gameplayers = <?= json_encode($players); ?>;
-        var finish = <?= $playerNum ?> -1;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
          
