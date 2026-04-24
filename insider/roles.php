@@ -82,6 +82,7 @@ $key = array_search($gmName, $players);
 
 if ($key !== false) {
     unset($players[$key]);
+    $players = array_values($players);
 }
 ?>
 <!DOCTYPE html>
