@@ -127,7 +127,7 @@ if ($key !== false) {
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i] + ", you are the Insider.");
                 $("#confirm").text("The secret word is " + gmWord);
-                document.style.color = "red";
+                document.getElementById("player").style.color = "red";
             } else {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("You are NOT the Insider.");
