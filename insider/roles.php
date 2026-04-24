@@ -114,7 +114,7 @@ if ($key !== false) {
     </div>
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
-        var gmWord = <?= $gmWord ?>;
+        var gmWord = "<?= $gmWord ?>";
         var gameplayers = <?= json_encode($players); ?>;
 
         console.log(gameplayers);
