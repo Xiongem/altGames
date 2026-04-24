@@ -16,30 +16,65 @@ switch ($playerNum) {
         $sql = "SELECT player1, player2, player3, player4 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                $players = [$p1, $p2, $p3, $p4];
         break;
     
     case '5':
         $sql = "SELECT player1, player2, player3, player4, player5 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                $players = [$p1, $p2, $p3, $p4, $p5];
         break;
     
     case '6':
         $sql = "SELECT player1, player2, player3, player4, player5, player6 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6];
         break;
 
     case '7':
         $sql = "SELECT player1, player2, player3, player4, player5, player6, player7 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7];
         break;
 
     case '8':
         $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8];
         break;
 }
 ?>
@@ -74,12 +109,12 @@ switch ($playerNum) {
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
         var gmWord = <?php $gmWord ?>;
-        var gameplayers = <?= json_encode($game); ?>;
+        var gameplayers = <?= json_encode($players); ?>;
 
-        // var r = Math.floor(Math.random() * gameplayers.length);
-        // var insider = gameplayers[r];
+        var r = Math.floor(Math.random() * gameplayers.length);
+        var insider = gameplayers[r];
 
-        const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
+        // const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
         
         var i = 0;
         function displayPlayer() {
