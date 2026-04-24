@@ -119,6 +119,7 @@ if ($key !== false) {
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
 
+        console.log(gameplayers);
         console.log(insider);
         
         
