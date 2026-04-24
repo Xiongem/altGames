@@ -122,6 +122,7 @@ print_r($game);
 
 
             let colors = ["red", "green", "blue", "yellow"];
+            console.log(colors);
             let random = colors.sort(() => 0.5 - Math.random())[0];
             console.log(random);
             
