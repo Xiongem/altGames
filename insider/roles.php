@@ -22,12 +22,6 @@ switch ($playerNum) {
                     $p3 = $game["player3"];
                     $p4 = $game["player4"];
                 $players = [$p1, $p2, $p3, $p4];
-
-                $key = array_search($gmName, $players);
-                if ($key !== false) {
-                    unset($players[$key]);
-                }
-                print_r($players);
         break;
     
     case '5':
@@ -84,6 +78,11 @@ switch ($playerNum) {
                 $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8];
         break;
 }
+$key = array_search($gmName, $players);
+
+if ($key !== false) {
+    unset($players[$key]);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -117,6 +116,9 @@ switch ($playerNum) {
         //* PHP Session variables to js variables here
         var gmWord = <?php $gmWord ?>;
         var gameplayers = <?= json_encode($players); ?>;
+
+        console.log(gameplayers);
+        
 
         var r = Math.floor(Math.random() * gameplayers.length);
         var insider = gameplayers[r];
