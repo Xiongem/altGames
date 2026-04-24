@@ -129,7 +129,7 @@ if ($key !== false) {
                 $("#confirm").text("You are NOT the Insider.");
             }
 
-            gameplayers[i++];
+            
 
             if (i === gameplayers.length) {
                 i = 0;
@@ -140,6 +140,8 @@ if ($key !== false) {
                 nextButton.style.display = "none";
                 startButton.style.display = "flex";
             }
+
+            gameplayers[i++];
         }
     </script>
 </body>
