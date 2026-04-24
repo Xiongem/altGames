@@ -131,20 +131,17 @@ if ($key !== false) {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("You are NOT the Insider.");
             }
-
-            
-
-            if (i === gameplayers.length) {
-                i = 0;
-                console.log("the end");
-                var nextButton = document.getElementById("nextPlayer");
-                var startButton = document.getElementById("start");
-
-                nextButton.style.display = "none";
-                startButton.style.display = "flex";
-            }
-
             gameplayers[i++];
+        }
+
+        if (i === gameplayers.length) {
+            i = 0;
+            console.log("the end");
+            var nextButton = document.getElementById("nextPlayer");
+            var startButton = document.getElementById("start");
+
+            nextButton.style.display = "none";
+            startButton.style.display = "flex";
         }
     </script>
 </body>
