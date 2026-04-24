@@ -93,7 +93,7 @@ print_r($game);
 </head>
 <body>
     <div class="wrapper">
-        <form method="post" action="../php/insiderGM.php">
+        <form class="wrapper" method="post" action="../php/insiderGM.php">
             <h1 class="title">Insider</h1>
             <div id="gmNameWrapper" class="spacing sections">
                 <h2 class="title">The Game Master is:</h2>
