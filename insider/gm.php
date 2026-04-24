@@ -115,6 +115,7 @@ print_r($game);
             
             let i = Math.floor(Math.random() * gameplayers.length);
             let r = gameplayers[i];
+            console.log(r);
             $("#gmName").text(r);
             console.log(r);
             
