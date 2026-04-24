@@ -117,6 +117,7 @@ if ($key !== false) {
         //* PHP Session variables to js variables here
         var gmWord = "<?= $gmWord ?>";
         var gameplayers = <?= json_encode($players); ?>;
+        var finish = <?= $playerNum ?> -1;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
 
@@ -136,7 +137,7 @@ if ($key !== false) {
             gameplayers[i++];
         }
 
-        if (i === <?= $playerNum ?>) {
+        if (i === finish) {
             i = 0;
             console.log("the end");
             var nextButton = document.getElementById("nextPlayer");
