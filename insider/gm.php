@@ -119,6 +119,11 @@ print_r($game);
             console.log(r);
             $("#gmName").text(r);
             console.log(r);
+
+
+            let gameplayers = <?= json_encode($game); ?>;
+            let random = gameplayers.sort(() => 0.5 - Math.random())[0];
+            console.log(random);
             
 
             var gameID = <?= $gameID ?>;
