@@ -132,7 +132,7 @@ if ($key !== false) {
             }
             gameplayers[i++];
 
-            if (i == finish) {
+            if (i == gameplayers.length) {
                 i = 0;
 
                 var startButton = document.getElementById("start");
