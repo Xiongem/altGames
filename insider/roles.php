@@ -110,18 +110,12 @@ if ($key !== false) {
             <h3 class="spacing"><span id="confirm"></span></h3>
         </div>
         <button id="nextPlayer" onclick="displayPlayer();">Next Player</button>
-        <button>Start!</button>
+        <button id="start">Start!</button>
     </div>
     <script type='text/javascript'>
         //* PHP Session variables to js variables here
         var gmWord = "<?= $gmWord ?>";
         var gameplayers = <?= json_encode($players); ?>;
-
-        console.log(gameplayers);
-        
-
-        // var r = Math.floor(Math.random() * gameplayers.length);
-        // var insider = gameplayers[r];
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
         
@@ -140,7 +134,11 @@ if ($key !== false) {
             if (i === gameplayers.length) {
                 i = 0;
                 console.log("the end");
-                var playerButton = getElem
+                var nextButton = document.getElementById("nextPlayer");
+                var startButton = document.getElementById("start");
+
+                nextButton.style.display = "none";
+                startButton.style.display = "flex";
             }
         }
     </script>
