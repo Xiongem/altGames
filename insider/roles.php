@@ -139,7 +139,7 @@ if ($key !== false) {
             console.log(i);
         }
 
-        if (i === finish) {
+        if (i == finish) {
             i = 0;
             console.log("the end");
             var nextButton = document.getElementById("nextPlayer");
