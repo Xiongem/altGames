@@ -136,6 +136,7 @@ if ($key !== false) {
                 $("#confirm").text("You are NOT the Insider.");
             }
             gameplayers[i++];
+            console.log(i);
         }
 
         if (i === finish) {
