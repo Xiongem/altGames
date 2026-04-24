@@ -118,6 +118,9 @@ if ($key !== false) {
         var gameplayers = <?= json_encode($players); ?>;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
+
+        console.log(insider);
+        
         
         var i = 0;
         function displayPlayer() {
