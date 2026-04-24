@@ -120,10 +120,10 @@ if ($key !== false) {
         console.log(gameplayers);
         
 
-        var r = Math.floor(Math.random() * gameplayers.length);
-        var insider = gameplayers[r];
+        // var r = Math.floor(Math.random() * gameplayers.length);
+        // var insider = gameplayers[r];
 
-        // const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
+        const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
         
         var i = 0;
         function displayPlayer() {
