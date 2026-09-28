@@ -43,7 +43,7 @@ dbConnect();
             </div>
             <div id="guessTimeWrapper" class="spacing sections">
                 <div class="instruct-wrapper">
-                    <h4>Please choose amount of GUESSING time:</h4>
+                    <h4>Please choose amount of QUESTION time:</h4>
                     <div id="guessImg" class="guessImg-wrapper">
                         <img class="instruct-img" src="/insider/images/questionMark.webp">
                         <div id="guessExplain" class="popup-wrapper">
