@@ -144,7 +144,7 @@ if ($key !== false) {
         }
 
         function nextPage() {
-            window.location.href = "qtimer.php?gameID=<?= $gameID ?>";
+            window.location.href = "qTimer.php?gameID=<?= $gameID ?>";
         }
 
         
