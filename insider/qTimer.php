@@ -35,26 +35,26 @@ $sql = "SELECT playerNum FROM games WHERE gameID=$gameID";
         </div>
         <script>
             // Set the date we're counting down to
-            var countdownDuration = 300 * 1000; // 5 minutes in milliseconds
+            var countdownDuration = 300; 
 
             // Update the count down every 1 second
             var x = setInterval(function() {
 
             // Get today's date and time
-            var now = new Date().getTime(); //Date.now()
+            var elapsedTime = Date.now();
 
             // Find the distance between now and the count down date
-            var distance = countdownDuration - now;
+            var remainingTime = countdownDuration - elapsedTime;
 
             // Time calculations for days, hours, minutes and seconds
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var minutes = Math.floor(remainingTime / 1000 / 60);
+            var seconds = Math.floor((remainingTime / 1000) % 60);
 
             // Display the result in the element with id="demo"
             document.getElementById("timer").innerHTML = minutes + " : " + seconds;
 
             // If the count down is finished, write some text
-            if (distance < 0) {
+            if (remainingTime < 0) {
                 clearInterval(x);
                 document.getElementById("timer").innerHTML = "EXPIRED";
             }
