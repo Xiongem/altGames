@@ -31,8 +31,8 @@
         background-color: #004122;
         color: #f6f0ff;
         border-radius: 8px;
-        min-width: 3em;
-        max-height: 3em;
+        width: 3em;
+        height: 3em;
         padding: 0 0.5em;
         border: none;
         cursor: pointer;
