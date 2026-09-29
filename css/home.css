@@ -15,25 +15,6 @@
 
 /** SMALL PHONES*/
 @media only screen and (min-width: 200px) {
-    .title-wrapper {
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        /* border-bottom: 2px solid gray; */
-        padding-left: 2em;
-        margin-bottom: 0.5em;
-        background-color: var(--accent-3);
-        background: var(--background-gradient);
-    }
-    #logo {
-        width: 3em;
-        height: fit-content;
-        /* margin-right: 1em; */
-    }
-    .title {
-        color: var(--text-color);
-        margin-left: 1em;
-    }
     .games-wrapper {
         display: flex;
         flex-direction: column;
@@ -95,9 +76,6 @@
     }
 }
 @media only screen and (min-width: 1000px) {
-    .title-wrapper {
-        margin-bottom: 2em;
-    }
     .border-wrapper {
         width: 25em;
         height: 25em;
