@@ -1,9 +1,32 @@
-h1, h2, h3, h4, h5, h6, p {
-    /* font-family: Bradley Hand; */
-    font-size: 1.2em;
-}
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: Bradley Hand;
+} */
 body {
     background-color: #f6f0ff;
+}
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+
+}
+p {
+
+}
+label {
+
 }
 
 @media only screen and (min-width: 200px) {
