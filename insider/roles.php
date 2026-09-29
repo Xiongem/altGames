@@ -121,10 +121,10 @@ if ($key !== false) {
         var gameplayers = <?= json_encode($players); ?>;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
-            // function submitInsider() {
+            function submitInsider() {
                 
-            // }
-            // submitInsider();
+            }
+            submitInsider();
 
         
         
@@ -132,6 +132,7 @@ if ($key !== false) {
         function displayPlayer() {
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i] + ", you are the Insider.");
+                function submitInsider() {
                     var insider = gameplayers[i];
                     switch (insider) {
                         case <?= $p1 ?>:
@@ -207,6 +208,9 @@ if ($key !== false) {
                             });
                             break;
                     }  
+                }
+                submitInsider();
+                    
                 $("#confirm").text("The secret word is " + gmWord);
                 document.getElementById("player").style.color = "red";
             } else {
