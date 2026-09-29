@@ -5,6 +5,7 @@
     }
     .insider-wrapper {
         display: flex;
+        flex-direction: row;
         width: 85%;
     }
     #insiderLogo {
