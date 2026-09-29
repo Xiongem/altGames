@@ -11,8 +11,8 @@
 //         $created = $game["created"];
 //         $expiration = $game["expiration"];
 
-//         $math = $expiration - $created;
-        $math = 2026-09-29 02:26:14 + 2026-09-29 02:56:14;
+        // $math = strtotime($expiration) - strtotime($created);
+        $math = strtotime("2026-09-29 02:56:14") - strtotime("2026-09-29 02:26:14");
         echo $math;
 
 
