@@ -49,6 +49,7 @@ p {
         width:fit-content;
         height: 2em;
         border: none;
+        padding: 0.5em;
         cursor: pointer;
     }
     .insider {
