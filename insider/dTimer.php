@@ -35,7 +35,7 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
             <p> Who is the Insider? Discuss and vote before time is up.</p>
             <h2 id="timer" class="timer"></h2>
             <div class="buttonWrapper">
-                <button id="nextButton" onclick="nextPage()">Question Time</button>
+                <button id="nextButton" onclick="nextPage()">Reveal answers</button>
             </div>
         </div>
     </div>
@@ -53,7 +53,8 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
 
                 if (--timer < 0) {
                     display.textContent = "Time is up!";
-
+                    var nextButton = document.getElementById("nextButton");
+                    nextButton.style.display = "block";
                 }
             }, 1000);
         }
@@ -65,7 +66,7 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
         };
 
         function nextPage() {
-            window.location.href = ".php?gameID=<?= $gameID ?>";
+            window.location.href = "end.php?gameID=<?= $gameID ?>";
         }
     </script>
 </body>
