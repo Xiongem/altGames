@@ -5,15 +5,16 @@ session_start();
 require($_SERVER['DOCUMENT_ROOT'] . '/php-processes/utilities.php');
 dbConnect();
 
-$sql = "SELECT created, expiration FROM games";
-    $result = $_SESSION["conn"]->query($sql);
-        $game = $result->fetch_assoc();
-        $created = $game["created"];
-        $expiration = $game["expiration"];
+// $sql = "SELECT created, expiration FROM games";
+//     $result = $_SESSION["conn"]->query($sql);
+//         $game = $result->fetch_assoc();
+//         $created = $game["created"];
+//         $expiration = $game["expiration"];
 
-        $math = $expiration - $created;
-
+//         $math = $expiration - $created;
+        $math = 2 + 2;
         echo $math;
+
 
 // $stmt = $_SESSION["conn"] -> prepare("DELETE FROM users WHERE expiration < NOW() && ");
 
