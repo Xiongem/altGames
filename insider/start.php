@@ -26,7 +26,7 @@ dbConnect();
     <div class="wrapper">
         <form method="post" action="../php/insiderStart.php" class="wrapper">
             <div class="insider-wrapper">
-                <img class="image" src="insider/images/insiderLogo.webp" alt="Insider Game Logo">
+                <img class="image" src="/insider/images/insiderLogo.webp" alt="Insider Game Logo">
                 <h1 class="title">Insider</h1>
             </div>
             <div id="playerWrapper" class="spacing sections">
