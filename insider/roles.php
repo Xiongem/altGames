@@ -169,7 +169,7 @@ if ($key !== false) {
                                     //assign values
                                     var insider = "<?= $p4 ?>";
                                     //begin post method
-                                    $.post("php/insiderInsider.php", {
+                                    $.post("php/insiderInsider", {
                                         //DATA
                                         insider: insider
                                     });
