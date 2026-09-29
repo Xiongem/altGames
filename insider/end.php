@@ -47,7 +47,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         <div class="end-wrapper">
             <h1 class="title">Play again?</h1>
                 <div class="buttonWrapper">
-                    <button id="playAgain" onclick="window.location.href='/insider/start.php'">Play again</button>
+                    <button id="playAgain" onclick="window.location.href='/insider/start.php'">RESTART</button>
                 </div>
         </div>
     </div>
