@@ -132,8 +132,8 @@ if ($key !== false) {
             // }
             // submitInsider();
 
-        <?php $_SESSION["insider"] ?> = insider;
-        <?php echo $_SESSION["insider"] ?>;
+        <?php $insider ?> = insider;
+        
         var i = 0;
         function displayPlayer() {
             if (gameplayers[i] == insider) {
@@ -159,5 +159,6 @@ if ($key !== false) {
             window.location.href = "qTimer.php?gameID=<?= $gameID ?>";
         }        
     </script>
+    <?php echo $_SESSION["insider"] ?>;
 </body>
 </html>
