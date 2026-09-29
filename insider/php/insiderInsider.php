@@ -5,7 +5,7 @@ dbConnect();
 
 $gameID = $_POST["gameID"];
 
-$stmt = $_SESSION["conn"] -> prepare("UPDATE games SET insider=? WHERE gameID=$gameID");
+$stmt = $_SESSION["conn"] -> prepare("UPDATE games SET `insider`=? WHERE gameID=$gameID");
     $stmt->bind_param("s",
                             $_POST["insider"]);
 
