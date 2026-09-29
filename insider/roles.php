@@ -120,7 +120,7 @@ if ($key !== false) {
         function showRole() {
             document.getElementById("confirm").style.display = "block";
         }
-        
+
         //* PHP Session variables to js variables here
         var gmWord = "<?= $gmWord ?>";
         var gameplayers = <?= json_encode($players); ?>;
@@ -129,7 +129,8 @@ if ($key !== false) {
         var i = 0;
         function displayPlayer() {
             if (gameplayers[i] == insider) {
-                $("#player").text(gameplayers[i] + ", you are the Insider.");
+                $("#player").text(gameplayers[i]);
+                $("#confirm").text("you are the Insider.");
                 function submitInsider() {
                     var insider = gameplayers[i];
                     switch (insider) {
@@ -226,11 +227,11 @@ if ($key !== false) {
                 submitInsider();
                     
                 $("#confirm").text("The secret word is " + gmWord);
-                document.getElementById("player").style.color = "red";
+                document.getElementById("confirm").style.color = "red";
             } else {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("You are NOT the Insider.");
-                document.getElementById("player").style.color = "black";
+                document.getElementById("confirm").style.color = "black";
             }
             gameplayers[i++];
 
