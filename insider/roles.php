@@ -121,18 +121,85 @@ if ($key !== false) {
         var gameplayers = <?= json_encode($players); ?>;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
-            // function submitInsider() {
-            //     //assign values
-                
-            //     //begin post method
-            //     $.post("php/insiderInsider.php", {
-            //         //DATA
-            //         insider: insider
-            //     });
-            // }
-            // submitInsider();
+            function submitInsider() {
+                switch (insider) {
+                    case $p1:
+                        //assign values
+                        var insider = "<?= $p1 ?>"
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                    case $p2:
+                        //assign values
+                        var insider = "<?= $p2 ?>"
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                    case $p3:
+                        //assign values
+                        var insider = "<?= $p3 ?>"
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                    case $p4:
+                        //assign values
+                        var insider = "<?= $p4 ?>";
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                    case $p5:
+                        //assign values
+                        var insider = "<?= $p5 ?>";
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                    case $p6:
+                        //assign values
+                        var insider = "<?= $p6 ?>";
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                    case $p7:
+                        //assign values
+                        var insider = "<?= $p7 ?>";
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                    case $p8:
+                        //assign values
+                        var insider = "<?= $p8 ?>";
+                        //begin post method
+                        $.post("php/insiderInsider.php", {
+                            //DATA
+                            insider: insider
+                        });
+                        break;
+                }
+            }
+            submitInsider();
 
-        <?php $insider ?> = insider;
+        
         
         var i = 0;
         function displayPlayer() {
@@ -159,8 +226,4 @@ if ($key !== false) {
             window.location.href = "qTimer.php?gameID=<?= $gameID ?>";
         }        
     </script>
-    <?php 
-    $_SESSION["insider"] = $insider;
-    echo $_SESSION["insider"] ?>;
-</body>
 </html>
