@@ -151,6 +151,7 @@ if ($key !== false) {
                                 case "<?= $p2 ?>":
                                     //assign values
                                     var insider = "<?= $p2 ?>";
+                                    console.log(insider);
                                     //begin post method
                                     $.post("php/insiderInsider.php", {
                                         //DATA
@@ -160,6 +161,7 @@ if ($key !== false) {
                                 case "<?= $p3 ?>":
                                     //assign values
                                     var insider = "<?= $p3 ?>";
+                                    console.log(insider);
                                     //begin post method
                                     $.post("php/insiderInsider.php", {
                                         //DATA
@@ -169,6 +171,7 @@ if ($key !== false) {
                                 case "<?= $p4 ?>":
                                     //assign values
                                     var insider = "<?= $p4 ?>";
+                                    console.log(insider);
                                     //begin post method
                                     $.post("php/insiderInsider", {
                                         //DATA
