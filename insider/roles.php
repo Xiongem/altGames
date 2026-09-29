@@ -105,7 +105,9 @@ if ($key !== false) {
 </head>
 <body onload="displayPlayer()">
     <div class="title-wrapper">
-        <img id="logo" src="../images/favicon.webp" alt="purple, smiling gaming controller" onclick="goHome()">
+        <a href="../index.html">
+            <img id="logo" src="../images/favicon.webp" alt="purple, smiling gaming controller">
+        </a>
         <h1 class="title">ALT Games</h1>
     </div>
     <div class="wrapper">
@@ -251,10 +253,6 @@ if ($key !== false) {
 
         function nextPage() {
             window.location.href = "qTimer.php?gameID=<?= $gameID ?>";
-        }        
-
-        function goHome() {
-            window.location.href = "../index.html";
         }
     </script>
 </html>
