@@ -30,7 +30,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 </head>
 <body>
     <div class="title-wrapper">
-        <img id="logo" src="images/favicon.webp" alt="purple, smiling gaming controller">
+        <img id="logo" src="../images/favicon.webp" alt="purple, smiling gaming controller">
         <h1 class="title">ALT Games</h1>
     </div>
     <div class="wrapper">
