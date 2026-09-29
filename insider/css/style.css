@@ -10,13 +10,13 @@ h1 {
 h2 {
     font-size: 36px;
 }
-h3, label {
+h3 {
     font-size: 32px;
 }
 h4 {
     font-size: 28px;
 }
-h5 {
+h5, label {
     font-size: 24px;
 }
 h6 {
