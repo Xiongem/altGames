@@ -65,10 +65,6 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
             var insider = document.getElementById("insider");
             insider.style.display = "block";
         }
-
-        function goHome() {
-            window.location.href = "../index.html";
-        }
     </script>
 </body>
 </html>
