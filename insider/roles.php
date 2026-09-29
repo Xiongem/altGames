@@ -132,7 +132,8 @@ if ($key !== false) {
         function displayPlayer() {
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i] + ", you are the Insider.");
-                    switch (gameplayers[i]) {
+                    var insider = gameplayers[i];
+                    switch (insider) {
                         case <?= $p1 ?>:
                             //assign values
                             var insider = "<?= $p1 ?>"
