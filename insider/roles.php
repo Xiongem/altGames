@@ -130,73 +130,89 @@ if ($key !== false) {
                     switch (insider) {
                         case '<?= $p1 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p1 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
                         case '<?= $p2 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p2 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
                         case '<?= $p3 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p3 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
                         case '<?= $p4 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p4 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
                         case '<?= $p5 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p5 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
                         case '<?= $p6 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p6 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
                         case '<?= $p7 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p7 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
                         case '<?= $p8 ?>':
                             //assign values
+                            var gameID = <?= $gameID ?>;
                             var insider = "<?= $p8 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA
+                                gameID: gameID,
                                 insider: insider
                             });
                             break;
