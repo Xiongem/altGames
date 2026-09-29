@@ -35,7 +35,7 @@ $sql = "SELECT playerNum FROM games WHERE gameID=$gameID";
         </div>
         <script>
             // Set the date we're counting down to
-            var countdownDuration = 300; 
+            var countdownDuration = 300 * 1000; // 5 minutes in milliseconds
 
             // Update the count down every 1 second
             var x = setInterval(function() {
