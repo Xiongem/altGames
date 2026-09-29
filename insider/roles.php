@@ -123,11 +123,11 @@ if ($key !== false) {
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
             function submitInsider() {
                 //assign values
-                var insiderName = insider;
+                
                 //begin post method
                 $.post("php/insiderInsider.php", {
                     //DATA
-                    insider: insiderName
+                    insider: insider
                 });
             }
             submitInsider();
