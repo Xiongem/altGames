@@ -12,7 +12,7 @@
 //         $expiration = $game["expiration"];
 
 //         $math = $expiration - $created;
-        $math = 2 + 2;
+        $math = 2026-09-29 02:26:14 + 2026-09-29 02:56:14;
         echo $math;
 
 
