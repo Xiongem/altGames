@@ -39,7 +39,7 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
             </div>
         </div>
     </div>
-    <script>
+    <script type='text/javascript'>
         function startTimer(duration, display) {
             var timer = duration, minutes, seconds;
             setInterval(function () {

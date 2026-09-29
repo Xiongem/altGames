@@ -52,7 +52,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 </div>
         </div>
     </div>
-    <script>
+    <script type='text/javascript'>
         function revealGmWord() {
             var gmWord = document.getElementById("gmword");
             gmWord.style.display = "block";
@@ -62,5 +62,6 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
             var insider = document.getElementById("insider");
             insider.style.display = "block";
         }
+    </script>
 </body>
 </html>
