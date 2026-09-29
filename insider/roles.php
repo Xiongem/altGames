@@ -159,6 +159,8 @@ if ($key !== false) {
             window.location.href = "qTimer.php?gameID=<?= $gameID ?>";
         }        
     </script>
-    <?php echo $_SESSION["insider"] ?>;
+    <?php 
+    $_SESSION["insider"] = $insider;
+    echo $_SESSION["insider"] ?>;
 </body>
 </html>
