@@ -120,7 +120,7 @@ if ($key !== false) {
         function showRole() {
             document.getElementById("confirm").style.display = "block";
         }
-        document.getElementById("confirm").style.display = "block";
+        
         //* PHP Session variables to js variables here
         var gmWord = "<?= $gmWord ?>";
         var gameplayers = <?= json_encode($players); ?>;
