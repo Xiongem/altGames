@@ -8,18 +8,22 @@ dbConnect();
 $sql = "SELECT created, expiration FROM games";
     $result = $_SESSION["conn"]->query($sql);
         $game = $result->fetch_assoc();
+        $created = $game["created"];
+        $expiration = $game["expiration"];
 
-$stmt = $_SESSION["conn"] -> prepare("DELETE FROM users WHERE id=?");
-$stmt->bind_param("i",
-                        $userID);
+        $math = strtotime($expiration) - strtotime($created);
 
-//execute statement
-if ($stmt -> execute()) {
-    exit;
-} else {
-    die("unexpected error");
-}
+        echo $math;
 
-$stmt -> close();
-mysqli_close($conn);
+// $stmt = $_SESSION["conn"] -> prepare("DELETE FROM users WHERE expiration < NOW() && ");
+
+// //execute statement
+// if ($stmt -> execute()) {
+//     exit;
+// } else {
+//     die("unexpected error");
+// }
+
+// $stmt -> close();
+// mysqli_close($conn);
 ?>
