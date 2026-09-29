@@ -134,7 +134,7 @@ if ($key !== false) {
                 $("#player").text(gameplayers[i] + ", you are the Insider.");
                 function submitInsider() {
                     var insider = gameplayers[i];
-                    playerNum = <?= $playerNum ?>;
+                    var playerNum = <?= $playerNum ?>;
                     switch (playerNum) {
                         case '4':
                             switch (insider) {
