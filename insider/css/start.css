@@ -3,6 +3,10 @@
     .wrapper {
         width: 100%;
     }
+    #insiderLogo {
+        width: 4em;
+        height: fit-content;
+    }
     .selectWrapper {
         display: flex;
         justify-content: center;
