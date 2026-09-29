@@ -121,316 +121,86 @@ if ($key !== false) {
         var gameplayers = <?= json_encode($players); ?>;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
-            function submitInsider() {
-                
-            }
-            submitInsider();
-
-        
-        
         var i = 0;
         function displayPlayer() {
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i] + ", you are the Insider.");
                 function submitInsider() {
                     var insider = gameplayers[i];
-                    var playerNum = <?= $playerNum ?>;
-                    switch (playerNum) {
-                        case 4:
-                            switch (insider) {
-                                case "<?= $p1 ?>":
-                                    //assign values
-                                    var insider = "<?= $p1 ?>";
-                                    console.log(insider);
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p2 ?>":
-                                    //assign values
-                                    var insider = "<?= $p2 ?>";
-                                    console.log(insider);
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p3 ?>":
-                                    //assign values
-                                    var insider = "<?= $p3 ?>";
-                                    console.log(insider);
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p4 ?>":
-                                    //assign values
-                                    var insider = "<?= $p4 ?>";
-                                    console.log(insider);
-                                    //begin post method
-                                    $.post("php/insiderInsider", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                }
+                    switch (insider) {
+                        case '<?= $p1 ?>':
+                            //assign values
+                            var insider = "<?= $p1 ?>"
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
                             break;
-                        case 5:
-                            switch (insider) {
-                                case "<?= $p1 ?>":
-                                    //assign values
-                                    var insider = "<?= $p1 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p2 ?>":
-                                    //assign values
-                                    var insider = "<?= $p2 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p3 ?>":
-                                    //assign values
-                                    var insider = "<?= $p3 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p4 ?>":
-                                    //assign values
-                                    var insider = "<?= $p4 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p5 ?>":
-                                    //assign values
-                                    var insider = "<?= $p5 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                }
+                        case '<?= $p2 ?>':
+                            //assign values
+                            var insider = "<?= $p2 ?>"
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
                             break;
-                        case 6:
-                            switch (insider) {
-                                case "<?= $p1 ?>":
-                                    //assign values
-                                    var insider = "<?= $p1 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p2 ?>":
-                                    //assign values
-                                    var insider = "<?= $p2 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p3 ?>":
-                                    //assign values
-                                    var insider = "<?= $p3 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p4 ?>":
-                                    //assign values
-                                    var insider = "<?= $p4 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p5 ?>":
-                                    //assign values
-                                    var insider = "<?= $p5 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p6 ?>":
-                                    //assign values
-                                    var insider = "<?= $p6 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                }
+                        case '<?= $p3 ?>':
+                            //assign values
+                            var insider = "<?= $p3 ?>"
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
                             break;
-                        case 7:
-                            switch (insider) {
-                                case "<?= $p1 ?>":
-                                    //assign values
-                                    var insider = "<?= $p1 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p2 ?>":
-                                    //assign values
-                                    var insider = "<?= $p2 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p3 ?>":
-                                    //assign values
-                                    var insider = "<?= $p3 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p4 ?>":
-                                    //assign values
-                                    var insider = "<?= $p4 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p5 ?>":
-                                    //assign values
-                                    var insider = "<?= $p5 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p6 ?>":
-                                    //assign values
-                                    var insider = "<?= $p6 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p7 ?>":
-                                    //assign values
-                                    var insider = "<?= $p7 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                }
+                        case '<?= $p4 ?>':
+                            //assign values
+                            var insider = "<?= $p4 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
                             break;
-                        case 8:
-                            switch (insider) {
-                                case "<?= $p1 ?>":
-                                    //assign values
-                                    var insider = "<?= $p1 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p2 ?>":
-                                    //assign values
-                                    var insider = "<?= $p2 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p3 ?>":
-                                    //assign values
-                                    var insider = "<?= $p3 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p4 ?>":
-                                    //assign values
-                                    var insider = "<?= $p4 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p5 ?>":
-                                    //assign values
-                                    var insider = "<?= $p5 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p6 ?>":
-                                    //assign values
-                                    var insider = "<?= $p6 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p7 ?>":
-                                    //assign values
-                                    var insider = "<?= $p7 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                                case "<?= $p8 ?>":
-                                    //assign values
-                                    var insider = "<?= $p8 ?>";
-                                    //begin post method
-                                    $.post("php/insiderInsider.php", {
-                                        //DATA
-                                        insider: insider
-                                    });
-                                    break;
-                            }  
+                        case '<?= $p5 ?>':
+                            //assign values
+                            var insider = "<?= $p5 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
                             break;
-                    }
+                        case '<?= $p6 ?>':
+                            //assign values
+                            var insider = "<?= $p6 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case '<?= $p7 ?>':
+                            //assign values
+                            var insider = "<?= $p7 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case '<?= $p8 ?>':
+                            //assign values
+                            var insider = "<?= $p8 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                    }  
                 }
                 submitInsider();
                     
