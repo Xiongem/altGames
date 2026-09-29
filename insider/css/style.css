@@ -50,7 +50,7 @@ p {
         border-radius: 8px;
         /* width: 4em; */
         width:fit-content;
-        height: 2em;
+        height: fit-content;
         border: none;
         padding: 0.5em;
         cursor: pointer;
