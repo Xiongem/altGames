@@ -124,7 +124,7 @@ if ($key !== false) {
             //assign values
             var insider = insider;
             //begin post method
-            $.post("php/insiderInsider", {
+            $.post("../php/insiderInsider.php", {
                 //DATA
                 insider: insider
             });
