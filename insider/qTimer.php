@@ -31,7 +31,7 @@ $sql = "SELECT playerNum FROM games WHERE gameID=$gameID";
     <div class="wrapper">
         <div class="timer-wrapper">
             <h1 class="title">Timer</h1>
-            <p id="timer" class="timer"></p>
+            <h2 id="timer" class="timer"></h2>
         </div>
         <script>
             // Set the date we're counting down to
