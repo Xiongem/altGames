@@ -47,7 +47,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                 display.textContent = minutes + ":" + seconds;
 
                 if (--timer < 0) {
-                    timer = duration;
+                    display.textContent = "Time is up!";
                 }
             }, 1000);
         }
