@@ -104,6 +104,10 @@ if ($key !== false) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body onload="displayPlayer()">
+    <div class="title-wrapper">
+        <img id="logo" src="images/favicon.webp" alt="purple, smiling gaming controller">
+        <h1 class="title">ALT Games</h1>
+    </div>
     <div class="wrapper">
         <h1 class="title">Insider</h1>
         <div id="playerWrapper">
