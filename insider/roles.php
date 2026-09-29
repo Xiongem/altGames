@@ -138,7 +138,7 @@ if ($key !== false) {
                     switch (playerNum) {
                         case 4:
                             switch (insider) {
-                                case <?= $p1 ?>:
+                                case "<?= $p1 ?>":
                                     //assign values
                                     var insider = "<?= $p1 ?>";
                                     //begin post method
@@ -147,7 +147,7 @@ if ($key !== false) {
                                         insider: insider
                                     });
                                     break;
-                                case <?= $p2 ?>:
+                                case "<?= $p2 ?>":
                                     //assign values
                                     var insider = "<?= $p2 ?>";
                                     //begin post method
@@ -156,7 +156,7 @@ if ($key !== false) {
                                         insider: insider
                                     });
                                     break;
-                                case <?= $p3 ?>:
+                                case "<?= $p3 ?>":
                                     //assign values
                                     var insider = "<?= $p3 ?>";
                                     //begin post method
@@ -165,7 +165,7 @@ if ($key !== false) {
                                         insider: insider
                                     });
                                     break;
-                                case <?= $p4 ?>:
+                                case "<?= $p4 ?>":
                                     //assign values
                                     var insider = "<?= $p4 ?>";
                                     //begin post method
