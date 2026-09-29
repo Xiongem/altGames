@@ -8,7 +8,7 @@
         flex-direction: row;
         width: 85%;
         justify-content: space-evenly;
-        margin-bottom: 2em;
+        margin-bottom: 2em 0;
     }
     #insiderLogo {
         width: 4em;
@@ -21,7 +21,7 @@
         margin-bottom: 0.5em;
     }
     .selectWrapper > label {
-        margin: 0.5em 0;
+        margin-right: 0.5em;
     }
     #playerWrapper {
         display: flex;
