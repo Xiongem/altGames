@@ -1,22 +1,25 @@
 <?php
-// ob_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('log_errors', 'On');
+ini_set('error_log', '/path/to/php_errors.log');
 
-// session_start();
-// require($_SERVER['DOCUMENT_ROOT'] . '/php-processes/utilities.php');
-// dbConnect();
+ob_start();
 
-// $sql = "SELECT created, expiration FROM games";
-//     $result = $_SESSION["conn"]->query($sql);
-//         $game = $result->fetch_assoc();
-//         $created = $game["created"];
-//         $expiration = $game["expiration"];
+session_start();
+require($_SERVER['DOCUMENT_ROOT'] . '/php-processes/utilities.php');
+dbConnect();
 
-        // $math = strtotime($expiration) - strtotime($created);
-        $math = strtotime("2026-09-29 02:56:14") - strtotime("2026-09-29 02:26:14");
-        echo $math;
+$sql = "SELECT created, expiration FROM games";
+    $result = $_SESSION["conn"]->query($sql);
+        $game = $result->fetch_assoc();
+        $created = $game["created"];
+        $expiration = $game["expiration"];
+
+    $math = strtotime($expiration) - strtotime($created);
 
 
-// $stmt = $_SESSION["conn"] -> prepare("DELETE FROM users WHERE expiration < NOW() && ");
+$stmt = $_SESSION["conn"] -> prepare("DELETE FROM users WHERE expiration < NOW() && $math > 30");
 
 // //execute statement
 // if ($stmt -> execute()) {
