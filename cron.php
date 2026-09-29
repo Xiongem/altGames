@@ -11,7 +11,7 @@ $sql = "SELECT created, expiration FROM games";
         $created = $game["created"];
         $expiration = $game["expiration"];
 
-        $math = strtotime($expiration) - strtotime($created);
+        $math = $expiration - $created;
 
         echo $math;
 
