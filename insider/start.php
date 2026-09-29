@@ -25,7 +25,7 @@ dbConnect();
     <?= makeNav() ?>
     <div class="wrapper">
         <form method="post" action="../php/insiderStart.php" class="wrapper">
-            <div class="title-wrapper">
+            <div class="insider-wrapper">
                 <i class="fa-solid fa-user-secret"></i>
                 <h1 class="title">Insider</h1>
             </div>
