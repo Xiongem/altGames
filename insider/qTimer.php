@@ -62,39 +62,30 @@ $sql = "SELECT playerNum FROM games WHERE gameID=$gameID";
             //     document.getElementById("timer").innerHTML = "EXPIRED";
             // }
             // }, 1000);
-            function startCountdown() {
-                var countdownDuration = 300;
-                var elapsedTime = Date.now();
-                var remainingTime = countdownDuration - elapsedTime;
+            
 
-                var minutes = Math.floor(remainingTime / 1000 / 60);
-                var seconds = Math.floor((remainingTime / 1000) % 60);
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
 
-                var countdownElement = document.getElementById('timer');
-                countdownElement.textContent = minutes + ":" + seconds;
-            }
-            window.addEventListener('load', function() {
-                startCountdown();
-            });
-            function updateCountdown() {
-                // Calculate remaining time
-                const now = new Date().getTime();
-                const distance = countdownEndTime - now;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
 
-                // Calculate minutes and seconds
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                display.textContent = minutes + ":" + seconds;
 
-                // Update countdown display
-                countdownElement.innerHTML = `${minutes}m ${seconds}s`;
-
-                // Handle end of countdown
-                if (distance < 0) {
-                    clearInterval(countdownInterval);
-                    countdownElement.innerHTML = 'Countdown ended!';
+                if (--timer < 0) {
+                    timer = duration;
                 }
-            }
-            const countdownInterval = setInterval(updateCountdown, 1000);
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fiveMinutes = 60 * 5,
+                display = document.querySelector('#timer');
+            startTimer(fiveMinutes, display);
+        };
         </script>
     </div>
 </body>
