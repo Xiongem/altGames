@@ -31,6 +31,7 @@
         color: #f6f0ff;
         border-radius: 8px;
         min-width: 3em;
+        max-height: 4em;
         padding: 0 0.5em;
         border: none;
         cursor: pointer;
