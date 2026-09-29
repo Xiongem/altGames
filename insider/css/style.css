@@ -29,4 +29,7 @@ body {
         border: none;
         cursor: pointer;
     }
+    .insider {
+        display: none;
+    }
 }
