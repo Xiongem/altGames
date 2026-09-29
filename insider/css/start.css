@@ -8,6 +8,7 @@
         flex-direction: row;
         width: 85%;
         justify-content: space-evenly;
+        margin-bottom: 2em;
     }
     #insiderLogo {
         width: 4em;
