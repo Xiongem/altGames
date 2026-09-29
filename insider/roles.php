@@ -121,83 +121,10 @@ if ($key !== false) {
         var gameplayers = <?= json_encode($players); ?>;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
-            function submitInsider() {
-                switch (gameplayers[i]) {
-                    case <?= $p1 ?>:
-                        //assign values
-                        var insider = "<?= $p1 ?>"
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                    case <?= $p2 ?>:
-                        //assign values
-                        var insider = "<?= $p2 ?>"
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                    case <?= $p3 ?>:
-                        //assign values
-                        var insider = "<?= $p3 ?>"
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                    case <?= $p4 ?>:
-                        //assign values
-                        var insider = "<?= $p4 ?>";
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                    case <?= $p5 ?>:
-                        //assign values
-                        var insider = "<?= $p5 ?>";
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                    case <?= $p6 ?>:
-                        //assign values
-                        var insider = "<?= $p6 ?>";
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                    case <?= $p7 ?>:
-                        //assign values
-                        var insider = "<?= $p7 ?>";
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                    case <?= $p8 ?>:
-                        //assign values
-                        var insider = "<?= $p8 ?>";
-                        //begin post method
-                        $.post("php/insiderInsider.php", {
-                            //DATA
-                            insider: insider
-                        });
-                        break;
-                }
-            }
-            submitInsider();
+            // function submitInsider() {
+                
+            // }
+            // submitInsider();
 
         
         
@@ -205,6 +132,80 @@ if ($key !== false) {
         function displayPlayer() {
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i] + ", you are the Insider.");
+                    switch (gameplayers[i]) {
+                        case <?= $p1 ?>:
+                            //assign values
+                            var insider = "<?= $p1 ?>"
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case <?= $p2 ?>:
+                            //assign values
+                            var insider = "<?= $p2 ?>"
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case <?= $p3 ?>:
+                            //assign values
+                            var insider = "<?= $p3 ?>"
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case <?= $p4 ?>:
+                            //assign values
+                            var insider = "<?= $p4 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case <?= $p5 ?>:
+                            //assign values
+                            var insider = "<?= $p5 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case <?= $p6 ?>:
+                            //assign values
+                            var insider = "<?= $p6 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case <?= $p7 ?>:
+                            //assign values
+                            var insider = "<?= $p7 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                        case <?= $p8 ?>:
+                            //assign values
+                            var insider = "<?= $p8 ?>";
+                            //begin post method
+                            $.post("php/insiderInsider.php", {
+                                //DATA
+                                insider: insider
+                            });
+                            break;
+                    }  
                 $("#confirm").text("The secret word is " + gmWord);
                 document.getElementById("player").style.color = "red";
             } else {
