@@ -109,6 +109,7 @@ if ($key !== false) {
         <div id="playerWrapper">
             <h2  class="spacing"><span id="player"></span></h2>
             <h3 class="spacing"><span id="confirm"></span></h3>
+            <button id="showRole" onclick="showRole()">Show Role</button>
         </div>
         <div class="buttonWrapper">
             <button id="nextPlayer" onclick="displayPlayer();">Next Player</button>
@@ -116,6 +117,10 @@ if ($key !== false) {
         </div>
     </div>
     <script type='text/javascript'>
+        function showRole() {
+            document.getElementById("confirm").style.display = "block";
+        }
+        document.getElementById("confirm").style.display = "block";
         //* PHP Session variables to js variables here
         var gmWord = "<?= $gmWord ?>";
         var gameplayers = <?= json_encode($players); ?>;
