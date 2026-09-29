@@ -74,7 +74,7 @@ switch ($playerNum) {
                 <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
-            <button class="startBttn" type="submit">Submit</button>
+            <button class="insiderBttn" type="submit">Submit</button>
         </form>
     </div>
     <script type='text/javascript'>

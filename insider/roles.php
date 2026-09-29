@@ -110,11 +110,11 @@ if ($key !== false) {
         <div id="playerWrapper">
             <h2  class="spacing"><span id="player"></span></h2>
             <h3 class="spacing"><span id="confirm"></span></h3>
-            <button id="showRole" onclick="showRole()">Show Role</button>
+            <button id="showRole" class="insiderBttn" onclick="showRole()">Show Role</button>
         </div>
         <div class="buttonWrapper">
-            <button id="nextPlayer" onclick="displayPlayer();">Next Player</button>
-            <button id="start" onclick="nextPage()">Start!</button>
+            <button id="nextPlayer" class="insiderBttn" onclick="displayPlayer();">Next Player</button>
+            <button id="start" class="insiderBttn" onclick="nextPage()">Start!</button>
         </div>
     </div>
     <script type='text/javascript'>

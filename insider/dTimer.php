@@ -36,7 +36,7 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
             <p> Who is the Insider? Discuss and vote before time is up.</p>
             <h2 id="timer" class="timer"></h2>
             <div class="buttonWrapper">
-                <button id="nextButton" onclick="nextPage()">Reveal answers</button>
+                <button id="nextButton" class="insiderBttn" onclick="nextPage()">Reveal answers</button>
             </div>
         </div>
     </div>
