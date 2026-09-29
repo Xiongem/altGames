@@ -51,7 +51,8 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 
                 if (--timer < 0) {
                     display.textContent = "Time is up!";
-
+                    var nextButton = document.getElementById("nextButton");
+                    nextButton.style.display = "block";
                 }
             }, 1000);
         }

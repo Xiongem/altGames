@@ -1,4 +1,6 @@
 /** SMALL PHONES*/
 @media only screen and (min-width: 200px) {
-
+    #nextButton {
+        display: none;
+    }
 }
