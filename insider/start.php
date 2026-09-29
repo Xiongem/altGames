@@ -31,7 +31,7 @@ dbConnect();
             </div>
             <div id="playerWrapper" class="spacing sections">
                 <div class="selectWrapper">
-                    <label><h4>Please select number of players:</h4></label>
+                    <label><h4 class="instructions">Please select number of players:</h4></label>
                     <select id="playerNumber" name="playerNum" onclick="displayPlayers()">
                         <option value="">-</option>
                         <option value="4">4</option>
