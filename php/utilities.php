@@ -17,7 +17,7 @@ function makeNav() {
             <a href="../index.html">
                 <img id="logo" src="../images/favicon.webp" alt="purple, smiling gaming controller">
             </a>
-        <h1 class="title">ALT Games</h1>
+        <h1 class="nav-title">ALT Games</h1>
         </div>
     HTML;
         echo $htmlContent;
