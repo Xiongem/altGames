@@ -22,12 +22,7 @@ dbConnect();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="title-wrapper">
-        <a href="../index.html">
-            <img id="logo" src="../images/favicon.webp" alt="purple, smiling gaming controller">
-        </a>
-        <h1 class="title">ALT Games</h1>
-    </div>
+    <?= makeNav() ?>
     <div class="wrapper">
         <form method="post" action="../php/insiderStart.php" class="wrapper">
             <h1 class="title">Insider</h1>
