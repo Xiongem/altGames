@@ -25,7 +25,10 @@ dbConnect();
     <?= makeNav() ?>
     <div class="wrapper">
         <form method="post" action="../php/insiderStart.php" class="wrapper">
-            <h1 class="title">Insider</h1>
+            <div class="title-wrapper">
+                <i class="fa-solid fa-user-secret"></i>
+                <h1 class="title">Insider</h1>
+            </div>
             <div id="playerWrapper" class="spacing sections">
                 <div class="selectWrapper">
                     <label><h4>Please select number of players:</h4></label>
