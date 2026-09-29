@@ -37,7 +37,8 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                 <button id="nextButton" onclick="nextPage()">Discussion Time</button>
             </div>
         </div>
-        <script>
+    </div>
+    <script>
         function startTimer(duration, display) {
             var timer = duration, minutes, seconds;
             setInterval(function () {
@@ -66,7 +67,6 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
         function nextPage() {
             window.location.href = "dTimer.php?gameID=<?= $gameID ?>";
         }
-        </script>
-    </div>
+    </script>
 </body>
 </html>
