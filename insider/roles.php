@@ -121,6 +121,13 @@ if ($key !== false) {
         var gameplayers = <?= json_encode($players); ?>;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
+            //assign values
+            var insider = insider;
+            //begin post method
+            $.post("php/insiderInsider", {
+                //DATA
+                insider: insider
+            });
          
         var i = 0;
         function displayPlayer() {
