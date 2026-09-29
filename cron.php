@@ -1,9 +1,9 @@
 <?php
-ob_start();
+// ob_start();
 
-session_start();
-require($_SERVER['DOCUMENT_ROOT'] . '/php-processes/utilities.php');
-dbConnect();
+// session_start();
+// require($_SERVER['DOCUMENT_ROOT'] . '/php-processes/utilities.php');
+// dbConnect();
 
 // $sql = "SELECT created, expiration FROM games";
 //     $result = $_SESSION["conn"]->query($sql);
