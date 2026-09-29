@@ -132,7 +132,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p1 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
@@ -141,7 +141,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p2 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
@@ -150,7 +150,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p3 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
@@ -159,7 +159,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p4 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
@@ -168,7 +168,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p5 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
@@ -177,7 +177,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p6 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
@@ -186,7 +186,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p7 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
@@ -195,7 +195,7 @@ if ($key !== false) {
                             //assign values
                             var insider = "<?= $p8 ?>";
                             //begin post method
-                            $.post("php/insiderInsider.php", {
+                            $.post("../php/insiderInsider.php", {
                                 //DATA
                                 insider: insider
                             });
