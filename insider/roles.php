@@ -128,6 +128,8 @@ if ($key !== false) {
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
         var i = 0;
         function displayPlayer() {
+            document.getElementById("confirm").style.display = "none";
+
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("you are the Insider.");
