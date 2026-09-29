@@ -3,12 +3,11 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
 $gameID = $_GET["gameID"];
-$insider = $_SESSION["insider"];
 
 $sql = "SELECT * FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
         $game = $result->fetch_assoc();
-        // $insider = $game["insider"];
+        $insider = $game["insider"];
         $gmWord = $game["gmWord"];
 ?>
 
@@ -34,10 +33,16 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         <div class="end-wrapper">
             <h1 class="title">The Secret Word was:</h1>
             <h2 class="insider" id="gmword"><?= $gmWord ?></h2>
+                <div class="buttonWrapper">
+                    <button onclick="revealGmWord()">Reveal answer</button>
+                </div>
         </div>
         <div class="end-wrapper">
             <h1 class="title">The Insider was:</h1>
             <h2 class="insider" id="insider"><?= $insider ?></h2>
+                <div class="buttonWrapper">
+                    <button onclick="revealInsider()">Reveal answer</button>
+                </div>
         </div>
         <div class="end-wrapper">
             <h1 class="title">Play again?</h1>
@@ -46,5 +51,16 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 </div>
         </div>
     </div>
+    <script type='text/javascript'>
+        function revealGmWord() {
+            var gmWord = document.getElementById("gmword");
+            gmWord.style.display = "block";
+        }
+
+        function revealInsider() {
+            var insider = document.getElementById("insider");
+            insider.style.display = "block";
+        }
+    </script>
 </body>
 </html>
