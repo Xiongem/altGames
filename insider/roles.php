@@ -130,7 +130,7 @@ if ($key !== false) {
                     switch (insider) {
                         case '<?= $p1 ?>':
                             //assign values
-                            var insider = <?= $p1 ?>;
+                            var insider = "<?= $p1 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
@@ -139,7 +139,7 @@ if ($key !== false) {
                             break;
                         case '<?= $p2 ?>':
                             //assign values
-                            var insider = <?= $p2 ?>;
+                            var insider = "<?= $p2 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
@@ -148,7 +148,7 @@ if ($key !== false) {
                             break;
                         case '<?= $p3 ?>':
                             //assign values
-                            var insider = <?= $p3 ?>;
+                            var insider = "<?= $p3 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
@@ -157,7 +157,7 @@ if ($key !== false) {
                             break;
                         case '<?= $p4 ?>':
                             //assign values
-                            var insider = <?= $p4 ?>;
+                            var insider = "<?= $p4 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
@@ -166,7 +166,7 @@ if ($key !== false) {
                             break;
                         case '<?= $p5 ?>':
                             //assign values
-                            var insider = <?= $p5 ?>;
+                            var insider = "<?= $p5 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
@@ -175,7 +175,7 @@ if ($key !== false) {
                             break;
                         case '<?= $p6 ?>':
                             //assign values
-                            var insider = <?= $p6 ?>;
+                            var insider = "<?= $p6 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
@@ -184,7 +184,7 @@ if ($key !== false) {
                             break;
                         case '<?= $p7 ?>':
                             //assign values
-                            var insider = <?= $p7 ?>;
+                            var insider = "<?= $p7 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
@@ -193,7 +193,7 @@ if ($key !== false) {
                             break;
                         case '<?= $p8 ?>':
                             //assign values
-                            var insider = <?= $p8 ?>;
+                            var insider = "<?= $p8 ?>";
                             //begin post method
                             $.post("php/insiderInsider.php", {
                                 //DATA
