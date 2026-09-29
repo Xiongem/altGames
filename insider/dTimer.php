@@ -4,10 +4,10 @@ dbConnect();
 
 $gameID = $_GET["gameID"];
 
-$sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
+$sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
         $Timing = $result->fetch_assoc();
-        $guessTime = $Timing["guessTime"];
+        $discussTime = $Timing["discussTime"];
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
     <meta property="og:description" content="In class games and activities for ALTs."> 
     <meta property="og:image" content=""> 
     <meta property="og:url" content="">
-    <title>Question Time</title>
+    <title>Discussion Time</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timer.css">
@@ -31,10 +31,11 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 <body>
     <div class="wrapper">
         <div class="timer-wrapper">
-            <h1 class="title">Question Time</h1>
+            <h1 class="title">Discussion Time</h1>
+            <p> Who is the Insider? Discuss and vote before time is up.</p>
             <h2 id="timer" class="timer"></h2>
             <div class="buttonWrapper">
-                <button id="nextButton" onclick="nextPage()">Discussion Time</button>
+                <button id="nextButton" onclick="nextPage()">Question Time</button>
             </div>
         </div>
         <script>
@@ -57,13 +58,13 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
         }
 
         window.onload = function () {
-            var guessTime = 60 * <?= $guessTime ?>,
+            var discussTime = 60 * <?= $discussTime ?>,
                 display = document.querySelector('#timer');
-            startTimer(guessTime, display);
+            startTimer(discussTime, display);
         };
 
         function nextPage() {
-            window.location.href = "dTimer.php?gameID=<?= $gameID ?>";
+            window.location.href = ".php?gameID=<?= $gameID ?>";
         }
         </script>
     </div>
