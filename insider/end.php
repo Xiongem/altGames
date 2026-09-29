@@ -33,16 +33,16 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
     <div class = "wrapper">
         <div class="end-wrapper">
             <h1 class="title">The Secret Word was:</h1>
-            <h2 class="insider"><?= $gmWord ?></h2>
+            <h2 class="insider" id="gmword"><?= $gmWord ?></h2>
                 <div class="buttonWrapper">
-                    <button id="gmword" onclick="revealGmWord()">Reveal answer</button>
+                    <button onclick="revealGmWord()">Reveal answer</button>
                 </div>
         </div>
         <div class="end-wrapper">
             <h1 class="title">The Insider was:</h1>
-            <h2 class="insider"><?= $insider ?></h2>
+            <h2 class="insider" id="insider"><?= $insider ?></h2>
                 <div class="buttonWrapper">
-                    <button id="insider" onclick="revealInsider()">Reveal answer</button>
+                    <button onclick="revealInsider()">Reveal answer</button>
                 </div>
         </div>
         <div class="end-wrapper">
