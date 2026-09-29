@@ -24,7 +24,8 @@ body {
         background-color: #004122;
         color: #f6f0ff;
         border-radius: 8px;
-        width: 4em;
+        /* width: 4em; */
+        width:fit-content;
         height: 2em;
         border: none;
         cursor: pointer;
