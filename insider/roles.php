@@ -122,7 +122,7 @@ if ($key !== false) {
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
             function submitInsider() {
-                switch (insider) {
+                switch (gameplayers[i]) {
                     case <?= $p1 ?>:
                         //assign values
                         var insider = "<?= $p1 ?>"
