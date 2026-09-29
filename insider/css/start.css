@@ -28,6 +28,9 @@
         display: flex;
         align-items: center;
     }
+    #instructions {
+        text-align: center;
+    }
     .instruct-img {
         width: 0.7em;
         height: fit-content;
