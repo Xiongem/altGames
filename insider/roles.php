@@ -121,16 +121,18 @@ if ($key !== false) {
         var gameplayers = <?= json_encode($players); ?>;
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
-            function submitInsider() {
-                //assign values
+            // function submitInsider() {
+            //     //assign values
                 
-                //begin post method
-                $.post("php/insiderInsider.php", {
-                    //DATA
-                    insider: insider
-                });
-            }
-            submitInsider();
+            //     //begin post method
+            //     $.post("php/insiderInsider.php", {
+            //         //DATA
+            //         insider: insider
+            //     });
+            // }
+            // submitInsider();
+
+        <?php $SESSION["insider"] ?> = insider;
          
         var i = 0;
         function displayPlayer() {
