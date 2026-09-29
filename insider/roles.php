@@ -132,7 +132,7 @@ if ($key !== false) {
             // }
             // submitInsider();
 
-        <?php $SESSION["insider"] ?> = insider;
+        <?php $_SESSION["insider"] ?> = insider;
          
         var i = 0;
         function displayPlayer() {

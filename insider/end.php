@@ -3,11 +3,12 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
 $gameID = $_GET["gameID"];
+$insider = $_SESSION["insider"];
 
 $sql = "SELECT * FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
         $game = $result->fetch_assoc();
-        $insider = $game["insider"];
+        // $insider = $game["insider"];
         $gmWord = $game["gmWord"];
 ?>
 
