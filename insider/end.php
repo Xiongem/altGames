@@ -30,7 +30,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
 </head>
 <body>
     <div class="title-wrapper">
-        <img id="logo" src="../images/favicon.webp" alt="purple, smiling gaming controller">
+        <img id="logo" src="../images/favicon.webp" alt="purple, smiling gaming controller" onclick="goHome()">
         <h1 class="title">ALT Games</h1>
     </div>
     <div class = "wrapper">
@@ -64,6 +64,10 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         function revealInsider() {
             var insider = document.getElementById("insider");
             insider.style.display = "block";
+        }
+
+        function goHome() {
+            window.location.href = "../index.html";
         }
     </script>
 </body>
