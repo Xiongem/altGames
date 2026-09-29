@@ -3,6 +3,9 @@
     .wrapper {
         width: 100%;
     }
+    .insider-wrapper {
+        display: flex;
+    }
     #insiderLogo {
         width: 4em;
         height: fit-content;
