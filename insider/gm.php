@@ -69,7 +69,7 @@ switch ($playerNum) {
                 <h1 class="title">Insider</h1>
             </div>
             <div id="gmNameWrapper" class="spacing sections">
-                <h2 class="title">The Game Master is:</h2>
+                <h2 class="title center">The Game Master is:</h2>
                 <h3><span id="gmName"></span></h3>
             </div>
             <div id="gmWordWrapper" class="spacing sections">
