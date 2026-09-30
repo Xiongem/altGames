@@ -52,7 +52,7 @@ p {
         width:fit-content;
         height: fit-content;
         border: none;
-        padding: 0.5em;
+        padding: 2em;
         cursor: pointer;
     }
     .insider {
