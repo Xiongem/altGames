@@ -92,7 +92,7 @@ p {
     }
 }
 
-@media only screen and (min-width: 200px) {
+@media only screen and (min-width: 700px) {
     .playerInput {
         width: 50%;
     }
