@@ -35,10 +35,12 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
             <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
             <h1 class="title">Insider</h1>
         </div>
-        <div class="timer-wrapper">
+        <div class="content-wrapper">
             <h1 class="title">Discussion Time</h1>
             <p> Who is the Insider? Discuss and vote before time is up.</p>
-            <h2 id="timer" class="timer"></h2>
+            <div class="timer-wrapper">
+                <h2 id="timer" class="timer"></h2>
+            </div>
             <div class="buttonWrapper">
                 <button id="nextButton" class="insiderBttn" onclick="nextPage()">Reveal answers</button>
             </div>
