@@ -182,8 +182,8 @@ if ($key !== false) {
         </div>
         <div id="playerWrapper">
             <h2  class="spacing"><span id="player"></span></h2>
-            <div class="confirm-wrapper">
-                <h3 class="spacing"><span id="confirm"></span></h3>
+            <div class="confirm-wrapper spacing">
+                <h3><span id="confirm"></span></h3>
             </div>
             
         </div>
