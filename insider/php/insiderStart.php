@@ -5,7 +5,7 @@ ini_set('log_errors', 'On');
 ini_set('error_log', '/path/to/php_errors.log');
 
 ob_start();
-require($_SERVER['DOCUMENT_ROOT'] . '/insider/php/insiderStart.php'); 
+require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php'); 
 dbConnect();
 
 $gameID = rand(1000,9999);
