@@ -37,6 +37,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
         </div>
         <div class="content-wrapper">
             <h1 class="title">Question Time</h1>
+            <p class="center"> Ask yes or no questions to figure out the secret word.</p>
             <div class="timer-wrapper">
                 <h2 id="timer" class="timer"></h2>
             </div>
