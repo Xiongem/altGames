@@ -96,7 +96,7 @@ dbConnect();
                 </div>
             </div>
             <div class="buttonWrapper">
-                <button class="insiderBttn" type="submit"><p>Start</p></button>
+                <button class="insiderBttn" type="submit">Start</button>
             </div>
         </form>
     </div>
