@@ -47,7 +47,8 @@ p {
         align-items: center;
         background-color: #004122;
         color: #f6f0ff;
-        border-radius: 8px;
+        font-size: 26px;
+        border-radius: 16px;
         /* width: 4em; */
         width:fit-content;
         height: fit-content;
