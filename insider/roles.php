@@ -183,10 +183,15 @@ if ($key !== false) {
         <div id="playerWrapper">
             <h2  class="spacing"><span id="player"></span></h2>
             <h3 class="spacing"><span id="confirm"></span></h3>
+            
+        </div>
+        <div class="buttonWrapper spacing">
             <button id="showRole" class="insiderBttn" onclick="showRole()">Show Role</button>
         </div>
-        <div class="buttonWrapper">
+        <div class="buttonWrapper spacing">
             <button id="nextPlayer" class="insiderBttn" onclick="displayPlayer();">Next Player</button>
+        </div>
+        <div class="buttonWrapper spacing">
             <button id="start" class="insiderBttn" onclick="nextPage()">Start!</button>
         </div>
     </div>
