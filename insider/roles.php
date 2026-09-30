@@ -182,7 +182,9 @@ if ($key !== false) {
         </div>
         <div id="playerWrapper">
             <h2  class="spacing"><span id="player"></span></h2>
-            <h3 class="spacing"><span id="confirm"></span></h3>
+            <div class="confirm-wrapper">
+                <h3 class="spacing"><span id="confirm"></span></h3>
+            </div>
             
         </div>
         <div class="buttonWrapper spacing">
