@@ -4,29 +4,29 @@
 body {
     background-color: #f6f0ff;
 }
-h1 {
-    font-size: 40px;
-}
-h2 {
-    font-size: 36px;
-}
-h3 {
-    font-size: 32px;
-}
-h4 {
-    font-size: 28px;
-}
-h5 {
-    font-size: 24px;
-}
-h6, label {
-    font-size: 20px;
-}
-p {
-    font-size: 16px;
-}
 
 @media only screen and (min-width: 200px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    h6, label {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
     .center {
         display: flex;
         justify-content: center;
@@ -93,6 +93,27 @@ p {
 }
 
 @media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 46px;
+    }
+    h3 {
+        font-size: 42px;
+    }
+    h4 {
+        font-size: 38px;
+    }
+    h5 {
+        font-size: 34px;
+    }
+    h6, label {
+        font-size: 30px;
+    }
+    p {
+        font-size: 26px;
+    }
     .playerInput {
         width: 50%;
     }
