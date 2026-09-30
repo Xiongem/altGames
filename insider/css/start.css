@@ -87,7 +87,9 @@
 }
 
 @media only screen and (min-width: 700px) {
-
+    #guessExplain {
+        width: 15em;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
