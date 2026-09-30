@@ -5,4 +5,7 @@
         align-items: center;
         width: 85%;
     }
+    .answers-wrapper {
+        margin-bottom: 2em;
+    }
 }
