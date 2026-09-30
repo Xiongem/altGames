@@ -24,7 +24,7 @@ dbConnect();
 <body>
     <?= makeNav() ?>
     <div class="wrapper">
-        <form method="post" action="../php/insiderStart.php" class="wrapper">
+        <form method="post" action="/insider/php/insiderStart.php" class="wrapper">
             <div class="insider-wrapper">
                 <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
                 <h1 class="title">Insider</h1>
