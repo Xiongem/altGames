@@ -27,7 +27,7 @@ $stmt -> execute();
 
 
 switch ($players) {
-    case '4':
+    case 4:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4) VALUES (?, ?, ?, ?, ?)");
             $stmt->bind_param("issss",
                                 $gameID,
@@ -37,7 +37,7 @@ switch ($players) {
                                 $_POST["gameplayer4"]);
         break;
 
-    case '5':
+    case 5:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5) VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("isssss",
                                 $gameID,
@@ -48,7 +48,7 @@ switch ($players) {
                                 $_POST["gameplayer5"]);
         break;
 
-    case '6':
+    case 6:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5, player6) VALUES (?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("issssss",
                                 $gameID,
@@ -60,7 +60,7 @@ switch ($players) {
                                 $_POST["gameplayer6"]);
         break;
 
-    case '7':
+    case 7:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5, player6, player7) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("isssssss",
                                 $gameID,
@@ -73,7 +73,7 @@ switch ($players) {
                                 $_POST["gameplayer7"]);
         break;
 
-    case '8':
+    case 8:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5, player6, player7, player8) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("issssssss",
                                 $gameID,
@@ -87,7 +87,7 @@ switch ($players) {
                                 $_POST["gameplayer8"]);
         break;
 
-    case '9':
+    case 9:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5, player6, player7, player8) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("issssssss",
                                 $gameID,
@@ -102,7 +102,7 @@ switch ($players) {
                                 $_POST["gameplayer9"]);
         break;
 
-    case '10':
+    case 10:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5, player6, player7, player8) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("issssssss",
                                 $gameID,
@@ -118,7 +118,7 @@ switch ($players) {
                                 $_POST["gameplayer10"]);
         break;
     
-    case '11':
+    case 11:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5, player6, player7, player8) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("issssssss",
                                 $gameID,
@@ -135,7 +135,7 @@ switch ($players) {
                                 $_POST["gameplayer11"]);
         break;
 
-    case '12':
+    case 12:
         $stmt = $_SESSION["conn"] -> prepare("INSERT INTO players (gameID, player1, player2, player3, player4, player5, player6, player7, player8) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("issssssss",
                                 $gameID,
