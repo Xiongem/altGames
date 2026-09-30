@@ -220,7 +220,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p1 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -231,7 +231,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p2 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -242,7 +242,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p3 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -253,7 +253,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p4 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -264,7 +264,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p5 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -275,7 +275,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p6 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -286,7 +286,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p7 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -297,7 +297,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p8 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -308,7 +308,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p9 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -319,7 +319,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p10 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -330,7 +330,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p11 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
@@ -341,7 +341,7 @@ if ($key !== false) {
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p12 ?>";
                             //begin post method
-                            $.post("../php/insiderInsider.php", {
+                            $.post("/insider/php/insiderInsider.php", {
                                 //DATA
                                 gameID: gameID,
                                 insider: insider
