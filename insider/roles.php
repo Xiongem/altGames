@@ -187,8 +187,6 @@ if ($key !== false) {
         </div>
         <div class="buttonWrapper spacing">
             <button id="showRole" class="insiderBttn" onclick="showRole()">Show Role</button>
-        </div>
-        <div class="buttonWrapper spacing">
             <button id="nextPlayer" class="insiderBttn" onclick="displayPlayer();">Next Player</button>
         </div>
         <div class="buttonWrapper spacing">
