@@ -77,6 +77,76 @@ switch ($playerNum) {
                     $p8 = $game["player8"];
                 $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8];
         break;
+
+    case '9':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9];
+        break;
+
+    case '10':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                    $p10 = $game["player10"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10];
+        break;
+
+    case '11':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                    $p10 = $game["player10"];
+                    $p11 = $game["player11"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11];
+        break;
+
+    case '12':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                    $p10 = $game["player10"];
+                    $p11 = $game["player11"];
+                    $p12 = $game["player12"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11, $p12];
+        break;
 }
 $key = array_search($gmName, $players);
 
@@ -106,7 +176,10 @@ if ($key !== false) {
 <body onload="displayPlayer()">
     <?= makeNav() ?>
     <div class="wrapper">
-        <h1 class="title">Insider</h1>
+        <div class="insider-wrapper">
+            <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
+            <h1 class="title">Insider</h1>
+        </div>
         <div id="playerWrapper">
             <h2  class="spacing"><span id="player"></span></h2>
             <h3 class="spacing"><span id="confirm"></span></h3>
@@ -218,6 +291,50 @@ if ($key !== false) {
                             //assign values
                             var gameID = <?= $gameID ?>;
                             var insider = "<?= $p8 ?>";
+                            //begin post method
+                            $.post("../php/insiderInsider.php", {
+                                //DATA
+                                gameID: gameID,
+                                insider: insider
+                            });
+                            break;
+                        case '<?= $p9 ?>':
+                            //assign values
+                            var gameID = <?= $gameID ?>;
+                            var insider = "<?= $p9 ?>";
+                            //begin post method
+                            $.post("../php/insiderInsider.php", {
+                                //DATA
+                                gameID: gameID,
+                                insider: insider
+                            });
+                            break;
+                        case '<?= $p10 ?>':
+                            //assign values
+                            var gameID = <?= $gameID ?>;
+                            var insider = "<?= $p10 ?>";
+                            //begin post method
+                            $.post("../php/insiderInsider.php", {
+                                //DATA
+                                gameID: gameID,
+                                insider: insider
+                            });
+                            break;
+                        case '<?= $p11 ?>':
+                            //assign values
+                            var gameID = <?= $gameID ?>;
+                            var insider = "<?= $p11 ?>";
+                            //begin post method
+                            $.post("../php/insiderInsider.php", {
+                                //DATA
+                                gameID: gameID,
+                                insider: insider
+                            });
+                            break;
+                        case '<?= $p12 ?>':
+                            //assign values
+                            var gameID = <?= $gameID ?>;
+                            var insider = "<?= $p12 ?>";
                             //begin post method
                             $.post("../php/insiderInsider.php", {
                                 //DATA

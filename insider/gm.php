@@ -40,6 +40,30 @@ switch ($playerNum) {
             $result = $_SESSION["conn"]->query($sql);
                 $game = $result->fetch_assoc();
         break;
+
+    case '9':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+    
+    case '10':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9, player10 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+
+    case '11':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
+
+    case '12':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+        break;
 }
 ?>
 <!DOCTYPE html>
