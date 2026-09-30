@@ -52,7 +52,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                     </div>
             </div>
         </div>
-        <div class="end-wrapper">
+        <div id="playAgain" class="end-wrapper">
             <h1 class="title center">Play again?</h1>
                 <div class="buttonWrapper">
                     <button class="insiderBttn" id="playAgain" onclick="window.location.href='/insider/start.php'">RESTART</button>
@@ -68,6 +68,9 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         function revealInsider() {
             var insider = document.getElementById("insider");
             insider.style.display = "block";
+
+            var playAgain = document.getElementById("playAgain");
+            playAgain.style.display = "flex";
         }
     </script>
 </body>

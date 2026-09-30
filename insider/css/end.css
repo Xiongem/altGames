@@ -19,4 +19,7 @@
         height: 3em;
         margin-bottom: 2em;
     }
+    #playAgain {
+        display: none;
+    }
 }
