@@ -31,6 +31,10 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
 <body>
     <?= makeNav() ?>
     <div class="wrapper">
+        <div class="insider-wrapper">
+            <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
+            <h1 class="title">Insider</h1>
+        </div>
         <div class="timer-wrapper">
             <h1 class="title">Discussion Time</h1>
             <p> Who is the Insider? Discuss and vote before time is up.</p>
