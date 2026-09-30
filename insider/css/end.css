@@ -19,6 +19,9 @@
         height: 3em;
         margin-bottom: 2em;
     }
+    .insiderBttn {
+        margin-bottom: 1em;
+    }
     #playAgain {
         display: none;
     }
