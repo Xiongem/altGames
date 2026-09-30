@@ -35,7 +35,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
             <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
             <h1 class="title">Insider</h1>
         </div>
-        <div class="timer-wrapper">
+        <div class="content-wrapper">
             <h1 class="title">Question Time</h1>
             <div class="timer-wrapper">
                 <h2 id="timer" class="timer"></h2>
