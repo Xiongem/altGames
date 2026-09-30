@@ -14,7 +14,7 @@
     #insiderLogo {
         width: 4em;
         height: fit-content;
-        margin-right: 1em;
+        margin: 0.5em 1em 0 0;
     }
     .selectWrapper {
         display: flex;
