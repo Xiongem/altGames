@@ -37,7 +37,9 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
         </div>
         <div class="timer-wrapper">
             <h1 class="title">Question Time</h1>
-            <h2 id="timer" class="timer"></h2>
+            <div class="timer-wrapper">
+                <h2 id="timer" class="timer"></h2>
+            </div>
             <div class="buttonWrapper">
                 <button id="nextButton" class="insiderBttn" onclick="nextPage()">Discussion Time</button>
             </div>

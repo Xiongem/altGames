@@ -1,5 +1,10 @@
 /** SMALL PHONES*/
 @media only screen and (min-width: 200px) {
+    .timer-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #nextButton {
         display: none;
     }
