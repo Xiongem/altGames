@@ -61,7 +61,7 @@
     .playerInput {
         width: 70%;
         height: 2.5em;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
     .options {
         display: flex;
