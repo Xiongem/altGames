@@ -347,11 +347,15 @@ if ($key !== false) {
                 submitInsider();
                     
                 $("#confirm").text("Your are the Insider. The secret word is " + gmWord);
-                document.getElementById("confirm").style.color = "red";
+                var confirm = document.getElementById("confirm");
+                confirm.style.display = "flex";
+                confirm.style.color = "red";
             } else {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("You are NOT the Insider.");
-                document.getElementById("confirm").style.color = "black";
+                var confirm = document.getElementById("confirm");
+                confirm.style.display = "flex";
+                confirm.style.color = "black";
             }
             gameplayers[i++];
 
