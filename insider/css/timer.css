@@ -5,6 +5,9 @@
         justify-content: center;
         align-items: center;
     }
+    .timer {
+        text-align: center;
+    }
     #nextButton {
         display: none;
     }
