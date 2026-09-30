@@ -181,7 +181,7 @@ if ($key !== false) {
             <h1 class="title">Insider</h1>
         </div>
         <div id="playerWrapper">
-            <h2  class="spacing"><span id="player"></span></h2>
+            <h2><span id="player"></span></h2>
             <div class="confirm-wrapper spacing">
                 <h3><span id="confirm"></span></h3>
             </div>
