@@ -42,11 +42,6 @@
         align-items: center;
         width: 100%;
     }
-    .playerInput {
-        width: 70%;
-        height: 2.5em;
-        margin-bottom: 1em;
-    }
     .options {
         display: flex;
         justify-content: space-evenly;
