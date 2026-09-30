@@ -12,4 +12,10 @@
         width: 100%;
         margin-bottom: 4em;
     }
+    .reveal-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5em;
+    }
 }

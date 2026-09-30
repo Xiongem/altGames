@@ -35,14 +35,18 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         <div class="answers-wrapper">
             <div class="end-wrapper">
                 <h1 class="title center">The Secret Word was:</h1>
-                <h2 class="insider" id="gmword"><?= $gmWord ?></h2>
+                <div class="reveal-wrapper">
+                    <h2 class="insider" id="gmword"><?= $gmWord ?></h2>
+                </div>
                     <div class="buttonWrapper">
                         <button class="insiderBttn" onclick="revealGmWord()" >Reveal answer</button>
                     </div>
             </div>
             <div class="end-wrapper">
                 <h1 class="title center">The Insider was:</h1>
-                <h2 class="insider" id="insider"><?= $insider ?></h2>
+                <div class="reveal-wrapper">
+                    <h2 class="insider" id="insider"><?= $insider ?></h2>
+                </div>
                     <div class="buttonWrapper">
                         <button class="insiderBttn" onclick="revealInsider()">Reveal answer</button>
                     </div>
