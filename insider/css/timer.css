@@ -17,6 +17,7 @@
         background-color: #d9d9d9;
         border: solid 2px #004122;
         border-radius: 8px;
+        padding: 0.5em;
     }
     #nextButton {
         display: none;
