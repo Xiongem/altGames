@@ -64,13 +64,16 @@ switch ($playerNum) {
     <?= makeNav() ?>
     <div class="wrapper">
         <form class="wrapper" method="post" action="../php/insiderGM.php">
-            <h1 class="title">Insider</h1>
+            <div class="insider-wrapper">
+                <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
+                <h1 class="title">Insider</h1>
+            </div>
             <div id="gmNameWrapper" class="spacing sections">
                 <h2 class="title">The Game Master is:</h2>
                 <h3><span id="gmName"></span></h3>
             </div>
             <div id="gmWordWrapper" class="spacing sections">
-                <h3>Game Master, please choose a word:</h3>
+                <h3 class="instructions">Game Master, please choose a word:</h3>
                 <input type="text" id="gmWord" name="gmWord" placeholder="Ex: Apple">
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
