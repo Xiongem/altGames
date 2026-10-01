@@ -120,6 +120,9 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+    .insider-wrapper {
+        margin: 0.3em 0 2em 0;
+    }
     .playerInput {
         width: 40%;
         height: 3.5em;
