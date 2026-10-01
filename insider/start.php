@@ -60,15 +60,15 @@ dbConnect();
                     </div>
                 </div>
                 <div class="options">
-                    <div>
+                    <div class="option-wrapper">
                         <input type="radio" id="twoMins" class="radio" name="guessTime" value="2">
                         <label for="twoMins">2 Minutes</label>
                     </div>
-                    <div>
+                    <div class="option-wrapper">
                         <input type="radio" id="threeMins" class="radio" name="guessTime" value="3" checked>
                         <label for="threeMins">3 Minutes</label>
                     </div>
-                    <div>
+                    <div class="option-wrapper">
                         <input type="radio" id="fiveMins" class="radio" name="guessTime" value="5">
                         <label for="fiveMins">5 Minutes</label>
                     </div>
@@ -85,15 +85,15 @@ dbConnect();
                     </div>
                 </div>
                 <div class="options">
-                    <div>
+                    <div class="option-wrapper">
                         <input type="radio" id="oneMins" class="radio" name="discussTime" value="1">
                         <label for="oneMins">1 Minute</label>
                     </div>
-                    <div>
+                    <div class="option-wrapper">
                         <input type="radio" id="twoMins" class="radio" name="discussTime" value="2">
                         <label for="twoMins">2 Minutes</label>
                     </div>
-                    <div>
+                    <div class="option-wrapper">
                         <input type="radio" id="threeMins" class="radio" name="discussTime" value="3" checked>
                         <label for="threeMins">3 Minutes</label>
                     </div>

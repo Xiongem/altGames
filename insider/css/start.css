@@ -48,6 +48,12 @@
         width: 100%;
         margin-top: 1em;
     }
+    .option-wrapper {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+    }
     .radio {
         accent-color: #004122;
         cursor: pointer;
