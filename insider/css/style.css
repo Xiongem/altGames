@@ -120,6 +120,9 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+    .wrapper {
+        margin-bottom: 1em;
+    }
     .insider-wrapper {
         margin: 0.3em 0 2em 0;
     }
