@@ -31,9 +31,13 @@
 }
 
 @media only screen and (min-width: 700px) {
-
+    .end-wrapper {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-
+    .end-wrapper {
+            width: 40%;
+        }
 }
