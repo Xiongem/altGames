@@ -33,7 +33,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
     <?= makeNav() ?>
     <div class = "wrapper">
         <div class="answers-wrapper">
-            <div class="end-wrapper">
+            <div class="end-wrapper" id="top">
                 <h1 class="title center">The Secret Word was:</h1>
                 <div class="reveal-wrapper">
                     <h2 class="insider" id="gmword"><?= $gmWord ?></h2>

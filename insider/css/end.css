@@ -5,6 +5,9 @@
         align-items: center;
         width: 85%;
     }
+    #top {
+        border-bottom: solid 2px #004122;
+    }
     .answers-wrapper {
         display: flex;
         flex-direction: column;
