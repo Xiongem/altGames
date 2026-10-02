@@ -189,7 +189,7 @@ if ($key !== false) {
         </div>
         <div class="buttonWrapper spacing">
             <button id="showRole" class="insiderBttn" onclick="showRole()">Show Role</button>
-            <button id="nextPlayer" class="insiderBttn" onclick="displayPlayer();">Next Player</button>
+            <button id="nextPlayer" class="insiderBttn" onclick="nextPlayer();">Next Player</button>
         </div>
         <div class="buttonWrapper spacing">
             <button id="start" class="insiderBttn" onclick="nextPage()">Start!</button>
@@ -198,6 +198,7 @@ if ($key !== false) {
     <script type='text/javascript'>
         function showRole() {
             document.getElementById("confirm").style.display = "flex";
+            document.getElementById("nextPlayer").style.display = "flex";
         }
 
         //* PHP Session variables to js variables here
@@ -206,8 +207,9 @@ if ($key !== false) {
 
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
         var i = 0;
-        function displayPlayer() {
+        function nextPlayer() {
             document.getElementById("confirm").style.display = "none";
+            document.getElementById("nextPlayer").style.display = "none";
 
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i]);
