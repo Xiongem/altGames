@@ -180,7 +180,7 @@ if ($key !== false) {
             <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
             <h1 class="title">Insider</h1>
         </div>
-        <div id="playerWrapper  spacing">
+        <div id="playerWrapper" class="spacing">
             <h2><span id="player"></span></h2>
             <div class="confirm-wrapper">
                 <h3><span id="confirm"></span></h3>
