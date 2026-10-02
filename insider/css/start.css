@@ -57,6 +57,7 @@
     .radio {
         accent-color: #004122;
         cursor: pointer;
+        margin: 0 0.5em;
     }
     #guessExplain, #discussExplain {
         display: none;
