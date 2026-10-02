@@ -62,7 +62,7 @@
     #guessExplain, #discussExplain {
         display: none;
     }
-    #guessExplain {
+    #guessImg {
         position: relative;
     }
     #guessImg:hover #guessExplain {
@@ -72,6 +72,9 @@
         align-items: center;
         width: 9em;
         right: 0;
+    }
+    #discussImg {
+        position: relative;
     }
     #discussImg:hover #discussExplain {
         position: absolute;
