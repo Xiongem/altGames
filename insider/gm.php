@@ -87,7 +87,7 @@ switch ($playerNum) {
 <body>
     <?= makeNav() ?>
     <div class="wrapper">
-        <form class="wrapper" method="post" action="/insider/php/updateGM.php">
+        <form class="wrapper" method="post" action="/insider/php/insiderGM.php">
             <div class="insider-wrapper">
                 <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
                 <h1 class="title">Insider</h1>
@@ -114,7 +114,7 @@ switch ($playerNum) {
 
             var gameID = <?= $gameID ?>;
             //begin post method
-            $.post("../php/updateGM.php", {
+            $.post("/insider/php/updateGM.php", {
                 //DATA
                 gameID: gameID,
                 gmName: randomPlayer
