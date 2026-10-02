@@ -351,7 +351,7 @@ if ($key !== false) {
                 }
                 submitInsider();
                     
-                $("#confirm").text("Your are the Insider. The secret word is " + gmWord);
+                $("#confirm").text("You are the Insider. The secret word is " + gmWord);
                 var confirm = document.getElementById("confirm").style.color = "red";
             } else {
                 $("#player").text(gameplayers[i]);
