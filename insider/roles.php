@@ -199,6 +199,7 @@ if ($key !== false) {
         function showRole() {
             document.getElementById("confirm").style.display = "flex";
             document.getElementById("nextPlayer").style.display = "flex";
+            document.getElementById("showRole").style.display = "none";
         }
 
         //* PHP Session variables to js variables here
@@ -210,6 +211,7 @@ if ($key !== false) {
         function nextPlayer() {
             document.getElementById("confirm").style.display = "none";
             document.getElementById("nextPlayer").style.display = "none";
+            document.getElementById("showRole").style.display = "flex";
 
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i]);
