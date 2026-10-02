@@ -94,7 +94,7 @@
 }
 
 @media only screen and (min-width: 700px) {
-    #guessExplain {
+    #guessImg:hover #guessExplain {
         width: 15em;
     }
 }
