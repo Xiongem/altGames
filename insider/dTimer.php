@@ -41,6 +41,10 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
             <div class="timer-wrapper">
                 <h2 id="timer" class="timer"></h2>
             </div>
+            <div class="skip-wrapper">
+                <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
+
+            </div>
             <div class="buttonWrapper">
                 <button id="nextButton" class="insiderBttn" onclick="nextPage()">Reveal answers</button>
             </div>
