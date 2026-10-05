@@ -65,7 +65,9 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
                 if (--timer < 0) {
                     display.textContent = "Time is up!";
                     var nextButton = document.getElementById("nextButton");
+                    var skipButton = document.getElementById("skipButton");
                     nextButton.style.display = "block";
+                    skipButton.style.display = "none";
                 }
             }, 1000);
         }
