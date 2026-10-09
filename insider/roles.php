@@ -199,7 +199,7 @@ if ($key !== false) {
     </div>
     <script type='text/javascript'>
         function showRole() {
-            document.getElementById("confirm").style.display = "flex";
+            document.getElementById("contentWrapper").style.display = "flex";
             document.getElementById("nextPlayer").style.display = "flex";
             document.getElementById("showRole").style.display = "none";
         }
@@ -211,7 +211,7 @@ if ($key !== false) {
         const insider = gameplayers[Object.keys(gameplayers)[Math.floor(Math.random() * Object.keys(gameplayers).length)]];
         var i = 0;
         function nextPlayer() {
-            document.getElementById("confirm").style.display = "none";
+            document.getElementById("contentWrapper").style.display = "none";
             document.getElementById("nextPlayer").style.display = "none";
             document.getElementById("showRole").style.display = "flex";
 
