@@ -183,7 +183,9 @@ if ($key !== false) {
         <div id="playerWrapper" class="spacing">
             <h2><span id="player"></span></h2>
             <div class="confirm-wrapper">
-                <h3><span id="confirm"></span></h3>
+                <div class="content-wrapper" id="contentWrapper">
+                <h3><span id="confirm"></span><span id="word"></span></h3>
+                </div>
             </div>
             
         </div>
@@ -215,7 +217,7 @@ if ($key !== false) {
 
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i]);
-                $("#confirm").text("you are the Insider.");
+                // $("#confirm").text("you are the Insider.");
                 function submitInsider() {
                     var insider = gameplayers[i];
                     switch (insider) {
@@ -355,8 +357,11 @@ if ($key !== false) {
                 }
                 submitInsider();
                     
-                $("#confirm").text("You are the Insider. The secret word is " + gmWord);
-                var confirm = document.getElementById("confirm").style.color = "red";
+                $("#confirm").text("You are the Insider. The secret word is: ");
+                $("#word").text(gmWord);
+                var confirm = document.getElementById("confirm").style.color = "black";
+                var word = document.getElementById("word").style.color = "red";
+                word.style.fontWeight = "bold";
             } else {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("You are NOT the Insider.");
