@@ -30,8 +30,14 @@
         border: solid 2px #004122;
         border-radius: 8px;
     }
-    #confirm {
+    .contentWrapper {
         display: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #confirm {
+        display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
