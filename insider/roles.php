@@ -361,7 +361,6 @@ if ($key !== false) {
                 $("#word").text(gmWord);
                 var confirm = document.getElementById("confirm").style.color = "black";
                 var word = document.getElementById("word").style.color = "red";
-                word.style.fontWeight = "bold";
             } else {
                 $("#player").text(gameplayers[i]);
                 $("#confirm").text("You are NOT the Insider.");
