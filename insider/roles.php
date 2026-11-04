@@ -191,11 +191,11 @@ if ($key !== false) {
         </div>
         <div class="buttonWrapper spacing">
             <button id="showRole" class="insiderBttn" onclick="showRole()">
-                <ion-icon name="eye-outline"></ion-icon>
+                <ion-icon class="icons" name="eye-outline"></ion-icon>
                 Show Role
             </button>
             <button id="nextPlayer" class="insiderBttn" onclick="nextPlayer();">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
+                <ion-icon class="icons" name="arrow-forward-outline"></ion-icon>
                 Next Player
             </button>
         </div>
