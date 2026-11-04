@@ -86,16 +86,16 @@ dbConnect();
                 </div>
                 <div class="options">
                     <div class="option-wrapper">
-                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="1">
-                        <label for="oneMins">1 Minute</label>
+                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="3">
+                        <label for="oneMins">3 Minute</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="twoMins" class="radio" name="discussTime" value="2">
-                        <label for="twoMins">2 Minutes</label>
+                        <input type="radio" id="twoMins" class="radio" name="discussTime" value="5" checked>
+                        <label for="twoMins">5 Minutes</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="3" checked>
-                        <label for="threeMins">3 Minutes</label>
+                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="7">
+                        <label for="threeMins">7 Minutes</label>
                     </div>
                 </div>
             </div>
