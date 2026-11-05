@@ -102,7 +102,7 @@ switch ($playerNum) {
                 <span id="gmWordError" class="error"></span>
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
-            <button class="insiderBttn" onclick="checkContent()">Submit</button>
+            <div class="insiderBttn" onclick="checkContent()">Submit</div>
         </form>
     </div>
     <script type='text/javascript'>
