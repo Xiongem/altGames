@@ -377,14 +377,11 @@ if ($key !== false) {
 
             if (i == gameplayers.length) {
                 i = 0;
-                document.getElementById("showRole").setAttribute("onclick", "javascript: showStart()");
+                document.getElementById("showRole").setAttribute("onclick", "showRole(); showStart();");
             }
         }
 
-        function showStart() {        
-            document.getElementById("contentWrapper").style.display = "flex";
-            document.getElementById("nextPlayer").style.display = "flex";
-            document.getElementById("showRole").style.display = "none";        
+        function showStart() {                
             var startButton = document.getElementById("start");
             startButton.style.display = "flex";
         }
