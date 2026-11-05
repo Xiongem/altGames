@@ -87,7 +87,7 @@ switch ($playerNum) {
 <body>
     <?= makeNav() ?>
     <div class="wrapper">
-        <form class="wrapper" method="post" action="/insider/php/insiderGM.php">
+        <form class="wrapper">
             <div class="insider-wrapper">
                 <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
                 <h1 class="title">Insider</h1>
@@ -111,6 +111,14 @@ switch ($playerNum) {
             if ($("#gmWord").val() === "") {
                 $("#gmWordError").text("Please enter a word before submitting.");
                 return false;
+            }else {
+                var gameID = <?= $gameID ?>;
+                var gmWord = $("#gmWord").val();
+                $.post("/insider/php/insiderGM.php", {
+                    //DATA
+                    gameID: gameID,
+                    gmWord: gmWord
+                });
             }
         }
         function pullGM() {
