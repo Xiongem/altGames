@@ -118,11 +118,14 @@ switch ($playerNum) {
                 $.post("/insider/php/updateGM.php", {
                     //DATA
                     gameID: gameID,
-                    gmName: randomPlayer
+                    gmName: randomPlayer,
+                    success:function(){
+                        window.location.href = "/insider/roles.php?gameID=<?= $gameID ?>";
+                    }
                 });
             }
         pullGM();
-        
+
         function checkContent() {
             if ($("#gmWord").val() === "") {
                 $("#gmWordError").text("Please enter a word before submitting.");

@@ -10,7 +10,7 @@ $stmt = $_SESSION["conn"] -> prepare("UPDATE games SET gmWord=? WHERE gameID=$ga
                             $_POST["gmWord"]);
 
 if ($stmt -> execute()) {
-    header("Location: /insider/roles.php?gameID=$gameID");
+    // header("Location: /insider/roles.php?gameID=$gameID");
     exit;
 } else {
     die("an unexpected error occured");
