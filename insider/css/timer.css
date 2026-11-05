@@ -15,8 +15,8 @@
     .timer {
         text-align: center;
         font-size: 100px;
-        /* min-height: 8em;
-        min-width: 12em; */
+        /* min-height: 8em; */
+        min-width: 12em;
         background-color: #d9d9d9;
         border: solid 2px #004122;
         border-radius: 8px;
