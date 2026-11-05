@@ -118,10 +118,7 @@ switch ($playerNum) {
                 $.post("/insider/php/updateGM.php", {
                     //DATA
                     gameID: gameID,
-                    gmName: randomPlayer,
-                    success:function(){
-                        window.location.href = "/insider/roles.php?gameID=<?= $gameID ?>";
-                    }
+                    gmName: randomPlayer
                 });
             }
         pullGM();
@@ -136,7 +133,10 @@ switch ($playerNum) {
                 $.post("/insider/php/insiderGM.php", {
                     //DATA
                     gameID: gameID,
-                    gmWord: gmWord
+                    gmWord: gmWord,
+                    success:function() {
+                        window.location.href = "/insider/roles.php?gameID=<?= $gameID ?>";
+                    }
                 });
             }
         }
