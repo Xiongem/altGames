@@ -377,7 +377,7 @@ if ($key !== false) {
 
             if (i == gameplayers.length) {
                 i = 0;
-                document.getElementById("showRole").setAttribute("onclick", "javascript: showRole(); showStart();");
+                document.getElementById("showRole").setAttribute("onclick", "showRole(); showStart();");
             }
             function showStart() {                
                 var startButton = document.getElementById("start");
