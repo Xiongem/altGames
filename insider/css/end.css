@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 85%;
+        width: fit-content;
     }
     #top {
         border-bottom: solid 2px #004122;
@@ -40,13 +40,13 @@
 }
 
 @media only screen and (min-width: 700px) {
-    .end-wrapper {
+    /* .end-wrapper {
         width: 60%;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1200px) {
-    .end-wrapper {
-            width: 40%;
-        }
+    /* .end-wrapper {
+        width: 40%;
+    } */
 }
