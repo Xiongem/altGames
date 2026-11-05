@@ -107,20 +107,6 @@ switch ($playerNum) {
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
-        function checkContent() {
-            if ($("#gmWord").val() === "") {
-                $("#gmWordError").text("Please enter a word before submitting.");
-                return false;
-            }else {
-                var gameID = <?= $gameID ?>;
-                var gmWord = $("#gmWord").val();
-                $.post("/insider/php/insiderGM.php", {
-                    //DATA
-                    gameID: gameID,
-                    gmWord: gmWord
-                });
-            }
-        }
         function pullGM() {
             let gameplayers = <?= json_encode($game); ?>;
             
@@ -136,6 +122,22 @@ switch ($playerNum) {
                 });
             }
         pullGM();
+        
+        function checkContent() {
+            if ($("#gmWord").val() === "") {
+                $("#gmWordError").text("Please enter a word before submitting.");
+                return false;
+            }else {
+                var gameID = <?= $gameID ?>;
+                var gmWord = $("#gmWord").val();
+                $.post("/insider/php/insiderGM.php", {
+                    //DATA
+                    gameID: gameID,
+                    gmWord: gmWord
+                });
+            }
+        }
+        
     </script>
 </body>
 </html>
