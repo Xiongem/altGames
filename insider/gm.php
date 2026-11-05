@@ -102,11 +102,17 @@ switch ($playerNum) {
                 <span id="gmWordError" class="error"></span>
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
-            <button class="insiderBttn" type="submit">Submit</button>
+            <button class="insiderBttn" type="submit" onclick="checkContent()">Submit</button>
         </form>
     </div>
     <script type='text/javascript'>
         //* function to pull a random player name from player array and write it in the gmName span
+        function checkContent() {
+            if ($("#gmWord").val() === "") {
+                $("#gmWordError").text("Please enter a word before submitting.");
+                return false;
+            }
+        }
         function pullGM() {
             let gameplayers = <?= json_encode($game); ?>;
             
@@ -115,10 +121,6 @@ switch ($playerNum) {
 
             var gameID = <?= $gameID ?>;
             //begin post method
-            if ($("#gmWord").val() === "") {
-                $("#gmWordError").text("Please enter a word before submitting.");
-                return false;
-            } else {
                 $.post("/insider/php/updateGM.php", {
                     //DATA
                     gameID: gameID,
