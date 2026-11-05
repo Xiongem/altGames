@@ -39,7 +39,9 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
             <h1 class="title">Question Time</h1>
             <p class="center"> Ask yes or no questions to figure out the secret word before time is up.</p>
             <div class="timer-wrapper">
-                <h2 id="timer" class="timer"></h2>
+                <h2 id="timer" class="timer">
+                    <div class="loader" id="loader"></div>
+                </h2>
             </div>
             <div class="skip-wrapper">
                 <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
@@ -73,6 +75,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
         }
 
         window.onload = function () {
+            $("loader").hide();
             var guessTime = 60 * <?= $guessTime ?>,
                 display = document.querySelector('#timer');
             startTimer(guessTime, display);
