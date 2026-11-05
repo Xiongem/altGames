@@ -379,13 +379,14 @@ if ($key !== false) {
                 i = 0;
                 document.getElementById("showRole").setAttribute("onclick", "javascript: showStart()");
             }
-            function showStart() {        
-                document.getElementById("contentWrapper").style.display = "flex";
-                document.getElementById("nextPlayer").style.display = "flex";
-                document.getElementById("showRole").style.display = "none";        
-                var startButton = document.getElementById("start");
-                startButton.style.display = "flex";
-            }
+        }
+
+        function showStart() {        
+            document.getElementById("contentWrapper").style.display = "flex";
+            document.getElementById("nextPlayer").style.display = "flex";
+            document.getElementById("showRole").style.display = "none";        
+            var startButton = document.getElementById("start");
+            startButton.style.display = "flex";
         }
 
         function nextPage() {
