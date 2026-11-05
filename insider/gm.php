@@ -135,7 +135,6 @@ switch ($playerNum) {
                     gmName: randomPlayer
                 });
             }
-        }
         pullGM();
     </script>
 </body>
