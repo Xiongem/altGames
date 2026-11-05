@@ -13,6 +13,9 @@
         margin: 2em 0 4em 0;
     }
     .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         font-size: 100px;
         /* min-height: 8em; */
