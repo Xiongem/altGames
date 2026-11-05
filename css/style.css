@@ -73,3 +73,9 @@ body {
         margin-bottom: 2em;
     }
 }
+
+.error {
+    color: var(--warning);
+    font-weight: bold;
+    margin: 0.5em 0;
+}
