@@ -81,7 +81,7 @@ body {
         font-size: 26px;
         border-radius: 16px;
         /* width: 4em; */
-        width:fit-content;
+        width:fit-content; 
         height: fit-content;
         border: none;
         padding: 1em;
