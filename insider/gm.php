@@ -99,6 +99,7 @@ switch ($playerNum) {
             <div id="gmWordWrapper" class="spacing sections">
                 <h3 class="instructions">Game Master, please choose a word:</h3>
                 <input type="text" id="gmWord" class="playerInput" name="gmWord" placeholder="Ex: Apple">
+                <span id="gmWordError" class="error"></span>
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
             <button class="insiderBttn" type="submit">Submit</button>
@@ -114,11 +115,16 @@ switch ($playerNum) {
 
             var gameID = <?= $gameID ?>;
             //begin post method
-            $.post("/insider/php/updateGM.php", {
-                //DATA
-                gameID: gameID,
-                gmName: randomPlayer
-            });
+            if ($("#gmWord").val() === "") {
+                $("#gmWordError").text("Please enter a word before submitting.");
+                return false;
+            } else {
+                $.post("/insider/php/updateGM.php", {
+                    //DATA
+                    gameID: gameID,
+                    gmName: randomPlayer
+                });
+            }
         }
         pullGM();
     </script>
