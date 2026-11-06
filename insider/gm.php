@@ -129,7 +129,7 @@ switch ($playerNum) {
 
         //setup before functions
         var typingTimer;                //timer identifier
-        var doneTypingInterval = 2000;  //time in ms, 5 seconds for example
+        var doneTypingInterval = 1500;  //time in ms, 5 seconds for example
         var $input = $('#gmWord');
 
         //on keyup, start the countdown
