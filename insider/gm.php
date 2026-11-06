@@ -109,7 +109,7 @@ switch ($playerNum) {
         var checkWord = $('#gmWord').val();
         console.log(checkWord);
         
-        if (checkWord == "") {
+        if (checkWord == false) {
             $('#sumbit').css("display", "none");
         } else {
             $('#sumbit').css("display", "flex");
