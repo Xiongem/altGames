@@ -91,7 +91,6 @@ switch ($playerNum) {
             <div class="insider-wrapper">
                 <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
                 <h1 class="title">Insider</h1>
-                <?php echo $gmWord ?>
             </div>
             <div id="gmNameWrapper" class="spacing sections">
                 <h2 class="title center">The Game Master is:</h2>
