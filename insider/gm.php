@@ -97,7 +97,7 @@ switch ($playerNum) {
                 <h3>
                     <span id="gmName"></span>
                 </h3>
-                <ion-icon class="refresh" size="large" name="refresh-circle-outline" onclick="pullGM()"></ion-icon>
+                <ion-icon class="refresh" name="refresh-circle-outline" onclick="pullGM()"></ion-icon>
             </div>
             <div id="gmWordWrapper" class="spacing sections">
                 <h3 class="instructions">Game Master, please choose a word:</h3>
