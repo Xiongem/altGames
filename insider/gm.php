@@ -111,8 +111,12 @@ switch ($playerNum) {
         
         if (checkWord == false) {
             $('#sumbit').css("display", "none");
+            console.log("hello1");
+            
         } else {
             $('#sumbit').css("display", "flex");
+            console.log("hello2");
+            
         }
         //* function to pull a random player name from player array and write it in the gmName span
         function pullGM() {
