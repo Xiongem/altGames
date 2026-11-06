@@ -9,12 +9,12 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
 $gameID = $_GET["gameID"];
+$gmName = "";
+$gmWord = "";
+$insider = "";
 
 
-$stmt = $_SESSION["conn"] -> prepare("UPDATE `games` SET `gmName` = ?, 
-                                                            `gmWord` = ?, 
-                                                            `insider` = ?
-                                                    WHERE `gameID` = ?");
+$stmt = $_SESSION["conn"] -> prepare("UPDATE `games` SET `gmName` = ?, `gmWord` = ?, `insider` = ? WHERE `gameID` = ?");
 $stmt->bind_param("sssi", 
                     $gmName,
                     $gmWord,
