@@ -76,7 +76,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
 
         function resetGame() {
             var gameID = <?= $gameID ?>;
-            $.post("/insider/php/insiderGM.php", {
+            $.post("/insider/php/endGame.php", {
                 //DATA
                 gameID: gameID,
                 success:function() {
