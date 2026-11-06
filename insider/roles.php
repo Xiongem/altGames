@@ -179,7 +179,6 @@ if ($key !== false) {
         <div class="insider-wrapper">
             <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
             <h1 class="title">Insider</h1>
-            <?php echo $gmWord ?>
         </div>
         <div id="playerWrapper" class="spacing">
             <h2><span id="player"></span></h2>
