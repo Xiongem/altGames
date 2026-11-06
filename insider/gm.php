@@ -123,15 +123,39 @@ switch ($playerNum) {
             }
         pullGM();
 
-        function checkContent() {
-            if ($("#gmWord").val() === true) {
-                $('#submit').css("display", "flex");
-                console.log("hello2");
-            }else {
-                $('#submit').css("display", "none");
-                console.log("hello1");
-            }
+        //setup before functions
+        var typingTimer;                //timer identifier
+        var doneTypingInterval = 5000;  //time in ms, 5 seconds for example
+        var $input = $('#gmWord');
+
+        //on keyup, start the countdown
+        $input.on('keyup', function () {
+            clearTimeout(typingTimer);
+            typingTimer = setTimeout(doneTyping, doneTypingInterval);
+        });
+
+        //on keydown, clear the countdown 
+        $input.on('keydown', function () {
+            clearTimeout(typingTimer);
+            $('#submit').css("display", "none");
+                console.log("goodbye");
+        });
+
+        //user is "finished typing," do something
+        function doneTyping () {
+            $('#submit').css("display", "flex");
+                console.log("hello");
         }
+
+        // function checkContent() {
+        //     if ($("#gmWord").val() === true) {
+        //         $('#submit').css("display", "flex");
+        //         console.log("hello2");
+        //     }else {
+        //         $('#submit').css("display", "none");
+        //         console.log("hello1");
+        //     }
+        // }
         
     </script>
 </body>
