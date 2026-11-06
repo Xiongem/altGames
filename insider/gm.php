@@ -98,7 +98,6 @@ switch ($playerNum) {
                     <span id="gmName"></span>
                 </h3>
                 <ion-icon class="refresh" size="large" name="refresh-circle-outline" onclick="pullGM()"></ion-icon>
-                <ion-icon name="refresh-circle-outline"></ion-icon>
             </div>
             <div id="gmWordWrapper" class="spacing sections">
                 <h3 class="instructions">Game Master, please choose a word:</h3>
@@ -162,5 +161,7 @@ switch ($playerNum) {
         // }
         
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
