@@ -106,7 +106,10 @@ switch ($playerNum) {
         </form>
     </div>
     <script type='text/javascript'>
-        if ($('#gmWord').val() == "") {
+        var checkWord = $('#gmWord').val();
+        console.log(checkWord);
+        
+        if (checkWord == "") {
             $('#sumbit').css("display", "none");
         } else {
             $('#sumbit').css("display", "flex");
