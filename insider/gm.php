@@ -110,11 +110,11 @@ switch ($playerNum) {
         console.log(checkWord);
         
         if ($('#gmWord').val() == false) {
-            $('#sumbit').css("display", "none");
+            $('#submit').css("display", "none");
             console.log("hello1");
             
         } else {
-            $('#sumbit').css("display", "flex");
+            $('#submit').css("display", "flex");
             console.log("hello2");
             
         }
