@@ -2,6 +2,10 @@
     #gmWord {
         margin-top: 1em;
     }
+    .refresh {
+        width: 3em;
+        height: 3em;
+    }
 }
 
 @media only screen and (min-width: 700px) {
