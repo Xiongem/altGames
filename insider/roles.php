@@ -5,7 +5,7 @@ dbConnect();
 
 $gameID = $_GET["gameID"];
 
-$sql = "SELECT gmWord, playerNum, gmName FROM games WHERE gameID=$gameID";
+$sql = "SELECT * FROM games WHERE gameID = $gameID";
     $result = $_SESSION["conn"]->query($sql);
         $game = $result->fetch_assoc();
             $gmWord = $game["gmWord"];
