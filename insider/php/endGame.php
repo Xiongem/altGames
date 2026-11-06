@@ -11,7 +11,7 @@ dbConnect();
 $gameID = $_POST["gameID"];
 
 
-$stmt = $_SESSION["conn"] -> prepare("DELETE `gmName`
+$stmt = $_SESSION["conn"] -> prepare("DELETE `gmName, `gmWord`, `insider` 
                                         FROM `games` 
                                         WHERE `gameID` = ?");
 $stmt->bind_param("i", 
@@ -19,7 +19,7 @@ $stmt->bind_param("i",
 
 
 if ($stmt -> execute()) {
-    // header("Location: /insider/gm.php?gameID=$gameID");
+    header("Location: /insider/gm.php?gameID=$gameID");
     exit;
 } else {
     die("an unexpected error occured");
