@@ -80,7 +80,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 //DATA
                 gameID: gameID,
                 success:function() {
-                    window.location.href = "/insider/gm.php?gameID=<?= $gameID ?>";
+                    
                 }
             });
         }

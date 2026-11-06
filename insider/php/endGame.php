@@ -19,7 +19,7 @@ $stmt->bind_param("i",
 
 
 if ($stmt -> execute()) {
-    header("Location: /insider/gm.php?gameID=$gameID");
+    // header("Location: /insider/gm.php?gameID=$gameID");
     exit;
 } else {
     die("an unexpected error occured");
