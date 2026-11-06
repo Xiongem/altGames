@@ -87,7 +87,7 @@ switch ($playerNum) {
 <body>
     <?= makeNav() ?>
     <div class="wrapper">
-        <form class="wrapper">
+        <form class="wrapper" method="post" action="/insider/php/insiderGM.php">
             <div class="insider-wrapper">
                 <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
                 <h1 class="title">Insider</h1>
@@ -102,7 +102,7 @@ switch ($playerNum) {
                 <span id="gmWordError" class="error"></span>
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
-            <div class="insiderBttn" onclick="checkContent()">Submit</div>
+            <button type="submit" class="insiderBttn" onclick="checkContent()">Submit</button>
         </form>
     </div>
     <script type='text/javascript'>
@@ -127,17 +127,6 @@ switch ($playerNum) {
             if ($("#gmWord").val() === "") {
                 $("#gmWordError").text("Please enter a word before submitting.");
                 return false;
-            }else {
-                var gameID = <?= $gameID ?>;
-                var gmWord = $("#gmWord").val();
-                $.post("/insider/php/insiderGM.php", {
-                    //DATA
-                    gameID: gameID,
-                    gmWord: gmWord,
-                    success:function() {
-                        window.location.href = "/insider/roles.php?gameID=<?= $gameID ?>";
-                    }
-                });
             }
         }
         
