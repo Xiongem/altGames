@@ -11,10 +11,14 @@ dbConnect();
 $gameID = $_GET["gameID"];
 
 
-$stmt = $_SESSION["conn"] -> prepare("DELETE `gmName`, `gmWord`, `insider` 
-                                        FROM `games` 
-                                        WHERE `gameID` = ?");
-$stmt->bind_param("i", 
+$stmt = $_SESSION["conn"] -> prepare("UPDATE `games` SET `gmName` = ?, 
+                                                            `gmWord` = ?, 
+                                                            `insider` = ?
+                                                    WHERE `gameID` = ?");
+$stmt->bind_param("sssi", 
+                    $gmName,
+                    $gmWord,
+                    $insider,
                     $gameID);
 
 
@@ -24,13 +28,3 @@ if ($stmt -> execute()) {
 } else {
     die("an unexpected error occured");
 }
-
-// $stmt = $_SESSION["conn"] -> prepare("UPDATE `games` SET `gmName` = ?, 
-//                                                             `gmWord` = ?, 
-//                                                             `insider` = ?
-//                                                     WHERE `gameID` = ?");
-// $stmt->bind_param("sssi", 
-//                     $gmName,
-//                     $gmWord,
-//                     $insider,
-//                     $gameID);
