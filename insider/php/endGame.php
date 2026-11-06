@@ -11,7 +11,7 @@ dbConnect();
 $gameID = $_GET["gameID"];
 
 
-$stmt = $_SESSION["conn"] -> prepare("DELETE `gmName, `gmWord`, `insider` 
+$stmt = $_SESSION["conn"] -> prepare("DELETE `gmName`, `gmWord`, `insider` 
                                         FROM `games` 
                                         WHERE `gameID` = ?");
 $stmt->bind_param("i", 
