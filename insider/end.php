@@ -73,6 +73,15 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
             var playAgain = document.getElementById("playAgain");
             playAgain.style.display = "flex";
         }
+
+        var gameID = <?= $gameID ?>;
+        $.post("/insider/php/insiderGM.php", {
+            //DATA
+            gameID: gameID,
+            success:function() {
+                window.location.href = "/insider/gm.php?gameID=<?= $gameID ?>";
+            }
+        });
     </script>
 </body>
 </html>

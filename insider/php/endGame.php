@@ -9,12 +9,18 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
 $gameID = $_POST["gameID"];
+$gmName = "";
+$gmWord = "";
+$insider = "";
 
-
-$stmt = $_SESSION["conn"] -> prepare("DELETE `gmName`, `gmWord`, `insider` 
-                                        FROM `games` 
-                                        WHERE `gameID` = ?");
-$stmt->bind_param("i", 
+$stmt = $_SESSION["conn"] -> prepare("UPDATE `games` SET `gmName` = ?, 
+                                                            `gmWord` = ?, 
+                                                            `insider` = ?
+                                                    WHERE `gameID` = ?");
+$stmt->bind_param("sssi", 
+                    $gmName,
+                    $gmWord,
+                    $insider,
                     $gameID);
 
 
