@@ -98,26 +98,14 @@ switch ($playerNum) {
             </div>
             <div id="gmWordWrapper" class="spacing sections">
                 <h3 class="instructions">Game Master, please choose a word:</h3>
-                <input type="text" id="gmWord" class="playerInput" name="gmWord" placeholder="Ex: Apple">
+                <input type="text" id="gmWord" class="playerInput" name="gmWord" placeholder="Ex: Apple" onchange="checkContent()">
                 <span id="gmWordError" class="error"></span>
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
-            <button id="submit" type="submit" class="insiderBttn" onclick="checkContent()">Submit</button>
+            <button id="submit" type="submit" class="insiderBttn hide">Submit</button>
         </form>
     </div>
     <script type='text/javascript'>
-        var checkWord = $('#gmWord').val();
-        console.log(checkWord);
-        
-        if ($('#gmWord').val() == false) {
-            $('#submit').css("display", "none");
-            console.log("hello1");
-            
-        } else {
-            $('#submit').css("display", "flex");
-            console.log("hello2");
-            
-        }
         //* function to pull a random player name from player array and write it in the gmName span
         function pullGM() {
             let gameplayers = <?= json_encode($game); ?>;
@@ -136,9 +124,12 @@ switch ($playerNum) {
         pullGM();
 
         function checkContent() {
-            if ($("#gmWord").val() === "") {
-                $("#gmWordError").text("Please enter a word before submitting.");
-                return false;
+            if ($("#gmWord").val() === true) {
+                $('#submit').css("display", "flex");
+                console.log("hello2");
+            }else {
+                $('#submit').css("display", "none");
+                console.log("hello1");
             }
         }
         
