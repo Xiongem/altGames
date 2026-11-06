@@ -102,10 +102,15 @@ switch ($playerNum) {
                 <span id="gmWordError" class="error"></span>
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
-            <button type="submit" class="insiderBttn" onclick="checkContent()">Submit</button>
+            <button id="submit" type="submit" class="insiderBttn" onclick="checkContent()">Submit</button>
         </form>
     </div>
     <script type='text/javascript'>
+        if ($('#gmWord').val() == "") {
+            $('#sumbit').css("display", "none");
+        } else {
+            $('#sumbit').css("display", "flex");
+        }
         //* function to pull a random player name from player array and write it in the gmName span
         function pullGM() {
             let gameplayers = <?= json_encode($game); ?>;
