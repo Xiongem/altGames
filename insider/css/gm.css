@@ -2,13 +2,14 @@
     #gmWord {
         margin-top: 1em;
     }
-    /* #gmNameWrapper {
+    #gmNameWrapper {
         position: relative;
-    } */
+    }
     .refresh {
-        /* position: absolute; */
-        width: 2em;
-        height: 2em;
+        position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
     }
 }
 
