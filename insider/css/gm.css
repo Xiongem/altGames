@@ -2,7 +2,11 @@
     #gmWord {
         margin-top: 1em;
     }
+    #gmNameWrapper {
+        position: relative;
+    }
     .refresh {
+        position: absolute;
         width: 3em;
         height: 3em;
     }
