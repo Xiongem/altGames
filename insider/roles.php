@@ -176,7 +176,6 @@ if ($key !== false) {
         function reload() {
             location.reload(true);
         }
-        reload();
     </Script>
 </head>
 <body onload="nextPlayer()">
