@@ -8,7 +8,7 @@ ob_start();
 require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
-$gameID = $_GET["gameID"];
+$gameID = $_POST["gameID"];
 $gmName = "";
 $gmWord = "";
 $insider = "";
