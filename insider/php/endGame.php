@@ -8,7 +8,7 @@ ob_start();
 require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
-$gameID = $_POST["gameID"];
+$gameID = $_GET["gameID"];
 
 
 $stmt = $_SESSION["conn"] -> prepare("DELETE `gmName, `gmWord`, `insider` 
