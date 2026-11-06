@@ -173,7 +173,10 @@ if ($key !== false) {
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <Script>
-            location.reload(true);
+        function refresh(){
+            location.reload();
+        }
+        setTimeout(refresh, 300);
     </Script>
 </head>
 <body onload="nextPlayer()">
