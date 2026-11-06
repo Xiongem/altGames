@@ -55,7 +55,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         <div id="playAgain" class="end-wrapper">
             <h1 class="title center">Play again?</h1>
                 <div class="buttonWrapper">
-                    <button class="insiderBttn" onclick="window.location.href='/insider/gm.php?gameID=<?= $gameID ?>'">SAME PLAYERS</button>
+                    <button class="insiderBttn" onclick="resetGame()">SAME PLAYERS</button>
                     <button class="insiderBttn" onclick="window.location.href='/insider/start.php'">DIFFERENT PLAYERS</button>
                 </div>
         </div>
@@ -74,14 +74,16 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
             playAgain.style.display = "flex";
         }
 
-        var gameID = <?= $gameID ?>;
-        $.post("/insider/php/insiderGM.php", {
-            //DATA
-            gameID: gameID,
-            success:function() {
-                window.location.href = "/insider/gm.php?gameID=<?= $gameID ?>";
-            }
-        });
+        function resetGame() {
+            var gameID = <?= $gameID ?>;
+            $.post("/insider/php/insiderGM.php", {
+                //DATA
+                gameID: gameID,
+                success:function() {
+                    window.location.href = "/insider/gm.php?gameID=<?= $gameID ?>";
+                }
+            });
+        }
     </script>
 </body>
 </html>
