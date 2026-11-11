@@ -30,11 +30,11 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 </head>
 <body>
     <?= makeNav() ?>
-    <audio id="timerTick"src="insider/sounds/timer.mp3" preload="auto">
-        <!-- <source > -->
+    <audio id="timerTick">
+        <source src="insider/sounds/timer.mp3" type="audio/mpeg" preload="auto">
     </audio>
-    <audio id="timerAlarm" src="insider/sounds/alarm.mp3" preload="auto">
-        <!-- <source > -->
+    <audio id="timerAlarm">
+        <source src="insider/sounds/alarm.mp3" type="audio/mpeg" preload="auto">
     </audio>
     <div class="wrapper">
         <div class="insider-wrapper">
