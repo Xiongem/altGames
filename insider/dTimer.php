@@ -76,6 +76,7 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
 
         window.onload = function () {
             $("loader").hide();
+            $("#skipButton").css("display", "flex");
             var discussTime = 60 * <?= $discussTime ?>,
                 display = document.querySelector('#timer');
             startTimer(discussTime, display);

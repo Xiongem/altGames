@@ -76,6 +76,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 
         window.onload = function () {
             $("loader").hide();
+            $("#skipButton").css("display", "flex");
             var guessTime = 60 * <?= $guessTime ?>,
                 display = document.querySelector('#timer');
             startTimer(guessTime, display);
