@@ -30,7 +30,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 </head>
 <body>
     <?= makeNav() ?>
-    <audio id="timerTick">
+    <audio id="timerTick" autoplay>
         <source src="insider/sounds/timer.mp3" type="audio/mpeg" preload="auto">
     </audio>
     <audio id="timerAlarm">
@@ -71,8 +71,8 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                 display.textContent = minutes + ":" + seconds;
 
                 if (--timer < 0) {
-                    $("#timerTick").trigger('pause');
-                    $("#timerAlarm").trigger('play');
+                    // $("#timerTick").trigger('pause');
+                    // $("#timerAlarm").trigger('play');
                     display.textContent = "Time is up!";
                     var nextButton = document.getElementById("nextButton");
                     var skipButton = document.getElementById("skipButton");
@@ -84,7 +84,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 
         window.onload = function () {
             $("loader").hide();
-            $("#timerTick").trigger('play');
+            // $("#timerTick").trigger('play');
             $("#skipButton").css("display", "flex");
             var guessTime = 60 * <?= $guessTime ?>,
                 display = document.querySelector('#timer');
