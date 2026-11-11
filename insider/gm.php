@@ -102,7 +102,7 @@ switch ($playerNum) {
             </div>
             <div id="gmWordWrapper" class="spacing sections">
                 <h3 class="instructions">Game Master, please choose a word:</h3>
-                <input type="text" id="gmWord" class="playerInput" name="gmWord" placeholder="Ex: Apple" onchange="checkContent()">
+                <input type="text" id="gmWord" class="playerInput" name="gmWord" placeholder="Ex: Apple">
                 <span id="gmWordError" class="error"></span>
                 <input type="hidden" name="gameID" value= "<?= $gameID ?>">
             </div>
