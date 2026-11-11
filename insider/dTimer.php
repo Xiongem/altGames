@@ -36,8 +36,8 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
             <h1 class="title">Insider</h1>
         </div>
         <div class="content-wrapper">
-            <h1 class="title">Discussion Time</h1>
-            <p class="center"> Who is the Insider? Discuss and vote before time is up.</p>
+            <h1 class="title">Who is the Insider?</h1>
+            <p class="center">Discuss and vote before time is up.</p>
             <div class="timer-wrapper">
                 <h2 id="timer" class="timer">
                     <div class="loader" id="loader"></div>
