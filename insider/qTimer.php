@@ -71,8 +71,8 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                 display.textContent = minutes + ":" + seconds;
 
                 if (--timer < 0) {
-                    $("#timerTick").pause();
-                    $("#timerAlarm").play();
+                    $("#timerTick").trigger('pause');
+                    $("#timerAlarm").trigger('play');
                     display.textContent = "Time is up!";
                     var nextButton = document.getElementById("nextButton");
                     var skipButton = document.getElementById("skipButton");
@@ -84,7 +84,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 
         window.onload = function () {
             $("loader").hide();
-            $("#timerTick").play();
+            $("#timerTick").trigger('play');
             $("#skipButton").css("display", "flex");
             var guessTime = 60 * <?= $guessTime ?>,
                 display = document.querySelector('#timer');
