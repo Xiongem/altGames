@@ -35,13 +35,21 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
     <?php if ($result == 1) { ?>
     <div class="popup-wrapper" id="winPopup">
         <div class="popup-content">
-            
+            <div class="close-wrapper">
+                <ion-icon name="close-outline" onclick="closePopup(1)"></ion-icon>
+            </div>
+            <h1>You Win!</h1>
+            <p> Congrats! You found the Insider!</p>
         </div>
     </div>
     <?php } else { ?>
     <div class="popup-wrapper" id="losePopup">
         <div class="popup-content">
-            
+            <div class="close-wrapper">
+                <ion-icon size="large" name="close-outline" onclick="closePopup(0)"></ion-icon>
+            </div>
+            <h1>Better luck next time...</h1>
+            <p>The Insider was too sneaky this time.</p>
         </div>
     </div>
     <?php } ?>
@@ -75,6 +83,14 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         </div>
     </div>
     <script type='text/javascript'>
+        function closePopup(name) {
+            if (name == 1) {
+                $("#winPopup").hide();
+            } else {
+                $("#losePopup").hide();
+            }
+        }
+
         function revealGmWord() {
             var gmWord = document.getElementById("gmword");
             gmWord.style.display = "block";
