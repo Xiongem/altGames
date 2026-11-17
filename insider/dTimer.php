@@ -197,9 +197,9 @@ switch ($playerNum) {
                 <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
 
             </div>
-            <div class="buttonWrapper">
+            <!-- <div class="buttonWrapper">
                 <button id="nextButton" class="insiderBttn" onclick="nextPage()">Reveal answers</button>
-            </div>
+            </div> -->
         </div>
     </div>
     <script type='text/javascript'>
@@ -235,10 +235,11 @@ switch ($playerNum) {
 
                 if (--timer < 0) {
                     display.textContent = "Time is up!";
-                    var nextButton = document.getElementById("nextButton");
-                    var skipButton = document.getElementById("skipButton");
-                    nextButton.style.display = "block";
-                    skipButton.style.display = "none";
+                    // var nextButton = document.getElementById("nextButton");
+                    // var skipButton = document.getElementById("skipButton");
+                    // nextButton.style.display = "block";
+                    // skipButton.style.display = "none";
+                    setTimeout(nextPage, 3000);
                 }
             }, 1000);
         }
@@ -252,7 +253,7 @@ switch ($playerNum) {
         };
 
         function nextPage() {
-            window.location.href = "end.php?gameID=<?= $gameID ?>";
+            window.location.href = "end.php?gameID=<?=$gameID?>&result=0";
         }
     </script>
 </body>
