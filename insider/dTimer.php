@@ -183,11 +183,11 @@ switch ($playerNum) {
                 </h2>
             </div>
             <div class="vote-wrapper">
-                <?php $players = array_diff($players, [$gmName]);
-                        print_r($players);?>
                 <select>
-                    
-                    <option class="player" id=""></option>
+                    <?php $players = array_diff($players, [$gmName]);
+                        foreach ($players as $playerName) {?>
+                    <option class="player" id="<?=$playerName?>"><?=$playerName?></option>
+                    <?php } ?>
                 </select>
             </div>
             <div class="skip-wrapper">
