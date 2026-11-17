@@ -32,6 +32,19 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
 </head>
 <body>
     <?= makeNav() ?>
+    <?php if ($result == 1) { ?>
+    <div class="popup-wrapper" id="winPopup">
+        <div class="popup-content">
+            
+        </div>
+    </div>
+    <?php } else { ?>
+    <div class="popup-wrapper" id="losePopup">
+        <div class="popup-content">
+            
+        </div>
+    </div>
+    <?php } ?>
     <div class = "wrapper">
         <div class="answers-wrapper">
             <div class="end-wrapper" id="top">
