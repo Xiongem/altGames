@@ -39,7 +39,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 <ion-icon name="close-outline" onclick="closePopup(1)"></ion-icon>
             </div>
             <h1>You Win!</h1>
-            <p> Congrats! You found the Insider!</p>
+            <h2> Congrats! You found the Insider!</h2>
         </div>
     </div>
     <?php } else { ?>
@@ -49,7 +49,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 <ion-icon id="close-icon" size="large" name="close-outline" onclick="closePopup(0)"></ion-icon>
             </div>
             <h1>Better luck next time...</h1>
-            <p>The Insider was too sneaky this time.</p>
+            <h2>The Insider was too sneaky this time.</h2>
         </div>
     </div>
     <?php } ?>
