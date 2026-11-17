@@ -100,12 +100,13 @@ dbConnect();
                 </div>
             </div>
             <div class="buttonWrapper">
-                <button class="insiderBttn" type="submit">Start</button>
+                <button class="insiderBttn hide" id="submitStart" type="submit">Start</button>
             </div>
         </form>
     </div>
     <script type='text/javascript'>
         function displayPlayers(){
+            $("#submitStart").css("display", "flex");
             let players = document.getElementById("playerNumber");
             var container = document.getElementById("showPlayers");
             while (container.hasChildNodes()) {
