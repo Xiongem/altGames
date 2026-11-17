@@ -183,12 +183,15 @@ switch ($playerNum) {
                 </h2>
             </div>
             <div class="vote-wrapper">
-                <select>
+                <h3>Choose the Insider before time runs out</h3>
+                <select id="insiderSelect" class="insiderSelect">
+                    <option class="player">Who is the Insider?</option>
                     <?php $players = array_diff($players, [$gmName]);
                         foreach ($players as $playerName) {?>
                     <option class="player" id="<?=$playerName?>"><?=$playerName?></option>
                     <?php } ?>
                 </select>
+                <div class="insiderBttn" id="insiderButton" onclick="chooseInsider()">Vote</div>
             </div>
             <div class="skip-wrapper">
                 <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
@@ -200,6 +203,25 @@ switch ($playerNum) {
         </div>
     </div>
     <script type='text/javascript'>
+        function chooseInsider() {
+            var insider = $("#insiderSelect").val();
+            var gameID = <?= $gameID ?>;
+
+            $.ajax ({
+                url: "php/chooseInsider.php",
+                method: "post",
+                data: {insider:insider,
+                    gameID:gameID},
+                success:function(result) {
+                    if (result == true) {
+                        window.location.href = "end.php?gameID=<?=$gameID?>&result=1";
+                    } else {
+                        window.location.href = "end.php?gameID=<?=$gameID?>&result=0";
+                    }
+                }
+            })
+        }
+        
         function startTimer(duration, display) {
             var timer = duration, minutes, seconds;
             setInterval(function () {

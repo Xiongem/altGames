@@ -3,6 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
 $gameID = $_GET["gameID"];
+$result = $_GET["result"];
 
 $sql = "SELECT * FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
