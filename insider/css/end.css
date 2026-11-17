@@ -60,6 +60,12 @@
         border: solid 2px #004122;
         border-radius: 8px;
     }
+    .popup-content h1 {
+        font-size: 50px;
+    }
+    .popup-content h2 {
+        font-size: 40px;
+    }
     .close-wrapper {
         position: absolute;
         right: 0;
