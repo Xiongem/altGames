@@ -45,12 +45,13 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 </h2>
             </div>
             <div class="vote-wrapper">
-                <select>
-                    <?php $stmt = "SELECT * FROM `players` WHERE gameID=$gameID"; 
+                <?php $stmt = "SELECT * FROM `players` WHERE gameID=$gameID"; 
                         $result = $_SESSION["conn"]->query($stmt);
                         $players = $result->fetch_assoc();
                         $players = array_diff($players, [$gmName]);
                         print_r($players);?>
+                <select>
+                    
                     <option class="player" id=""></option>
                 </select>
             </div>
