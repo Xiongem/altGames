@@ -9,6 +9,144 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         $Timing = $result->fetch_assoc();
         $discussTime = $Timing["discussTime"];
         $gmName = $Timing["gmName"];
+        $playerNum = $Timing["playerNum"];
+
+switch ($playerNum) {
+    case '4':
+        $sql = "SELECT player1, player2, player3, player4 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                $players = [$p1, $p2, $p3, $p4];
+        break;
+    
+    case '5':
+        $sql = "SELECT player1, player2, player3, player4, player5 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                $players = [$p1, $p2, $p3, $p4, $p5];
+        break;
+    
+    case '6':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6];
+        break;
+
+    case '7':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7];
+        break;
+
+    case '8':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8];
+        break;
+
+    case '9':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9];
+        break;
+
+    case '10':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9, player10 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                    $p10 = $game["player10"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10];
+        break;
+
+    case '11':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                    $p10 = $game["player10"];
+                    $p11 = $game["player11"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11];
+        break;
+
+    case '12':
+        $sql = "SELECT player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12 FROM players WHERE gameID=$gameID";
+            $result = $_SESSION["conn"]->query($sql);
+                $game = $result->fetch_assoc();
+                    $p1 = $game["player1"];
+                    $p2 = $game["player2"];
+                    $p3 = $game["player3"];
+                    $p4 = $game["player4"];
+                    $p5 = $game["player5"];
+                    $p6 = $game["player6"];
+                    $p7 = $game["player7"];
+                    $p8 = $game["player8"];
+                    $p9 = $game["player9"];
+                    $p10 = $game["player10"];
+                    $p11 = $game["player11"];
+                    $p12 = $game["player12"];
+                $players = [$p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11, $p12];
+        break;
+}
 ?>
 
 <!DOCTYPE html>
@@ -45,10 +183,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 </h2>
             </div>
             <div class="vote-wrapper">
-                <?php $stmt = "SELECT * FROM `players` WHERE gameID=$gameID"; 
-                        $result = $_SESSION["conn"]->query($stmt);
-                        $players = $result->fetch_assoc();
-                        $players = array_diff($players, [$gmName]);
+                <?php $players = array_diff($players, [$gmName]);
                         print_r($players);?>
                 <select>
                     
