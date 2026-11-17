@@ -43,6 +43,9 @@
         align-items: center;
         width: 100%;
     }
+    .vote-wrapper h3 {
+        text-align: center;
+    }
     .insiderSelect {
         width: 50%;
         height: 2em;
