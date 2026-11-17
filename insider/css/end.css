@@ -67,6 +67,9 @@
         padding: 0.7em;
         cursor: pointer;
     }
+    #close-icon {
+        cursor: pointer;
+    }
 }
 
 @media only screen and (min-width: 700px) {

@@ -46,7 +46,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
     <div class="popup-wrapper" id="losePopup">
         <div class="popup-content">
             <div class="close-wrapper">
-                <ion-icon size="large" name="close-outline" onclick="closePopup(0)"></ion-icon>
+                <ion-icon id="close-icon" size="large" name="close-outline" onclick="closePopup(0)"></ion-icon>
             </div>
             <h1>Better luck next time...</h1>
             <p>The Insider was too sneaky this time.</p>
