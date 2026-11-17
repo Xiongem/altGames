@@ -4,10 +4,11 @@ dbConnect();
 
 $gameID = $_GET["gameID"];
 
-$sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
+$sql = "SELECT * FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
         $Timing = $result->fetch_assoc();
         $discussTime = $Timing["discussTime"];
+        $gmName = $Timing["gmName"];
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +43,16 @@ $sql = "SELECT discussTime FROM games WHERE gameID=$gameID";
                 <h2 id="timer" class="timer">
                     <div class="loader" id="loader"></div>
                 </h2>
+            </div>
+            <div class="vote-wrapper">
+                <select>
+                    <?php $stmt = "SELECT * FROM `players` WHERE gameID=$gameID"; 
+                        $result = $_SESSION["conn"]->query($stmt);
+                        $players = $result->fetch_assoc();
+                        $players = array_diff($players, [$gmName]);
+                        print_r($players);?>
+                    <option class="player" id=""></option>
+                </select>
             </div>
             <div class="skip-wrapper">
                 <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
