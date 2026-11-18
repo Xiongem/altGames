@@ -91,7 +91,7 @@ switch ($playerNum) {
     <div class="popup-wrapper hide" id="settingsPopup">
         <div class="popup-content">
             <div class="close-wrapper">
-                <ion-icon name="close-outline" onclick="closeSettingPopup()"></ion-icon>
+                <ion-icon size="large" name="close-outline" onclick="closeSettingPopup()"></ion-icon>
             </div>
             <div class="setting-title-wrapper">
                 <h1>Settings</h1>

@@ -37,7 +37,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
     <div class="popup-wrapper" id="winPopup">
         <div class="popup-content">
             <div class="close-wrapper">
-                <ion-icon name="close-outline" onclick="closePopup('#winPopup')"></ion-icon>
+                <ion-icon size="large" name="close-outline" onclick="closePopup('#winPopup')"></ion-icon>
             </div>
             <h1 id="win">You Win!</h1>
             <h2> Congrats! You found the Insider!</h2>
