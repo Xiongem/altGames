@@ -38,31 +38,6 @@
         justify-content: center;
         align-items: center;
     }
-    .popup-wrapper {
-        position: absolute;
-        z-index: 4;
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        width: 100%;
-        height: 100%;
-        padding-top: 4em;
-    }
-    .popup-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 70%;
-        height: 50%;
-        padding: 1em;
-
-        background-color: #d9d9d9;
-        border: solid 2px #004122;
-        border-radius: 8px;
-    }
     .popup-content h1 {
         font-size: 50px;
         margin-bottom: 0.5em;
@@ -75,16 +50,6 @@
     }
     #lose {
         color: rgb(160, 56, 0);
-    }
-    .close-wrapper {
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 0.7em;
-        cursor: pointer;
-    }
-    #close-icon {
-        cursor: pointer;
     }
 }
 
