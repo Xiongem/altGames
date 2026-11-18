@@ -15,6 +15,7 @@
     }
     .setting-title-wrapper {
         text-align: center;
+        text-decoration: underline;
         margin-bottom: 1em;
     }
     .options {
