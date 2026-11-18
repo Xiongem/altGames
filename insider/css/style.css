@@ -72,21 +72,84 @@ body {
         border-radius: 8px;
         padding: 0 8px;
     }
-    .insiderBttn {
-        /* display: flex; */
+    /* .insiderBttn {
         justify-content: center;
         align-items: center;
         background-color: #004122;
         color: #f6f0ff;
         font-size: 26px;
         border-radius: 16px;
-        /* width: 4em; */
         width:fit-content;
         height: fit-content;
         border: none;
         padding: 1em;
         cursor: pointer;
+    } */
+    /* From Uiverse.io by cssbuttons-io */ 
+    .insiderBttn {
+        appearance: button;
+        background-color: #004122;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 13px 19px;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transform: translateZ(0);
+        transition: filter .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
     }
+
+    .insiderBttn:after {
+        background-clip: padding-box;
+        background-color: #004122;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .insiderBttn:main, .insiderBttn:focus {
+        user-select: auto;
+    }
+
+    .insiderBttn:hover:not(:disabled) {
+        filter: brightness(1.1);
+    }
+
+    .insiderBttn:disabled {
+        cursor: auto;
+    }
+
+    .insiderBttn:active:after {
+        border-width: 0 0 0px;
+    }
+
+    .insiderBttn:active {
+        padding-bottom: 10px;
+    }
+    
     .insider {
         display: none;
     }
