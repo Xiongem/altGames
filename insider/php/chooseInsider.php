@@ -12,7 +12,7 @@ $sql = "SELECT `insider` FROM `games` WHERE `gameID` = $gameID";
         $gameInsider = $vote["insider"];
 
 if ($gameInsider == $insider) {
-    return 1;
+    1;
 } else {
-    return 0;
+    0;
 }
