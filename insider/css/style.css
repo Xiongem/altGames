@@ -88,7 +88,7 @@ body {
     /* From Uiverse.io by cssbuttons-io */ 
     .insiderBttn {
         appearance: button;
-        background-color: #036234;
+        background-color: #004122;
         border: solid transparent;
         border-radius: 16px;
         border-width: 0 0 4px;
@@ -117,7 +117,7 @@ body {
 
     .insiderBttn:after {
         background-clip: padding-box;
-        background-color: #004122;
+        background-color: #036234;
         border: solid transparent;
         border-radius: 16px;
         border-width: 0 0 4px;
