@@ -69,6 +69,12 @@
     .popup-content h2 {
         font-size: 40px;
     }
+    #win {
+        color: #036234;
+    }
+    #lose {
+        color: rgb(160, 56, 0);
+    }
     .close-wrapper {
         position: absolute;
         right: 0;
