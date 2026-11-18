@@ -5,10 +5,12 @@ dbConnect();
 
 $gameID = $_GET["gameID"];
 
-$sql = "SELECT playerNum FROM games WHERE gameID=$gameID";
+$sql = "SELECT playerNum, guessTime, discussTime FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
         $players = $result->fetch_assoc();
             $playerNum = $players["playerNum"];
+            $guessTime = $players["guessTime"];
+            $discussTime = $players["discussTime"];
 
 switch ($playerNum) {
     case '4':
@@ -86,6 +88,54 @@ switch ($playerNum) {
 </head>
 <body>
     <?= makeNav() ?>
+    <div class="popup-wrapper" id="settingsPopup">
+        <div class="popup-content">
+            <div class="close-wrapper">
+                <ion-icon name="close-outline" onclick="closeSettingPopup()"></ion-icon>
+            </div>
+            <div class="title-wrapper">
+                <h1>Settings</h1>
+            </div>
+            <div class="setting-wrapper">
+                <h3>Question Time</h3>
+                <div class="options">
+                    <div class="option-wrapper">
+                        <input type="radio" id="twoMins" class="radio" name="guessTime" value="2"
+                        <?php if($guessTime==2){?>checked<?php } ?>>
+                        <label for="twoMins">2 Minutes</label>
+                    </div>
+                    <div class="option-wrapper">
+                        <input type="radio" id="threeMins" class="radio" name="guessTime" value="3"
+                        <?php if($guessTime==3){?>checked<?php } ?>>
+                        <label for="threeMins">3 Minutes</label>
+                    </div>
+                    <div class="option-wrapper">
+                        <input type="radio" id="fiveMins" class="radio" name="guessTime" value="5"
+                        <?php if($guessTime==5){?>checked<?php } ?>>
+                        <label for="fiveMins">5 Minutes</label>
+                    </div>
+                </div>
+                <h3>Insider Discussion Time</h3>
+                <div class="options">
+                    <div class="option-wrapper">
+                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="3"
+                        <?php if($discussTime==3){?>checked<?php } ?>>
+                        <label for="oneMins">3 Minute</label>
+                    </div>
+                    <div class="option-wrapper">
+                        <input type="radio" id="twoMins" class="radio" name="discussTime" value="5"
+                        <?php if($discussTime==5){?>checked<?php } ?>>
+                        <label for="twoMins">5 Minutes</label>
+                    </div>
+                    <div class="option-wrapper">
+                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="7"
+                        <?php if($discussTime==7){?>checked<?php } ?>>
+                        <label for="threeMins">7 Minutes</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <ion-icon class="setting-icon" id="settingIcon" size="large" name="settings" onclick="openSettings()"></ion-icon>
         <form class="wrapper" method="post" action="/insider/php/insiderGM.php">
@@ -105,12 +155,34 @@ switch ($playerNum) {
                 <h3 class="instructions">Game Master, please choose a word:</h3>
                 <input type="text" id="gmWord" class="playerInput" name="gmWord" placeholder="Ex: Apple">
                 <span id="gmWordError" class="error"></span>
-                <input type="hidden" name="gameID" value= "<?= $gameID ?>">
+                <input type="hidden" name="gameID" value= "<?=$gameID?>">
             </div>
             <button id="submit" type="submit" class="insiderBttn hide">Submit</button>
         </form>
     </div>
     <script type='text/javascript'>
+        function openSettings() {
+            $("#settingsPopup").css("display", "flex");
+        }
+        function closeSettingPopup() {
+            $("#settingsPopup").hide();
+            var gameID = <?=$gameID?>;
+            var guessTime = $("[name='guessTime']:checked").val()
+            var discussTime = $("[name='discussTime']:checked").val()
+
+            $.ajax ({
+                url: "php/updateTime.php",
+                method: "post",
+                data: {gameID:gameID,
+                    guessTime:guessTime,
+                    discussTime:discussTime},
+                    success:function(result) {
+                        console.log(result);
+                    }
+            })
+        }
+
+
         //* function to pull a random player name from player array and write it in the gmName span
         function pullGM() {
             let gameplayers = <?= json_encode($game); ?>;
@@ -151,17 +223,6 @@ switch ($playerNum) {
             $('#submit').css("display", "flex");
                 console.log("hello");
         }
-
-        // function checkContent() {
-        //     if ($("#gmWord").val() === true) {
-        //         $('#submit').css("display", "flex");
-        //         console.log("hello2");
-        //     }else {
-        //         $('#submit').css("display", "none");
-        //         console.log("hello1");
-        //     }
-        // }
-        
     </script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
