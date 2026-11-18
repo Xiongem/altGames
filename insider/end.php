@@ -3,13 +3,15 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/utilities.php');
 dbConnect();
 
 $gameID = $_GET["gameID"];
-$result = $_GET["result"];
+$voteResult = $_GET["result"];
 
 $sql = "SELECT * FROM games WHERE gameID=$gameID";
     $result = $_SESSION["conn"]->query($sql);
         $game = $result->fetch_assoc();
         $insider = $game["insider"];
         $gmWord = $game["gmWord"];
+
+echo $voteResult;
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +34,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
 </head>
 <body>
     <?= makeNav() ?>
-    <?php if ($result == 1) { ?>
+    <?php if ($voteResult == 1) { ?>
     <div class="popup-wrapper" id="winPopup">
         <div class="popup-content">
             <div class="close-wrapper">
@@ -42,7 +44,7 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
             <h2> Congrats! You found the Insider!</h2>
         </div>
     </div>
-    <?php } else { ?>
+    <?php } elseif ($voteResult == 0) { ?>
     <div class="popup-wrapper" id="losePopup">
         <div class="popup-content">
             <div class="close-wrapper">
