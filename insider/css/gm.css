@@ -16,6 +16,9 @@
     .setting-title-wrapper {
         text-align: center;
     }
+    .options {
+        margin: 1em 0;
+    }
 }
 
 @media only screen and (min-width: 700px) {
