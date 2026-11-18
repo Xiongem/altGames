@@ -100,37 +100,37 @@ switch ($playerNum) {
                 <h3>Question Time</h3>
                 <div class="options">
                     <div class="option-wrapper">
-                        <input type="radio" id="twoMins" class="radio" name="guessTime" value="2"
+                        <input type="radio" id="twoMinsG" class="radio" name="guessTime" value="2"
                         <?php if($guessTime==2){?>checked<?php } ?>>
-                        <label for="twoMins">2 Minutes</label>
+                        <label for="twoMinsG">2 Minutes</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="threeMins" class="radio" name="guessTime" value="3"
+                        <input type="radio" id="threeMinsG" class="radio" name="guessTime" value="3"
                         <?php if($guessTime==3){?>checked<?php } ?>>
-                        <label for="threeMins">3 Minutes</label>
+                        <label for="threeMinsG">3 Minutes</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="fiveMins" class="radio" name="guessTime" value="5"
+                        <input type="radio" id="fiveMinsG" class="radio" name="guessTime" value="5"
                         <?php if($guessTime==5){?>checked<?php } ?>>
-                        <label for="fiveMins">5 Minutes</label>
+                        <label for="fiveMinsG">5 Minutes</label>
                     </div>
                 </div>
                 <h3>Insider Discussion Time</h3>
                 <div class="options">
                     <div class="option-wrapper">
-                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="3"
+                        <input type="radio" id="oneMinsD" class="radio" name="discussTime" value="3"
                         <?php if($discussTime==3){?>checked<?php } ?>>
-                        <label for="oneMins">3 Minute</label>
+                        <label for="oneMinsD">3 Minute</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="twoMins" class="radio" name="discussTime" value="5"
+                        <input type="radio" id="twoMinsD" class="radio" name="discussTime" value="5"
                         <?php if($discussTime==5){?>checked<?php } ?>>
-                        <label for="twoMins">5 Minutes</label>
+                        <label for="twoMinsD">5 Minutes</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="7"
+                        <input type="radio" id="sevenMinsD" class="radio" name="discussTime" value="7"
                         <?php if($discussTime==7){?>checked<?php } ?>>
-                        <label for="threeMins">7 Minutes</label>
+                        <label for="sevenMinsD">7 Minutes</label>
                     </div>
                 </div>
             </div>
