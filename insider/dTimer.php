@@ -213,7 +213,7 @@ switch ($playerNum) {
                 data: {insider:insider,
                     gameID:gameID},
                 success:function(result) {
-                    if (result == true) {
+                    if (result == 1) {
                         console.log("true");
                         
                     } else {
