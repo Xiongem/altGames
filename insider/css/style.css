@@ -37,7 +37,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
     .insider-wrapper {
         display: flex;
