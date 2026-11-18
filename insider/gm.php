@@ -88,7 +88,7 @@ switch ($playerNum) {
 </head>
 <body>
     <?= makeNav() ?>
-    <div class="popup-wrapper" id="settingsPopup">
+    <div class="popup-wrapper hide" id="settingsPopup">
         <div class="popup-content">
             <div class="close-wrapper">
                 <ion-icon name="close-outline" onclick="closeSettingPopup()"></ion-icon>
