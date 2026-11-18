@@ -89,13 +89,13 @@
 }
 
 @media only screen and (min-width: 700px) {
-    /* .end-wrapper {
-        width: 60%;
-    } */
+    .popup-content {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    /* .end-wrapper {
-        width: 40%;
-    } */
+    .popup-content {
+        width: 30%;
+    }
 }
