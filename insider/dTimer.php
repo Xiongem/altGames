@@ -214,10 +214,10 @@ switch ($playerNum) {
                     gameID:gameID},
                 success:function(result) {
                     if (result == 1) {
-                        console.log("true");
+                        console.log(result);
                         
                     } else {
-                        console.log("false");
+                        console.log(result);
                         
                     }
                 }
