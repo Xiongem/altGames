@@ -214,9 +214,11 @@ switch ($playerNum) {
                     gameID:gameID},
                 success:function(result) {
                     if (result == true) {
-                        window.location.href = "end.php?gameID=<?=$gameID?>&result=1";
+                        console.log("true");
+                        
                     } else {
-                        window.location.href = "end.php?gameID=<?=$gameID?>&result=0";
+                        console.log("false");
+                        
                     }
                 }
             })
