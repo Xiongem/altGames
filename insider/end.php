@@ -10,6 +10,8 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         $game = $result->fetch_assoc();
         $insider = $game["insider"];
         $gmWord = $game["gmWord"];
+
+echo $voteResult;
 ?>
 
 <!DOCTYPE html>
