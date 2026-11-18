@@ -87,6 +87,7 @@ switch ($playerNum) {
 <body>
     <?= makeNav() ?>
     <div class="wrapper">
+        <ion-icon class="setting-icon" id="settingIcon" size="large" name="settings" onclick="openSettings()"></ion-icon>
         <form class="wrapper" method="post" action="/insider/php/insiderGM.php">
             <div class="insider-wrapper">
                 <img class="image" id="insiderLogo" src="/insider/images/insiderLogo.svg" alt="Insider Game Logo">
