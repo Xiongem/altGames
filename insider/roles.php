@@ -205,9 +205,12 @@ if ($key !== false) {
     </div>
     <script type='text/javascript'>
         function showRole() {
-            document.getElementById("contentWrapper").style.display = "flex";
-            document.getElementById("nextPlayer").style.display = "flex";
-            document.getElementById("showRole").style.display = "none";
+            $("#contentWrapper").css("display", "flex");
+            $("#nextPlayer").css("display", "flex");
+            $("#showRole").css("display", "none");
+            // document.getElementById("contentWrapper").style.display = "flex";
+            // document.getElementById("nextPlayer").style.display = "flex";
+            // document.getElementById("showRole").style.display = "none";
         }
 
         //* PHP Session variables to js variables here
@@ -218,9 +221,12 @@ if ($key !== false) {
         
         var i = 0;
         function nextPlayer() {
-            document.getElementById("contentWrapper").style.display = "none";
-            document.getElementById("nextPlayer").style.display = "none";
-            document.getElementById("showRole").style.display = "flex";
+            $("#contentWrapper").css("display", "none");
+            $("#nextPlayer").css("display", "none");
+            $("#showRole").css("display", "flex");
+            // document.getElementById("contentWrapper").style.display = "none";
+            // document.getElementById("nextPlayer").style.display = "none";
+            // document.getElementById("showRole").style.display = "flex";
 
             if (gameplayers[i] == insider) {
                 $("#player").text(gameplayers[i]);
