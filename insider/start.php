@@ -61,16 +61,16 @@ dbConnect();
                 </div>
                 <div class="options">
                     <div class="option-wrapper">
-                        <input type="radio" id="twoMins" class="radio" name="guessTime" value="2">
-                        <label for="twoMins">2 Minutes</label>
+                        <input type="radio" id="twoMinsG" class="radio" name="guessTime" value="2">
+                        <label for="twoMinsG">2 Minutes</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="threeMins" class="radio" name="guessTime" value="3" checked>
-                        <label for="threeMins">3 Minutes</label>
+                        <input type="radio" id="threeMinsG" class="radio" name="guessTime" value="3" checked>
+                        <label for="threeMinsG">3 Minutes</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="fiveMins" class="radio" name="guessTime" value="5">
-                        <label for="fiveMins">5 Minutes</label>
+                        <input type="radio" id="fiveMinsG" class="radio" name="guessTime" value="5">
+                        <label for="fiveMinsG">5 Minutes</label>
                     </div>
                 </div>
             </div>
@@ -86,16 +86,16 @@ dbConnect();
                 </div>
                 <div class="options">
                     <div class="option-wrapper">
-                        <input type="radio" id="oneMins" class="radio" name="discussTime" value="3">
-                        <label for="oneMins">3 Minute</label>
+                        <input type="radio" id="threeMinsD" class="radio" name="discussTime" value="3">
+                        <label for="threeMinsD">3 Minute</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="twoMins" class="radio" name="discussTime" value="5" checked>
-                        <label for="twoMins">5 Minutes</label>
+                        <input type="radio" id="fiveMinsD" class="radio" name="discussTime" value="5" checked>
+                        <label for="fiveMinsD">5 Minutes</label>
                     </div>
                     <div class="option-wrapper">
-                        <input type="radio" id="threeMins" class="radio" name="discussTime" value="7">
-                        <label for="threeMins">7 Minutes</label>
+                        <input type="radio" id="sevenMinsD" class="radio" name="discussTime" value="7">
+                        <label for="sevenMinsD">7 Minutes</label>
                     </div>
                 </div>
             </div>
