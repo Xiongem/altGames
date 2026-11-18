@@ -192,6 +192,9 @@ body {
     .playerInput {
         width: 50%;
     }
+    .setting-icon {
+        margin: 0.5em 2em;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -201,6 +204,9 @@ body {
     .playerInput {
         width: 40%;
         height: 3.5em;
+    }
+    .setting-icon {
+        margin: 0.5em 3em;
     }
 }
 .hide {
