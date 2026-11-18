@@ -13,6 +13,9 @@
         height: 1em;
         cursor: pointer;
     }
+    .setting-title-wrapper {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 700px) {
