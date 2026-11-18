@@ -32,6 +32,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-bottom: 1em;
     }
     .wrapper {
         display: flex;
@@ -72,20 +73,6 @@ body {
         border-radius: 8px;
         padding: 0 8px;
     }
-    /* .insiderBttn {
-        justify-content: center;
-        align-items: center;
-        background-color: #004122;
-        color: #f6f0ff;
-        font-size: 26px;
-        border-radius: 16px;
-        width:fit-content;
-        height: fit-content;
-        border: none;
-        padding: 1em;
-        cursor: pointer;
-    } */
-    /* From Uiverse.io by cssbuttons-io */ 
     .insiderBttn {
         appearance: button;
         background-color: #004122;
@@ -201,9 +188,6 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-    .wrapper {
-        margin-bottom: 1em;
-    }
     .insider-wrapper {
         margin: 0.3em 0 2em 0;
     }
