@@ -61,18 +61,18 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 <div class="reveal-wrapper">
                     <h2 class="insider" id="gmword"><?= $gmWord ?></h2>
                 </div>
-                    <div class="buttonWrapper">
+                    <!-- <div class="buttonWrapper">
                         <button class="insiderBttn" onclick="revealGmWord()" >Reveal answer</button>
-                    </div>
+                    </div> -->
             </div>
             <div class="end-wrapper">
                 <h1 class="title center">The Insider was:</h1>
                 <div class="reveal-wrapper">
                     <h2 class="insider" id="insider"><?= $insider ?></h2>
                 </div>
-                    <div class="buttonWrapper">
+                    <!-- <div class="buttonWrapper">
                         <button class="insiderBttn" onclick="revealInsider()">Reveal answer</button>
-                    </div>
+                    </div> -->
             </div>
         </div>
         <div id="playAgain" class="end-wrapper">
@@ -84,18 +84,18 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
         </div>
     </div>
     <script type='text/javascript'>
-        function revealGmWord() {
-            var gmWord = document.getElementById("gmword");
-            gmWord.style.display = "block";
-        }
+        // function revealGmWord() {
+        //     var gmWord = document.getElementById("gmword");
+        //     gmWord.style.display = "block";
+        // }
 
-        function revealInsider() {
-            var insider = document.getElementById("insider");
-            insider.style.display = "block";
+        // function revealInsider() {
+        //     var insider = document.getElementById("insider");
+        //     insider.style.display = "block";
 
-            var playAgain = document.getElementById("playAgain");
-            playAgain.style.display = "flex";
-        }
+        //     var playAgain = document.getElementById("playAgain");
+        //     playAgain.style.display = "flex";
+        // }
 
         function resetGame() {
             var gameID = <?= $gameID ?>;

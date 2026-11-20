@@ -176,7 +176,7 @@ switch ($playerNum) {
         </div>
         <div class="content-wrapper">
             <h1 class="title">Who is the Insider?</h1>
-            <p class="center">Discuss and vote before time is up.</p>
+            <p class="center">Discuss and vote for who you think the insider is before time runs out.</p>
             <div class="timer-wrapper">
                 <h2 id="timer" class="timer">
                     <div class="loader" id="loader"></div>

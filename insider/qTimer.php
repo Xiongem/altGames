@@ -43,19 +43,22 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
         </div>
         <div class="content-wrapper">
             <h1 class="title">Question Time</h1>
-            <p class="center"> Ask yes or no questions to figure out the secret word before time is up.</p>
+            <p class="center"> 
+                Ask yes or no questions to figure out the secret word before time is up. 
+                Once you've correctly guessed the secret word, press the "correct answer" button!
+            </p>
             <div class="timer-wrapper">
                 <h2 id="timer" class="timer">
                     <div class="loader" id="loader"></div>
                 </h2>
             </div>
             <div class="skip-wrapper">
-                <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
+                <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Correct Answer</button>
 
             </div>
-            <div class="buttonWrapper">
+            <!-- <div class="buttonWrapper">
                 <button id="nextButton" class="insiderBttn" onclick="nextPage()">Discussion Time</button>
-            </div>
+            </div> -->
         </div>
     </div>
     <script type='text/javascript'>
@@ -74,12 +77,17 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                     // $("#timerTick").trigger('pause');
                     // $("#timerAlarm").trigger('play');
                     display.textContent = "Time is up!";
-                    var nextButton = document.getElementById("nextButton");
-                    var skipButton = document.getElementById("skipButton");
-                    nextButton.style.display = "block";
-                    skipButton.style.display = "none";
+                    setTimeout(nextPage, 2000);
+                    // var nextButton = document.getElementById("nextButton");
+                    // var skipButton = document.getElementById("skipButton");
+                    // nextButton.style.display = "block";
+                    // skipButton.style.display = "none";
                 }
             }, 1000);
+        }
+
+        function nextPage() {
+            window.location.href = "end.php?gameID=<?=$gameID?>&result=0";
         }
 
         window.onload = function () {
