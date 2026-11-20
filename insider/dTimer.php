@@ -239,7 +239,7 @@ switch ($playerNum) {
                     // var skipButton = document.getElementById("skipButton");
                     // nextButton.style.display = "block";
                     // skipButton.style.display = "none";
-                    setTimeout(nextPage, 2000);
+                    setTimeout(nextPage, 1000);
                 }
             }, 1000);
         }

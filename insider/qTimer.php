@@ -77,7 +77,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                     // $("#timerTick").trigger('pause');
                     // $("#timerAlarm").trigger('play');
                     display.textContent = "Time is up!";
-                    setTimeout(endPage, 2000);
+                    setTimeout(endPage, 1000);
                     // var nextButton = document.getElementById("nextButton");
                     // var skipButton = document.getElementById("skipButton");
                     // nextButton.style.display = "block";
