@@ -10,7 +10,7 @@ dbConnect();
 
 $gameID = rand(1000,9999);
 $created = date("Y-m-d H:i:s",time());
-$expire = date("Y-m-d H:i:s",time() + 60 * 30); //expires after 30 minutes
+$expire = date("Y-m-d H:i:s",time() + 60 * 60); //expires after 60 minutes
 $players = $_POST["playerNum"];
 
 $stmt = $_SESSION["conn"] -> begin_transaction();
