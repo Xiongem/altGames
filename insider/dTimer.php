@@ -193,10 +193,10 @@ switch ($playerNum) {
                 </select>
                 <div class="insiderBttn" id="insiderButton" onclick="chooseInsider()">Vote</div>
             </div>
-            <div class="skip-wrapper">
+            <!-- <div class="skip-wrapper">
                 <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
 
-            </div>
+            </div> -->
             <!-- <div class="buttonWrapper">
                 <button id="nextButton" class="insiderBttn" onclick="nextPage()">Reveal answers</button>
             </div> -->
