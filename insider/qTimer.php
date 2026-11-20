@@ -71,6 +71,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
 
                 if (--timer < 0) {
                     display.textContent = "Time is up!";
+                    $("#skipButton").hide();
                     setTimeout(endPage, 1000);
                 }
             }, 1000);

@@ -228,6 +228,7 @@ switch ($playerNum) {
 
                 if (--timer < 0) {
                     display.textContent = "Time is up!";
+                    $("#insiderButton").hide();
                     setTimeout(nextPage, 1000);
                 }
             }, 1000);
