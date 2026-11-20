@@ -51,6 +51,9 @@
     #lose {
         color: rgb(160, 56, 0);
     }
+    .insider {
+        color: rgb(160, 56, 0);
+    } 
 }
 
 @media only screen and (min-width: 700px) {
