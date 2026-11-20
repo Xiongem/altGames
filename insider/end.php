@@ -50,7 +50,6 @@ $sql = "SELECT * FROM games WHERE gameID=$gameID";
                 <ion-icon id="close-icon" size="large" name="close-outline" onclick="closePopup('#losePopup')"></ion-icon>
             </div>
             <h1 id="lose">Better luck next time...</h1>
-            <h2>The Insider was too sneaky this time.</h2>
         </div>
     </div>
     <?php } ?>
