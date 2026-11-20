@@ -193,13 +193,6 @@ switch ($playerNum) {
                 </select>
                 <div class="insiderBttn" id="insiderButton" onclick="chooseInsider()">Vote</div>
             </div>
-            <!-- <div class="skip-wrapper">
-                <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Skip</button>
-
-            </div> -->
-            <!-- <div class="buttonWrapper">
-                <button id="nextButton" class="insiderBttn" onclick="nextPage()">Reveal answers</button>
-            </div> -->
         </div>
     </div>
     <script type='text/javascript'>
@@ -235,10 +228,6 @@ switch ($playerNum) {
 
                 if (--timer < 0) {
                     display.textContent = "Time is up!";
-                    // var nextButton = document.getElementById("nextButton");
-                    // var skipButton = document.getElementById("skipButton");
-                    // nextButton.style.display = "block";
-                    // skipButton.style.display = "none";
                     setTimeout(nextPage, 1000);
                 }
             }, 1000);

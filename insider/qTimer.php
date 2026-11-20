@@ -54,11 +54,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
             </div>
             <div class="skip-wrapper">
                 <button id="skipButton" class="insiderBttn skipButton" onclick="nextPage()">Correct Answer</button>
-
             </div>
-            <!-- <div class="buttonWrapper">
-                <button id="nextButton" class="insiderBttn" onclick="nextPage()">Discussion Time</button>
-            </div> -->
         </div>
     </div>
     <script type='text/javascript'>
@@ -74,14 +70,8 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                 display.textContent = minutes + ":" + seconds;
 
                 if (--timer < 0) {
-                    // $("#timerTick").trigger('pause');
-                    // $("#timerAlarm").trigger('play');
                     display.textContent = "Time is up!";
                     setTimeout(endPage, 1000);
-                    // var nextButton = document.getElementById("nextButton");
-                    // var skipButton = document.getElementById("skipButton");
-                    // nextButton.style.display = "block";
-                    // skipButton.style.display = "none";
                 }
             }, 1000);
         }
