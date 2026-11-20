@@ -77,7 +77,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                     // $("#timerTick").trigger('pause');
                     // $("#timerAlarm").trigger('play');
                     display.textContent = "Time is up!";
-                    setTimeout(nextPage, 2000);
+                    setTimeout(endPage, 2000);
                     // var nextButton = document.getElementById("nextButton");
                     // var skipButton = document.getElementById("skipButton");
                     // nextButton.style.display = "block";
@@ -86,7 +86,7 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
             }, 1000);
         }
 
-        function nextPage() {
+        function endPage() {
             window.location.href = "end.php?gameID=<?=$gameID?>&result=0";
         }
 
@@ -98,6 +98,10 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                 display = document.querySelector('#timer');
             startTimer(guessTime, display);
         };
+
+        function nextPage() {
+            window.location.href = "dTimer.php?gameID=<?= $gameID ?>";
+        }
     </script>
 </body>
 </html>
