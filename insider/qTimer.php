@@ -98,10 +98,6 @@ $sql = "SELECT guessTime FROM games WHERE gameID=$gameID";
                 display = document.querySelector('#timer');
             startTimer(guessTime, display);
         };
-
-        function nextPage() {
-            window.location.href = "dTimer.php?gameID=<?= $gameID ?>";
-        }
     </script>
 </body>
 </html>
